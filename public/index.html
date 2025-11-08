@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Popflare — Football, Trailers, Charts & Viral</title>
+
+  <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+  <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+
+  <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+  <script>window.ezstandalone = window.ezstandalone || {}; ezstandalone.cmd = ezstandalone.cmd || [];</script>
+
+  <link rel="canonical" href="https://popflare.co.uk/"/>
+  <meta name="description" content="Popflare — last night's football highlights, upcoming movie trailers, UK pop chart videos, and the funniest viral clips."/>
+  <meta property="og:title" content="Popflare — The Pulse of Football, Films & Feels"/>
+  <meta property="og:description" content="Official highlights, English trailers, UK Top 100, and viral shorts — updated on schedule."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://popflare.co.uk"/>
+  <meta property="og:image" content="assets/pf-logo.svg"/>
+  <meta name="theme-color" content="#000000"/>
+
+  <link rel="icon" href="assets/pf-logo.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+
+  <style>
+    :root{--pf-pink:#FF3366}
+    @media (prefers-color-scheme: dark){
+      :root{--bg:#0b0b0d;--panel:#121216;--muted:#8b8b98;--text:#efeff5;--chip:#1e1e24;--border:#1b1b22}
+    }
+    @media (prefers-color-scheme: light){
+      :root{--bg:#f7f7fb;--panel:#ffffff;--muted:#5d5d6e;--text:#171722;--chip:#f0f0ff;--border:#e7e7f3}
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    .wrap{max-width:1100px;margin:0 auto;padding:16px}
+    .header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,var(--bg),var(--bg) 70%);border-bottom:1px solid var(--border)}
+    .header-inner{display:flex;align-items:center;gap:16px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand-title{font-weight:800;font-size:20px}
+    .nav{display:flex;gap:10px;margin-left:auto;flex-wrap:wrap}
+    .nav button{background:var(--chip);color:var(--text);border:1px solid var(--border);padding:8px 12px;border-radius:999px;cursor:pointer;font-weight:600}
+    .nav button.active{border-color:var(--pf-pink);box-shadow:0 0 0 2px rgba(255,51,102,.25)}
+    .meta{color:var(--muted);font-size:12px;margin-left:8px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px}
+    @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+    .thumb{position:relative;padding-top:56.25%;background:#000}
+    .thumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-bottom:1px solid var(--border)}
+    .title{padding:10px 12px 4px;font-weight:700;line-height:1.3}
+    .meta-row{display:flex;align-items:center;gap:8px;color:var(--muted);padding:0 12px 12px;font-size:13px}
+    .badge{background:var(--chip);color:var(--muted);font-size:11px;border:1px solid var(--border);border-radius:999px;padding:3px 8px}
+    .footer{color:var(--muted);text-align:center;margin:30px 0 50px}
+    .ad-slot{display:flex;align-items:center;justify-content:center;height:80px;background:var(--panel);border:1px dashed var(--border);border-radius:12px;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div id="ezoic-pub-ad-placeholder-100" style="height:0;overflow:hidden"></div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <img src="assets/pf-logo.svg" alt="Popflare logo" width="36" height="36"/>
+        <div class="brand-title">Popflare</div>
+      </div>
+      <nav class="nav">
+        <button id="btn-football" class="active">Last Night’s Football</button>
+        <button id="btn-trailers">Upcoming movie trailers</button>
+        <button id="btn-ukpop">UK Pop Top 100</button>
+        <button id="btn-viral">Viral</button>
+      </nav>
+      <div class="meta">Last updated: <span id="updated">—</span></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="grid" class="grid"></div>
+    <div id="ezoic-pub-ad-placeholder-101" style="height:0;overflow:hidden"></div>
+    <div id="ezoic-pub-ad-placeholder-102" style="height:0;overflow:hidden"></div>
+    <div id="ezoic-pub-ad-placeholder-103" style="height:0;overflow:hidden"></div>
+    <div id="ezoic-pub-ad-placeholder-104" style="height:0;overflow:hidden"></div>
+    <footer class="footer">© <span id="year"></span> Popflare — The Pulse of Football, Films & Feels</footer>
+  </main>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

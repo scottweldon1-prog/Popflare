@@ -1,0 +1,11 @@
+{
+  "name": "popflare",
+  "version": "4.3.0",
+  "type": "module",
+  "scripts": {
+    "build:feeds": "node scripts/build_feeds.mjs public/content"
+  },
+  "dependencies": {
+    "node-fetch": "3.3.2"
+  }
+}

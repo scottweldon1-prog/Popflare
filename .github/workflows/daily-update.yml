@@ -1,0 +1,14 @@
+name: Popflare Auto Update
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # every 12 hours
+  workflow_dispatch:         # manual trigger
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify build hook
+        run: |
+          curl -X POST -d '{}' https://api.netlify.com/build_hooks/690f2a3b82d283f234076c23
