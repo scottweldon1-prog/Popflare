@@ -1,14 +1,27 @@
 name: Popflare Auto Update
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "0 */12 * * *"   # every 12 hours
-  workflow_dispatch:         # manual trigger
+    - cron: "0 4 * * *"   # 04:00 UTC ≈ 04:00 UK when not in DST, adjust if you prefer
 
 jobs:
-  trigger:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Netlify build hook
-        run: |
-          curl -X POST -d '{}' https://api.netlify.com/build_hooks/690f2a3b82d283f234076c23
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: node scripts/build_feeds.mjs public/content
+      - run: |
+          git config user.name "popflare-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add public/content/*.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Auto-update feeds"
+            git push
+          fi

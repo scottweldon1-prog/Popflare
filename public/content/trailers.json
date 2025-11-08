@@ -1,4 +1,61 @@
 {
-  "updatedAt": "2025-11-08T10:44:13.202Z",
-  "items": []
+  "updatedAt": "2025-11-08T13:14:14.815Z",
+  "items": [
+    {
+      "id": "wwjYCkPH48w",
+      "title": "The Family McMullen | Official Trailer",
+      "channel": "Warner Bros.",
+      "url": "https://www.youtube.com/watch?v=wwjYCkPH48w",
+      "embedUrl": "https://www.youtube.com/embed/wwjYCkPH48w",
+      "published": "2025-10-01T16:00:00+00:00"
+    },
+    {
+      "id": "AuYmKbtnmEA",
+      "title": "Michael | Official Trailer",
+      "channel": "Universal Pictures",
+      "url": "https://www.youtube.com/watch?v=AuYmKbtnmEA",
+      "embedUrl": "https://www.youtube.com/embed/AuYmKbtnmEA",
+      "published": "2025-11-07T17:25:48+00:00"
+    },
+    {
+      "id": "NQypHE9_Fm4",
+      "title": "Five Nights at Freddy's 2 | Official Trailer 2",
+      "channel": "Universal Pictures",
+      "url": "https://www.youtube.com/watch?v=NQypHE9_Fm4",
+      "embedUrl": "https://www.youtube.com/embed/NQypHE9_Fm4",
+      "published": "2025-11-05T05:02:37+00:00"
+    },
+    {
+      "id": "Plxre8nyYtQ",
+      "title": "The Stringer: The Man Who Took The Photo | Official Trailer | Netflix",
+      "channel": "Netflix",
+      "url": "https://www.youtube.com/watch?v=Plxre8nyYtQ",
+      "embedUrl": "https://www.youtube.com/embed/Plxre8nyYtQ",
+      "published": "2025-11-07T15:00:00+00:00"
+    },
+    {
+      "id": "FjO8XACCpiQ",
+      "title": "One Shot With Ed Sheeran: A Music Experience | Official Trailer | Netflix",
+      "channel": "Netflix",
+      "url": "https://www.youtube.com/watch?v=FjO8XACCpiQ",
+      "embedUrl": "https://www.youtube.com/embed/FjO8XACCpiQ",
+      "published": "2025-11-06T17:00:00+00:00"
+    },
+    {
+      "id": "UtZ1qya0X2M",
+      "title": "The Abandons | Official Trailer | Netflix",
+      "channel": "Netflix",
+      "url": "https://www.youtube.com/watch?v=UtZ1qya0X2M",
+      "embedUrl": "https://www.youtube.com/embed/UtZ1qya0X2M",
+      "published": "2025-11-05T16:00:00+00:00"
+    },
+    {
+      "id": "Y6UXdDbuNFc",
+      "title": "A Man on the Inside | Season 2 Official Trailer | Netflix",
+      "channel": "Netflix",
+      "url": "https://www.youtube.com/watch?v=Y6UXdDbuNFc",
+      "embedUrl": "https://www.youtube.com/embed/Y6UXdDbuNFc",
+      "published": "2025-11-04T17:00:00+00:00"
+    }
+  ]
 }

@@ -1,59 +1,129 @@
 
-const TABS = ["football","trailers","ukpop","viral"];
-const state = {active:"football", data:{}, page:1, pageSize:18, loading:false};
-const $ = id => document.getElementById(id);
+// assets/app.js — Popflare v5
+const TABS = {
+  football: "content/football.json",
+  trailers: "content/trailers.json",
+  ukpop: "content/ukpop.json",
+  viral: "content/viral.json",
+};
 
-async function fetchJSON(name){
-  try{
-    const res = await fetch(`content/${name}.json?ts=${Date.now()}`);
-    if(!res.ok) throw 0;
-    return await res.json();
-  }catch{ return {updatedAt:null, items:[]}; }
+const state = {
+  current: "football",
+  items: [],
+  page: 0,
+  pageSize: 12,
+  loading: false,
+  end: false
+};
+
+const grid = document.getElementById("grid");
+const updatedEl = document.getElementById("updated");
+
+document.querySelectorAll(".tab").forEach(btn => {
+  btn.addEventListener("click", () => {
+    if (btn.dataset.tab === state.current) return;
+    document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    switchTab(btn.dataset.tab);
+  });
+});
+
+async function switchTab(tab) {
+  state.current = tab;
+  state.items = [];
+  state.page = 0;
+  state.end = false;
+  grid.innerHTML = "";
+  await loadFeed();
 }
-async function loadTab(name){
-  state.active = name; state.page = 1; state.loading = false;
-  TABS.forEach(t => { const b = $(`btn-${t}`); if(b) b.classList.toggle("active", t===name); });
-  if(!state.data[name]) state.data[name] = await fetchJSON(name);
-  render(name, state.data[name], true);
-  if(window.ezstandalone?.cmd){
-    ezstandalone.cmd.push(() => ezstandalone.destroyAll());
-    ezstandalone.cmd.push(() => ezstandalone.showAds(100,101,102,103,104));
+
+async function loadFeed() {
+  state.loading = true;
+  try {
+    const res = await fetch(TABS[state.current] + "?t=" + Date.now());
+    const data = await res.json();
+    updatedEl.textContent = new Date(data.updatedAt || Date.now()).toLocaleString();
+    state.items = data.items || [];
+    appendPage();
+  } catch (e) {
+    console.error(e);
+    grid.innerHTML = `<div class="card" style="grid-column:span 12; padding:16px">Failed to load content.</div>`;
+  } finally {
+    state.loading = false;
   }
 }
-function escapeHtml(s){return (s||"").replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function cardHTML(item){
-  const title = escapeHtml(item.title||"");
-  const channel = escapeHtml(item.channel||"");
-  const when = item.published ? new Date(item.published).toLocaleString() : "";
-  return `<div class="card">
-    <div class="thumb"><iframe loading="lazy" src="${item.embedUrl}" title="${title}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-    <div class="title">${title}</div>
-    <div class="meta-row"><span class="badge">${channel}</span>${when?`<span>${when}</span>`:""}</div>
-  </div>`;
+
+function appendPage() {
+  if (state.end) return;
+  const start = state.page * state.pageSize;
+  const slice = state.items.slice(start, start + state.pageSize);
+  if (slice.length === 0) {
+    state.end = true;
+    return;
+  }
+  for (const v of slice) grid.appendChild(renderCard(v));
+  state.page++;
 }
-function render(name, data, reset=false){
-  const grid = $("grid");
-  if(reset) grid.innerHTML = "";
-  const start = (state.page-1)*state.pageSize, end=start+state.pageSize;
-  (data.items||[]).slice(start,end).forEach((it, idx)=>{
-    if((start+idx)>0 && (start+idx)%9===0) grid.insertAdjacentHTML("beforeend","<div class='ad-slot'>Ad slot</div>");
-    grid.insertAdjacentHTML("beforeend", cardHTML(it));
-  });
-  $("updated").textContent = data.updatedAt ? new Date(data.updatedAt).toLocaleString() : "—";
+
+function renderCard(v) {
+  const el = document.createElement("article");
+  el.className = "card";
+  el.innerHTML = `
+    <div class="thumb">
+      <iframe
+        loading="lazy"
+        src="${v.embedUrl}?rel=0&showinfo=0"
+        title="${escapeHtml(v.title)}"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="body">
+      <div class="title">${escapeHtml(v.title)}</div>
+      <div class="meta-row">
+        <span>${escapeHtml(v.channel || "")}</span>
+        <span>•</span>
+        <span>${new Date(v.published).toLocaleDateString()}</span>
+      </div>
+    </div>
+  `;
+  return el;
 }
-window.addEventListener("scroll", ()=>{
-  if(state.loading) return;
-  if(window.innerHeight + window.scrollY < document.body.offsetHeight - 600) return;
-  const d = state.data[state.active]; if(!d) return;
-  const pages = Math.ceil((d.items?.length||0)/state.pageSize); if(state.page>=pages) return;
-  state.loading=true; state.page++; render(state.active, d, false); state.loading=false;
-  if(window.ezstandalone?.cmd){ ezstandalone.cmd.push(() => ezstandalone.showAds()); }
+
+function escapeHtml(s) {
+  return String(s || "")
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+// Infinite scroll
+window.addEventListener("scroll", () => {
+  if (state.loading || state.end) return;
+  const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 800;
+  if (nearBottom) appendPage();
 });
-document.addEventListener("DOMContentLoaded", ()=>{
-  $("btn-football").onclick=()=>loadTab("football");
-  $("btn-trailers").onclick=()=>loadTab("trailers");
-  $("btn-ukpop").onclick=()=>loadTab("ukpop");
-  $("btn-viral").onclick=()=>loadTab("viral");
-  document.getElementById("year").textContent = new Date().getFullYear();
-  loadTab("football");
-});
+
+// Boot
+switchTab(state.current);
+
+// ---- AdSense helper (safe if you don't have an ID yet) ----
+(function setupAds() {
+  const cfg = window.POPFLARE_ADSENSE || {};
+  if (!cfg.enabled || !cfg.client) {
+    document.querySelectorAll(".ad-slot").forEach(x => x.textContent = "Ad slot");
+    return;
+  }
+  // inject client
+  try {
+    // top
+    document.getElementById("ad-top").innerHTML =
+      `<ins class="adsbygoogle" style="display:block" data-ad-client="${cfg.client}" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>`;
+    // bottom
+    document.getElementById("ad-bottom").innerHTML =
+      `<ins class="adsbygoogle" style="display:block" data-ad-client="${cfg.client}" data-ad-slot="1234567891" data-ad-format="auto" data-full-width-responsive="true"></ins>`;
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  } catch (e) {
+    console.warn("Ads not initialized:", e);
+  }
+})();
