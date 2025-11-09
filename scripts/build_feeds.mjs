@@ -1,11 +1,17 @@
-// Popflare v11 – final full feeds builder
+// Popflare v12 — Netlify-safe build (no embedded secrets)
 import 'dotenv/config';
 import fetch from "node-fetch";
 import { writeFileSync, mkdirSync } from "fs";
 import { join } from "path";
 import { execSync } from "child_process";
 
+// Get key ONLY from environment (never hardcoded)
 const API_KEY = process.env.YOUTUBE_API_KEY;
+if (!API_KEY) {
+  console.error("❌ Missing YOUTUBE_API_KEY environment variable.");
+  process.exit(1);
+}
+
 const outDir = process.argv[2] || "public/content";
 mkdirSync(outDir, { recursive: true });
 
@@ -15,11 +21,12 @@ async function youtubeSearch(query, maxResults = 50) {
   const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=${maxResults}&q=${encodeURIComponent(
     query
   )}&key=${API_KEY}&regionCode=GB&relevanceLanguage=en`;
+
   try {
     const res = await fetch(url);
-    if (!res.ok) throw new Error(res.statusText);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
-    if (!data.items) throw new Error("No items");
+    if (!data.items) return [];
     return data.items.map(v => ({
       id: v.id.videoId,
       title: v.snippet.title,
@@ -103,11 +110,10 @@ async function buildSection(name, queries, test, limit = 100) {
 
   try {
     execSync("git add public/content/*.json");
-    execSync('git commit -m "Popflare v11 full working feeds"');
+    execSync('git commit -m "Popflare v12 — Netlify-safe build"');
     execSync("git push origin main");
     console.log("✅ Feeds pushed to GitHub.");
   } catch (err) {
     console.warn("⚠️ Git push skipped:", err.message);
   }
 })();
-
