@@ -5,7 +5,7 @@ import { writeFileSync, mkdirSync } from "fs";
 import { join } from "path";
 import { execSync } from "child_process";
 
-const API_KEY = process.env.YOUTUBE_API_KEY || "AIzaSyCWN1vBeous_RemqXwBb2RSasSAU3smM6Q";
+const API_KEY = process.env.YOUTUBE_API_KEY;
 const outDir = process.argv[2] || "public/content";
 mkdirSync(outDir, { recursive: true });
 
