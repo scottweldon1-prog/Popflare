@@ -1,9 +1,8 @@
-
-// Popflare app.js – final working version
+// Popflare app.js – final working version (no "Last updated" dependency)
 
 async function loadTab(tab) {
   const grid = document.getElementById("grid");
-  const updated = document.getElementById("updated");
+  const updated = document.getElementById("updated"); // may not exist anymore
   grid.innerHTML = "Loading content…";
 
   try {
@@ -15,7 +14,11 @@ async function loadTab(tab) {
       return;
     }
 
-    updated.textContent = new Date(data.updatedAt).toLocaleString();
+    // Only update timestamp if element exists
+    if (updated) {
+      updated.textContent = new Date(data.updatedAt).toLocaleString();
+    }
+
     grid.innerHTML = data.items
       .map(
         (v) => `
@@ -43,4 +46,6 @@ document.querySelectorAll(".tab").forEach((btn) => {
   btn.addEventListener("click", () => switchTab(btn.dataset.tab));
 });
 
+// Default tab
 loadTab("football");
+
