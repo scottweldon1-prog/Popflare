@@ -3,10 +3,13 @@
   "version": "5.0.0",
   "type": "module",
   "scripts": {
-    "build:feeds": "node scripts/build_feeds.mjs public/content"
-  },
+  "build:feeds": "node scripts/build_feeds.mjs",
+  "build:pages": "node scripts/generate_pages.mjs",
+  "build": "npm run build:feeds && npm run build:pages"
+},
   "dependencies": {
     "dotenv": "^17.2.3",
     "node-fetch": "^3.3.2"
   }
 }
+
