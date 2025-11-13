@@ -1,7 +1,12 @@
-// Popflare – Netlify-safe feeds builder (no literals, no pushes)
+// Popflare – Netlify-safe feeds builder (loads local .env if present)
+import dotenv from "dotenv";
 import fetch from "node-fetch";
 import { writeFileSync, mkdirSync } from "fs";
 import { join } from "path";
+
+// Load environment variables
+dotenv.config({ path: "./scripts/.env.local" }); // ✅ looks in scripts folder first
+dotenv.config(); // fallback to root .env if exists
 
 const API_KEY = process.env.YOUTUBE_API_KEY;
 if (!API_KEY) {
