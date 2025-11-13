@@ -1,13 +1,1 @@
 /ads.txt https://srv.adstxtmanager.com/19390/popflare.co.uk 200
-
-# Allow direct access to generated category pages
-/football/*   /football/:splat   200
-/trailers/*   /trailers/:splat   200
-/ukpop/*      /ukpop/:splat      200
-/viral/*      /viral/:splat      200
-
-# Allow video detail pages
-/v/*          /v/:splat          200
-
-# Home page is now the static SEO homepage
-/             /index.html        200
