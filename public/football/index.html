@@ -23,14 +23,21 @@
     .wrap { max-width: 1100px; margin: 0 auto; padding: 1rem; }
     .page-title { font-size: 1.6rem; margin: 1rem 0; }
     .lead { color:#aaa; margin-bottom: 1rem; }
-    .grid-cards { display:grid; gap:1rem; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); }
-    .card a { text-decoration:none; color:inherit; display:block; }
+    .list-cards { display:flex; flex-direction:column; gap:1rem; margin-top: 1rem; }
+    .card-row { display:flex; gap:1rem; padding:0.75rem; border-radius:0.75rem; background:#111; text-decoration:none; color:inherit; }
+    .card-row:hover { background:#181818; }
+    .thumb { flex: 0 0 220px; aspect-ratio:16/9; background:#000; border-radius:.5rem; overflow:hidden; }
+    .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+    .card-body { flex:1; display:flex; flex-direction:column; }
+    .card-title { font-size:1rem; margin:0 0 .35rem 0; }
+    .meta-line { color:#999; font-size:.85rem; margin-bottom:.25rem; }
     .chip { display:inline-block; padding:.25rem .6rem; border:1px solid #333; border-radius:999px; font-size:.8rem; color:#bbb; }
-    .meta-line { color:#999; font-size:.9rem; margin:.25rem 0 .5rem; }
-    .thumb { width:100%; aspect-ratio:16/9; background:#111; border-radius:.75rem; overflow:hidden; display:block }
-    .thumb img { width:100%; height:100%; object-fit:cover; display:block }
-    .footer-links { text-align:center; margin:2rem 0; color:#999; font-size:.9rem}
-    .footer-links a{ color:#FF3366; text-decoration:none }
+    .footer-links { text-align:center; margin:2rem 0; color:#999; font-size:.9rem;}
+    .footer-links a{ color:#FF3366; text-decoration:none; }
+    @media (max-width: 700px) {
+      .card-row { flex-direction:column; }
+      .thumb { width:100%; }
+    }
   </style>
 </head>
 <body>
@@ -53,7 +60,7 @@
 
   <main class="wrap">
 
-    <!-- AD #1 TOP -->
+    <!-- AD: Top -->
     <ins class="adsbygoogle"
          style="display:block; text-align:center; margin:20px auto;"
          data-ad-client="ca-pub-8959777846553693"
@@ -65,712 +72,712 @@
     <h1 class="page-title">Last Night’s Football</h1>
     <p class="lead">The best official highlights and goals from last night’s action across Premier League, EFL, Europe and beyond.</p>
     <p class="meta-line"><span class="chip">Updated 11 Nov 2025</span></p>
-    <section class="grid-cards">
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=7tpMnVkGITI" title="HIGHLIGHTS | Doku Dismantles Liverpool | Man City 3-0 Liverpool">
-          <span class="thumb"><img alt="HIGHLIGHTS | Doku Dismantles Liverpool | Man City 3-0 Liverpool" src="https://i.ytimg.com/vi/7tpMnVkGITI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Doku Dismantles Liverpool | Man City 3-0 Liverpool</h3>
-          <div class="meta-line">Man City • 2025-11-09T22:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=hma40Tv5B_4" title="EXTENDED HIGHLIGHTS | Crystal Palace v Brighton | Premier League">
-          <span class="thumb"><img alt="EXTENDED HIGHLIGHTS | Crystal Palace v Brighton | Premier League" src="https://i.ytimg.com/vi/hma40Tv5B_4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">EXTENDED HIGHLIGHTS | Crystal Palace v Brighton | Premier League</h3>
-          <div class="meta-line">Official Brighton & Hove Albion FC • 2025-11-10T23:59:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=VHAJfLBUSyg" title="Chelsea 3-0 Wolves | HIGHLIGHTS - Extended | Premier League 2025/26">
-          <span class="thumb"><img alt="Chelsea 3-0 Wolves | HIGHLIGHTS - Extended | Premier League 2025/26" src="https://i.ytimg.com/vi/VHAJfLBUSyg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Chelsea 3-0 Wolves | HIGHLIGHTS - Extended | Premier League 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-11-10T00:01:11Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=vTpPiFOeOA0" title="Gusto&#39;s First Chelsea Goal! | Chelsea 3-0 Wolves | HIGHLIGHTS | Premier League 2025/26">
-          <span class="thumb"><img alt="Gusto&#39;s First Chelsea Goal! | Chelsea 3-0 Wolves | HIGHLIGHTS | Premier League 2025/26" src="https://i.ytimg.com/vi/vTpPiFOeOA0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Gusto&#39;s First Chelsea Goal! | Chelsea 3-0 Wolves | HIGHLIGHTS | Premier League 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-11-09T00:02:32Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=QHOS6Sflfdg" title="Man City dismantle the champions to go second | Man City 3-0 Liverpool | Premier League Highlights">
-          <span class="thumb"><img alt="Man City dismantle the champions to go second | Man City 3-0 Liverpool | Premier League Highlights" src="https://i.ytimg.com/vi/QHOS6Sflfdg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Man City dismantle the champions to go second | Man City 3-0 Liverpool | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-11-09T18:40:34Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=nMa2L6xpdc8" title="Manchester City vs Liverpool (3-0) Highlights | Premier League 2025/26">
-          <span class="thumb"><img alt="Manchester City vs Liverpool (3-0) Highlights | Premier League 2025/26" src="https://i.ytimg.com/vi/nMa2L6xpdc8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Manchester City vs Liverpool (3-0) Highlights | Premier League 2025/26</h3>
-          <div class="meta-line">Nexus Football • 2025-11-09T18:46:40Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=eYcWMYhyuNE" title="Highlights: Manchester City 3-0 Liverpool | Haaland, Gonzalez &amp; Doku score in Reds defeat">
-          <span class="thumb"><img alt="Highlights: Manchester City 3-0 Liverpool | Haaland, Gonzalez &amp; Doku score in Reds defeat" src="https://i.ytimg.com/vi/eYcWMYhyuNE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Highlights: Manchester City 3-0 Liverpool | Haaland, Gonzalez &amp; Doku score in Reds defeat</h3>
-          <div class="meta-line">Liverpool FC • 2025-11-09T22:00:39Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Qfxs9xGa0gE" title="Villa THRASH Cherries! | Aston Villa 4-0 Bournemouth | Premier League Highlights">
-          <span class="thumb"><img alt="Villa THRASH Cherries! | Aston Villa 4-0 Bournemouth | Premier League Highlights" src="https://i.ytimg.com/vi/Qfxs9xGa0gE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Villa THRASH Cherries! | Aston Villa 4-0 Bournemouth | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-11-09T16:19:12Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=lpgn1vdEH-0" title="BIG THREE POINTS! 🔥 | Nottingham Forest 3-1 Leeds United | Premier League Highlights">
-          <span class="thumb"><img alt="BIG THREE POINTS! 🔥 | Nottingham Forest 3-1 Leeds United | Premier League Highlights" src="https://i.ytimg.com/vi/lpgn1vdEH-0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">BIG THREE POINTS! 🔥 | Nottingham Forest 3-1 Leeds United | Premier League Highlights</h3>
-          <div class="meta-line">Nottingham Forest FC  • 2025-11-09T22:00:45Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=3yyOOYJUJ6U" title="Best goals of the 2024/2025 Premier League Season Part One 💫">
-          <span class="thumb"><img alt="Best goals of the 2024/2025 Premier League Season Part One 💫" src="https://i.ytimg.com/vi/3yyOOYJUJ6U/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best goals of the 2024/2025 Premier League Season Part One 💫</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-05-26T15:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=_4jqA-mz_Ig" title="EXTENDED HIGHLIGHTS | City 3-0 Liverpool | Doku stars as City beat Liverpool!">
-          <span class="thumb"><img alt="EXTENDED HIGHLIGHTS | City 3-0 Liverpool | Doku stars as City beat Liverpool!" src="https://i.ytimg.com/vi/_4jqA-mz_Ig/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">EXTENDED HIGHLIGHTS | City 3-0 Liverpool | Doku stars as City beat Liverpool!</h3>
-          <div class="meta-line">Man City • 2025-11-11T00:00:44Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=mYDmyjwOOhI" title="CRAZY LATE DRAMA | Tottenham Hotspur 2-2 Man Utd | Premier League Highlights">
-          <span class="thumb"><img alt="CRAZY LATE DRAMA | Tottenham Hotspur 2-2 Man Utd | Premier League Highlights" src="https://i.ytimg.com/vi/mYDmyjwOOhI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">CRAZY LATE DRAMA | Tottenham Hotspur 2-2 Man Utd | Premier League Highlights</h3>
-          <div class="meta-line">Tottenham Hotspur • 2025-11-08T21:45:04Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=lWzqf6Y9pZ4" title="Tottenham vs Manchester United (2-2) Highlights | Premier League 2025/26">
-          <span class="thumb"><img alt="Tottenham vs Manchester United (2-2) Highlights | Premier League 2025/26" src="https://i.ytimg.com/vi/lWzqf6Y9pZ4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Tottenham vs Manchester United (2-2) Highlights | Premier League 2025/26</h3>
-          <div class="meta-line">Nexus Football • 2025-11-08T14:53:05Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=hrO37SOX05k" title="The Best Goals of the Premier League Season So Far!">
-          <span class="thumb"><img alt="The Best Goals of the Premier League Season So Far!" src="https://i.ytimg.com/vi/hrO37SOX05k/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">The Best Goals of the Premier League Season So Far!</h3>
-          <div class="meta-line">Premier League • 2025-10-13T15:01:48Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=uwvBr2Hy2Ac" title="Thiago DOUBLE and Schade strike against Toon! | Brentford 3-1 Newcastle | Premier League Highlights">
-          <span class="thumb"><img alt="Thiago DOUBLE and Schade strike against Toon! | Brentford 3-1 Newcastle | Premier League Highlights" src="https://i.ytimg.com/vi/uwvBr2Hy2Ac/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Thiago DOUBLE and Schade strike against Toon! | Brentford 3-1 Newcastle | Premier League Highlights</h3>
-          <div class="meta-line">Brentford Football Club • 2025-11-09T22:00:22Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=wpcKyur-kbI" title="THE BEST PREMIER LEAGUE GOALS OF 2024/25!">
-          <span class="thumb"><img alt="THE BEST PREMIER LEAGUE GOALS OF 2024/25!" src="https://i.ytimg.com/vi/wpcKyur-kbI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">THE BEST PREMIER LEAGUE GOALS OF 2024/25!</h3>
-          <div class="meta-line">Premier League • 2025-06-11T13:31:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=4COdQza_DG8" title="HIGHLIGHTS | Crystal Palace v Brighton | Premier League">
-          <span class="thumb"><img alt="HIGHLIGHTS | Crystal Palace v Brighton | Premier League" src="https://i.ytimg.com/vi/4COdQza_DG8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Crystal Palace v Brighton | Premier League</h3>
-          <div class="meta-line">Official Brighton & Hove Albion FC • 2025-11-09T22:00:04Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=irYAvHpl3T4" title="EVERTON 2-0 FULHAM | Premier League highlights">
-          <span class="thumb"><img alt="EVERTON 2-0 FULHAM | Premier League highlights" src="https://i.ytimg.com/vi/irYAvHpl3T4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">EVERTON 2-0 FULHAM | Premier League highlights</h3>
-          <div class="meta-line">Everton Football Club • 2025-11-08T22:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=hhpdSD0jEoA" title="Chelsea 1-2 Sunderland | HIGHLIGHTS | Premier League 2025/26">
-          <span class="thumb"><img alt="Chelsea 1-2 Sunderland | HIGHLIGHTS | Premier League 2025/26" src="https://i.ytimg.com/vi/hhpdSD0jEoA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Chelsea 1-2 Sunderland | HIGHLIGHTS | Premier League 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-10-25T21:00:42Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=PJ4-XAJ8Xns" title="Saka and Trossard extend unbeaten run! | EXTENDED HIGHLIGHTS | Sunderland vs Arsenal (2-2) | EPL">
-          <span class="thumb"><img alt="Saka and Trossard extend unbeaten run! | EXTENDED HIGHLIGHTS | Sunderland vs Arsenal (2-2) | EPL" src="https://i.ytimg.com/vi/PJ4-XAJ8Xns/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Saka and Trossard extend unbeaten run! | EXTENDED HIGHLIGHTS | Sunderland vs Arsenal (2-2) | EPL</h3>
-          <div class="meta-line">Arsenal • 2025-11-10T00:00:25Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=SXHoDl2twPg" title="A point apiece in the North East | HIGHLIGHTS | Sunderland vs Arsenal (2-2) | Saka, Trossard | EPL">
-          <span class="thumb"><img alt="A point apiece in the North East | HIGHLIGHTS | Sunderland vs Arsenal (2-2) | Saka, Trossard | EPL" src="https://i.ytimg.com/vi/SXHoDl2twPg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">A point apiece in the North East | HIGHLIGHTS | Sunderland vs Arsenal (2-2) | Saka, Trossard | EPL</h3>
-          <div class="meta-line">Arsenal • 2025-11-08T22:26:57Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ch_S1gj70Wo" title="LIVERPOOL 1 vs  0 REAL MADRID  | UEFA Champions League | HIGHLIGHTS  #ucl 2025-26">
-          <span class="thumb"><img alt="LIVERPOOL 1 vs  0 REAL MADRID  | UEFA Champions League | HIGHLIGHTS  #ucl 2025-26" src="https://i.ytimg.com/vi/ch_S1gj70Wo/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">LIVERPOOL 1 vs  0 REAL MADRID  | UEFA Champions League | HIGHLIGHTS  #ucl 2025-26</h3>
-          <div class="meta-line">SportOzg • 2025-11-05T16:00:59Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=O56wF0Sf4DU" title="CPL FINAL HIGHLIGHTS: Atlético Ottawa vs. Cavalry FC 🇨🇦 | Nov. 9, 2025">
-          <span class="thumb"><img alt="CPL FINAL HIGHLIGHTS: Atlético Ottawa vs. Cavalry FC 🇨🇦 | Nov. 9, 2025" src="https://i.ytimg.com/vi/O56wF0Sf4DU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">CPL FINAL HIGHLIGHTS: Atlético Ottawa vs. Cavalry FC 🇨🇦 | Nov. 9, 2025</h3>
-          <div class="meta-line">CPL Soccer • 2025-11-10T03:39:47Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=wgDloG_gGcI" title="Wait... The GOALIE Scored?! 😱">
-          <span class="thumb"><img alt="Wait... The GOALIE Scored?! 😱" src="https://i.ytimg.com/vi/wgDloG_gGcI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Wait... The GOALIE Scored?! 😱</h3>
-          <div class="meta-line">Premier League • 2025-08-26T13:31:02Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=4uRdbhUXBMs" title="Extended Premier League Highlights | Sunderland AFC 2 - 2 Arsenal FC">
-          <span class="thumb"><img alt="Extended Premier League Highlights | Sunderland AFC 2 - 2 Arsenal FC" src="https://i.ytimg.com/vi/4uRdbhUXBMs/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Extended Premier League Highlights | Sunderland AFC 2 - 2 Arsenal FC</h3>
-          <div class="meta-line">Sunderland AFC • 2025-11-10T00:00:12Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=YpBv9KqNBUo" title="Tottenham Hotspur 2-2 Man Utd | Extended Premier League Highlights">
-          <span class="thumb"><img alt="Tottenham Hotspur 2-2 Man Utd | Extended Premier League Highlights" src="https://i.ytimg.com/vi/YpBv9KqNBUo/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Tottenham Hotspur 2-2 Man Utd | Extended Premier League Highlights</h3>
-          <div class="meta-line">Tottenham Hotspur • 2025-11-10T06:00:28Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=jtHALdfBciY" title="Brobbey Scores 94th-Minute Equaliser | Sunderland AFC 2 - 2 Arsenal FC | Premier League Highlights">
-          <span class="thumb"><img alt="Brobbey Scores 94th-Minute Equaliser | Sunderland AFC 2 - 2 Arsenal FC | Premier League Highlights" src="https://i.ytimg.com/vi/jtHALdfBciY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Brobbey Scores 94th-Minute Equaliser | Sunderland AFC 2 - 2 Arsenal FC | Premier League Highlights</h3>
-          <div class="meta-line">Sunderland AFC • 2025-11-08T22:00:46Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ABM__Eq-VKY" title="Chelsea 2-1 Liverpool | HIGHLIGHTS - Extended | Premier League 2025/26">
-          <span class="thumb"><img alt="Chelsea 2-1 Liverpool | HIGHLIGHTS - Extended | Premier League 2025/26" src="https://i.ytimg.com/vi/ABM__Eq-VKY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Chelsea 2-1 Liverpool | HIGHLIGHTS - Extended | Premier League 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-10-05T23:00:12Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=x11PjV5Y4ck" title="Haaland, Reijnders &amp; Cherki get Man City off to FLYING start | Wolves 0-4 Man City | EPL Highlights">
-          <span class="thumb"><img alt="Haaland, Reijnders &amp; Cherki get Man City off to FLYING start | Wolves 0-4 Man City | EPL Highlights" src="https://i.ytimg.com/vi/x11PjV5Y4ck/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Haaland, Reijnders &amp; Cherki get Man City off to FLYING start | Wolves 0-4 Man City | EPL Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-08-16T18:55:29Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=cmb36PylfNw" title="Amad volley rescues point for Man Utd 🔴 | Nottingham Forest 2-2 Man Utd | Premier League Highlights">
-          <span class="thumb"><img alt="Amad volley rescues point for Man Utd 🔴 | Nottingham Forest 2-2 Man Utd | Premier League Highlights" src="https://i.ytimg.com/vi/cmb36PylfNw/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Amad volley rescues point for Man Utd 🔴 | Nottingham Forest 2-2 Man Utd | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-11-01T17:17:18Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=4JI44qJjtcI" title="The Best Goals, Drama &amp; Highlights | Man City v Liverpool">
-          <span class="thumb"><img alt="The Best Goals, Drama &amp; Highlights | Man City v Liverpool" src="https://i.ytimg.com/vi/4JI44qJjtcI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">The Best Goals, Drama &amp; Highlights | Man City v Liverpool</h3>
-          <div class="meta-line">Premier League • 2025-11-05T14:01:43Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=v-Yz30H4TZc" title="Trent’s Return Ends In Defeat! 😳 | Liverpool 1-0 Real Madrid | UEFA Champions League Highlights">
-          <span class="thumb"><img alt="Trent’s Return Ends In Defeat! 😳 | Liverpool 1-0 Real Madrid | UEFA Champions League Highlights" src="https://i.ytimg.com/vi/v-Yz30H4TZc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Trent’s Return Ends In Defeat! 😳 | Liverpool 1-0 Real Madrid | UEFA Champions League Highlights</h3>
-          <div class="meta-line">TNT Sports Football • 2025-11-04T22:02:35Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Lbxx_hGXCdU" title="Qarabağ 2-2 Chelsea | HIGHLIGHTS | Champions League 2025/26">
-          <span class="thumb"><img alt="Qarabağ 2-2 Chelsea | HIGHLIGHTS | Champions League 2025/26" src="https://i.ytimg.com/vi/Lbxx_hGXCdU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Qarabağ 2-2 Chelsea | HIGHLIGHTS | Champions League 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-11-06T18:30:20Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=naPbZe4vDsE" title="Man Utd win stormy THRILLER at Old Trafford | Man Utd 2-1 Chelsea | Premier League Highlights">
-          <span class="thumb"><img alt="Man Utd win stormy THRILLER at Old Trafford | Man Utd 2-1 Chelsea | Premier League Highlights" src="https://i.ytimg.com/vi/naPbZe4vDsE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Man Utd win stormy THRILLER at Old Trafford | Man Utd 2-1 Chelsea | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-09-20T19:01:48Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=dqT_w_EyUhU" title="Highlights: Liverpool 1-0 Real Madrid | Mac Allister Goal! | UEFA Champions League">
-          <span class="thumb"><img alt="Highlights: Liverpool 1-0 Real Madrid | Mac Allister Goal! | UEFA Champions League" src="https://i.ytimg.com/vi/dqT_w_EyUhU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Highlights: Liverpool 1-0 Real Madrid | Mac Allister Goal! | UEFA Champions League</h3>
-          <div class="meta-line">Liverpool FC • 2025-11-06T00:00:48Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=-XkzqtB3cN0" title="Black Cats return to the PL with a BANG! | Sunderland 3-0 West Ham | Premier League Highlights">
-          <span class="thumb"><img alt="Black Cats return to the PL with a BANG! | Sunderland 3-0 West Ham | Premier League Highlights" src="https://i.ytimg.com/vi/-XkzqtB3cN0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Black Cats return to the PL with a BANG! | Sunderland 3-0 West Ham | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-08-16T16:51:32Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ApPZcCitzwE" title="Brighton 2-2 Tottenham Hotspur | Premier League Highlights">
-          <span class="thumb"><img alt="Brighton 2-2 Tottenham Hotspur | Premier League Highlights" src="https://i.ytimg.com/vi/ApPZcCitzwE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Brighton 2-2 Tottenham Hotspur | Premier League Highlights</h3>
-          <div class="meta-line">Tottenham Hotspur • 2025-09-20T21:00:09Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Swyd6T5HkpU" title="SIX defeats in seven as Reds crash out! 😳 | Liverpool 0-3 Crystal Palace | Carabao Cup Highlights">
-          <span class="thumb"><img alt="SIX defeats in seven as Reds crash out! 😳 | Liverpool 0-3 Crystal Palace | Carabao Cup Highlights" src="https://i.ytimg.com/vi/Swyd6T5HkpU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">SIX defeats in seven as Reds crash out! 😳 | Liverpool 0-3 Crystal Palace | Carabao Cup Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-10-29T22:22:53Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=yl1h1j0-i9M" title="Mateta nets hat-trick! | Crystal Palace 3-3 Bournemouth | Premier League Highlights">
-          <span class="thumb"><img alt="Mateta nets hat-trick! | Crystal Palace 3-3 Bournemouth | Premier League Highlights" src="https://i.ytimg.com/vi/yl1h1j0-i9M/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Mateta nets hat-trick! | Crystal Palace 3-3 Bournemouth | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-10-18T16:49:49Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=NCpP541MM3c" title="Nketiah ends Liverpool unbeaten run! | Crystal Palace 2-1 Liverpool | Premier League Highlights">
-          <span class="thumb"><img alt="Nketiah ends Liverpool unbeaten run! | Crystal Palace 2-1 Liverpool | Premier League Highlights" src="https://i.ytimg.com/vi/NCpP541MM3c/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Nketiah ends Liverpool unbeaten run! | Crystal Palace 2-1 Liverpool | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-09-27T16:44:45Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=8rtgjHYx1sk" title="Late Haaland brace in Man City DEMOLITION job! | Manchester City 5-1 Burnley | EPL Highlights">
-          <span class="thumb"><img alt="Late Haaland brace in Man City DEMOLITION job! | Manchester City 5-1 Burnley | EPL Highlights" src="https://i.ytimg.com/vi/8rtgjHYx1sk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Late Haaland brace in Man City DEMOLITION job! | Manchester City 5-1 Burnley | EPL Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-09-27T16:37:35Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=BBEs2m7GdZI" title="Van Hecke own goal rescues Spurs! | Brighton 2-2 Spurs | Premier League Highlights">
-          <span class="thumb"><img alt="Van Hecke own goal rescues Spurs! | Brighton 2-2 Spurs | Premier League Highlights" src="https://i.ytimg.com/vi/BBEs2m7GdZI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Van Hecke own goal rescues Spurs! | Brighton 2-2 Spurs | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-09-20T16:24:45Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=R9k3zrb7Fyc" title="Van De Ven Goal Of The Season! 🤯 | Tottenham 4-0 Copenhagen | UEFA Champions League Highlights">
-          <span class="thumb"><img alt="Van De Ven Goal Of The Season! 🤯 | Tottenham 4-0 Copenhagen | UEFA Champions League Highlights" src="https://i.ytimg.com/vi/R9k3zrb7Fyc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Van De Ven Goal Of The Season! 🤯 | Tottenham 4-0 Copenhagen | UEFA Champions League Highlights</h3>
-          <div class="meta-line">TNT Sports Football • 2025-11-04T22:09:30Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=R5WnNJUsIOA" title="Norwich City 1-2 Leicester City | Highlights">
-          <span class="thumb"><img alt="Norwich City 1-2 Leicester City | Highlights" src="https://i.ytimg.com/vi/R5WnNJUsIOA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Norwich City 1-2 Leicester City | Highlights</h3>
-          <div class="meta-line">Norwich City Football Club • 2025-11-08T18:15:11Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=D7rBOd9nZRw" title="Newcastle United 1 Arsenal 2 | Premier League Highlights">
-          <span class="thumb"><img alt="Newcastle United 1 Arsenal 2 | Premier League Highlights" src="https://i.ytimg.com/vi/D7rBOd9nZRw/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Newcastle United 1 Arsenal 2 | Premier League Highlights</h3>
-          <div class="meta-line">Newcastle United • 2025-09-28T21:00:12Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=VGGa-scpPrk" title="ESTEWOW! 🤩 | Chelsea 2-1 Liverpool | HIGHLIGHTS | Premier League 2025/26">
-          <span class="thumb"><img alt="ESTEWOW! 🤩 | Chelsea 2-1 Liverpool | HIGHLIGHTS | Premier League 2025/26" src="https://i.ytimg.com/vi/VGGa-scpPrk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">ESTEWOW! 🤩 | Chelsea 2-1 Liverpool | HIGHLIGHTS | Premier League 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-10-04T21:15:03Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=x6DuhArJwao" title="Estêvão scores DRAMATIC stoppage-time winner! | Chelsea 2-1 Liverpool | Premier League Highlights">
-          <span class="thumb"><img alt="Estêvão scores DRAMATIC stoppage-time winner! | Chelsea 2-1 Liverpool | Premier League Highlights" src="https://i.ytimg.com/vi/x6DuhArJwao/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Estêvão scores DRAMATIC stoppage-time winner! | Chelsea 2-1 Liverpool | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-10-04T18:57:28Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=GDYzMFhlUmk" title="Tottenham Hotspur 1-2 Aston Villa | Premier League Highlights">
-          <span class="thumb"><img alt="Tottenham Hotspur 1-2 Aston Villa | Premier League Highlights" src="https://i.ytimg.com/vi/GDYzMFhlUmk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Tottenham Hotspur 1-2 Aston Villa | Premier League Highlights</h3>
-          <div class="meta-line">Tottenham Hotspur • 2025-10-19T21:00:15Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=7p2XxgAoXgs" title="UP TO THIRD! | Cheltenham Town v Notts County Extended Highlights">
-          <span class="thumb"><img alt="UP TO THIRD! | Cheltenham Town v Notts County Extended Highlights" src="https://i.ytimg.com/vi/7p2XxgAoXgs/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">UP TO THIRD! | Cheltenham Town v Notts County Extended Highlights</h3>
-          <div class="meta-line">EFL • 2025-11-10T23:12:11Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=QD192S6eTjs" title="Twine free kick cancels out SUPERB Watford opener! 🔥 | Watford 1-1 Bristol City | EFL Highlights">
-          <span class="thumb"><img alt="Twine free kick cancels out SUPERB Watford opener! 🔥 | Watford 1-1 Bristol City | EFL Highlights" src="https://i.ytimg.com/vi/QD192S6eTjs/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Twine free kick cancels out SUPERB Watford opener! 🔥 | Watford 1-1 Bristol City | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-11-07T22:22:59Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=vgh24Uropw4" title="Burgess nets two own goals against old club Ipswich 🚜 | Swansea 1-4 Ipswich | EFL Highlights">
-          <span class="thumb"><img alt="Burgess nets two own goals against old club Ipswich 🚜 | Swansea 1-4 Ipswich | EFL Highlights" src="https://i.ytimg.com/vi/vgh24Uropw4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Burgess nets two own goals against old club Ipswich 🚜 | Swansea 1-4 Ipswich | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-11-08T17:55:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=1dnl9yrlGIQ" title="Saints make it two wins from two! 👏 | Southampton 3-1 Sheffield Wednesday | EFL Highlights">
-          <span class="thumb"><img alt="Saints make it two wins from two! 👏 | Southampton 3-1 Sheffield Wednesday | EFL Highlights" src="https://i.ytimg.com/vi/1dnl9yrlGIQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Saints make it two wins from two! 👏 | Southampton 3-1 Sheffield Wednesday | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-11-08T17:37:14Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ewda01ESltQ" title="HIGHLIGHTS: Southampton 3-1 Sheffield Wednesday | Championship">
-          <span class="thumb"><img alt="HIGHLIGHTS: Southampton 3-1 Sheffield Wednesday | Championship" src="https://i.ytimg.com/vi/ewda01ESltQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS: Southampton 3-1 Sheffield Wednesday | Championship</h3>
-          <div class="meta-line">Southampton FC • 2025-11-08T18:11:59Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=EInkXvoo5ZM" title="James stoppage-time winner DENIES Norwich first home point | Norwich 1-2 Leicester | EFL Highlights">
-          <span class="thumb"><img alt="James stoppage-time winner DENIES Norwich first home point | Norwich 1-2 Leicester | EFL Highlights" src="https://i.ytimg.com/vi/EInkXvoo5ZM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">James stoppage-time winner DENIES Norwich first home point | Norwich 1-2 Leicester | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-11-08T17:18:17Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=NNSJp70l050" title="Managerless Saints end losing run! ✅ | QPR 1-2 Southampton | EFL Highlights">
-          <span class="thumb"><img alt="Managerless Saints end losing run! ✅ | QPR 1-2 Southampton | EFL Highlights" src="https://i.ytimg.com/vi/NNSJp70l050/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Managerless Saints end losing run! ✅ | QPR 1-2 Southampton | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-11-05T22:24:01Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=uylUTnNtPDg" title="TOP 2 BATTLE! | Stoke City v Coventry City extended highlights">
-          <span class="thumb"><img alt="TOP 2 BATTLE! | Stoke City v Coventry City extended highlights" src="https://i.ytimg.com/vi/uylUTnNtPDg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">TOP 2 BATTLE! | Stoke City v Coventry City extended highlights</h3>
-          <div class="meta-line">EFL • 2025-11-08T21:39:18Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=gFt4K7CgHqQ" title="Rams ruin Rovers&#39; anniversary celebrations! | Blackburn 1-2 Derby | EFL Highlights">
-          <span class="thumb"><img alt="Rams ruin Rovers&#39; anniversary celebrations! | Blackburn 1-2 Derby | EFL Highlights" src="https://i.ytimg.com/vi/gFt4K7CgHqQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Rams ruin Rovers&#39; anniversary celebrations! | Blackburn 1-2 Derby | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-11-08T15:01:17Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=SR6c62EQvj4" title="Barry Bannan scores STUNNER! 🤩 | Sheffield Wednesday 1-1 Norwich | EFL Highlights">
-          <span class="thumb"><img alt="Barry Bannan scores STUNNER! 🤩 | Sheffield Wednesday 1-1 Norwich | EFL Highlights" src="https://i.ytimg.com/vi/SR6c62EQvj4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Barry Bannan scores STUNNER! 🤩 | Sheffield Wednesday 1-1 Norwich | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-11-05T22:04:14Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=X_vQFpdyRFE" title="Boro go second with home win 📈 | Middlesbrough 2-1 Birmingham | EFL Highlights">
-          <span class="thumb"><img alt="Boro go second with home win 📈 | Middlesbrough 2-1 Birmingham | EFL Highlights" src="https://i.ytimg.com/vi/X_vQFpdyRFE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Boro go second with home win 📈 | Middlesbrough 2-1 Birmingham | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-11-08T17:31:05Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=g0Y0ngnjQ8E" title="Sheffield United 0-0 Queens Park Rangers | EFL Championship highlights">
-          <span class="thumb"><img alt="Sheffield United 0-0 Queens Park Rangers | EFL Championship highlights" src="https://i.ytimg.com/vi/g0Y0ngnjQ8E/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Sheffield United 0-0 Queens Park Rangers | EFL Championship highlights</h3>
-          <div class="meta-line">Sheffield United FC • 2025-11-08T17:55:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ZWnjtZQ70ao" title="Stoke City vs Coventry City | EFL Championship | 2025/26 | Full Match Highlights">
-          <span class="thumb"><img alt="Stoke City vs Coventry City | EFL Championship | 2025/26 | Full Match Highlights" src="https://i.ytimg.com/vi/ZWnjtZQ70ao/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Stoke City vs Coventry City | EFL Championship | 2025/26 | Full Match Highlights</h3>
-          <div class="meta-line">FanCode • 2025-11-08T18:14:19Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=a4nBDlmj8T0" title="Coventry City 3-1 Sheffield United | EFL Championship highlights">
-          <span class="thumb"><img alt="Coventry City 3-1 Sheffield United | EFL Championship highlights" src="https://i.ytimg.com/vi/a4nBDlmj8T0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Coventry City 3-1 Sheffield United | EFL Championship highlights</h3>
-          <div class="meta-line">Sheffield United FC • 2025-11-04T23:02:17Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=-lQrlFSaWGQ" title="TOP TWO! | Middlesbrough v Birmingham City extended highlights">
-          <span class="thumb"><img alt="TOP TWO! | Middlesbrough v Birmingham City extended highlights" src="https://i.ytimg.com/vi/-lQrlFSaWGQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">TOP TWO! | Middlesbrough v Birmingham City extended highlights</h3>
-          <div class="meta-line">EFL • 2025-11-08T21:48:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=VANmRNRu96c" title="Thiago SHINES as Bees beat Magpies | Brentford 3-1 Newcastle | Premier League Highlights">
-          <span class="thumb"><img alt="Thiago SHINES as Bees beat Magpies | Brentford 3-1 Newcastle | Premier League Highlights" src="https://i.ytimg.com/vi/VANmRNRu96c/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Thiago SHINES as Bees beat Magpies | Brentford 3-1 Newcastle | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-11-09T16:28:39Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=jckRHI2oVHM" title="SAVAGE STARS! 🏴󠁧󠁢󠁷󠁬󠁳󠁿 | Reading v Stevenage Extended Highlights">
-          <span class="thumb"><img alt="SAVAGE STARS! 🏴󠁧󠁢󠁷󠁬󠁳󠁿 | Reading v Stevenage Extended Highlights" src="https://i.ytimg.com/vi/jckRHI2oVHM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">SAVAGE STARS! 🏴󠁧󠁢󠁷󠁬󠁳󠁿 | Reading v Stevenage Extended Highlights</h3>
-          <div class="meta-line">EFL • 2025-11-06T23:22:32Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=kMVeXyhix5I" title="Late goals from Marmoush &amp; Cherki spare Man City | Swansea 1-3 Man City | Carabao Cup Highlights">
-          <span class="thumb"><img alt="Late goals from Marmoush &amp; Cherki spare Man City | Swansea 1-3 Man City | Carabao Cup Highlights" src="https://i.ytimg.com/vi/kMVeXyhix5I/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Late goals from Marmoush &amp; Cherki spare Man City | Swansea 1-3 Man City | Carabao Cup Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-10-29T22:45:13Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=jPbaP7C8CjE" title="SAKA SHINES! 💫 | Arsenal v Brighton &amp; Hove Albion Extended Highlights">
-          <span class="thumb"><img alt="SAKA SHINES! 💫 | Arsenal v Brighton &amp; Hove Albion Extended Highlights" src="https://i.ytimg.com/vi/jPbaP7C8CjE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">SAKA SHINES! 💫 | Arsenal v Brighton &amp; Hove Albion Extended Highlights</h3>
-          <div class="meta-line">EFL • 2025-10-30T00:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Aqe6C9iQ-HQ" title="Chelsea 1-2 Sunderland | HIGHLIGHTS - Extended | Premier League 2025/26">
-          <span class="thumb"><img alt="Chelsea 1-2 Sunderland | HIGHLIGHTS - Extended | Premier League 2025/26" src="https://i.ytimg.com/vi/Aqe6C9iQ-HQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Chelsea 1-2 Sunderland | HIGHLIGHTS - Extended | Premier League 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-10-27T00:01:23Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=BsYIs_jJ1XQ" title="Champions League Highlights: Newcastle Utd v Athletic Bilbao">
-          <span class="thumb"><img alt="Champions League Highlights: Newcastle Utd v Athletic Bilbao" src="https://i.ytimg.com/vi/BsYIs_jJ1XQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Champions League Highlights: Newcastle Utd v Athletic Bilbao</h3>
-          <div class="meta-line">RTÉ Sport • 2025-11-06T10:19:03Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=BiY23rb4des" title="Small scores SENSATIONAL strike! 🚀 | Preston 2-1 Swansea | EFL Highlights">
-          <span class="thumb"><img alt="Small scores SENSATIONAL strike! 🚀 | Preston 2-1 Swansea | EFL Highlights" src="https://i.ytimg.com/vi/BiY23rb4des/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Small scores SENSATIONAL strike! 🚀 | Preston 2-1 Swansea | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-11-05T22:12:13Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=9VVX3HOt88U" title="Hull END Blues 29-game unbeaten home run! 🤯| Birmingham 2-3 Hull City | EFL Highlights">
-          <span class="thumb"><img alt="Hull END Blues 29-game unbeaten home run! 🤯| Birmingham 2-3 Hull City | EFL Highlights" src="https://i.ytimg.com/vi/9VVX3HOt88U/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Hull END Blues 29-game unbeaten home run! 🤯| Birmingham 2-3 Hull City | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-10-18T16:49:59Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Su63RLbh4yY" title="Bayern Munich 3-1 Chelsea | HIGHLIGHTS | Champions League 2025/26">
-          <span class="thumb"><img alt="Bayern Munich 3-1 Chelsea | HIGHLIGHTS | Champions League 2025/26" src="https://i.ytimg.com/vi/Su63RLbh4yY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Bayern Munich 3-1 Chelsea | HIGHLIGHTS | Champions League 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-09-18T05:30:30Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=t7xD6mVBL2M" title="Chelsea 1-0 Benfica | HIGHLIGHTS | Champions League 2025/26">
-          <span class="thumb"><img alt="Chelsea 1-0 Benfica | HIGHLIGHTS | Champions League 2025/26" src="https://i.ytimg.com/vi/t7xD6mVBL2M/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Chelsea 1-0 Benfica | HIGHLIGHTS | Champions League 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-10-01T00:58:33Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ORjF4EVROOM" title="REDS CRASH OUT! 🏆 | Liverpool v Crystal Palace Extended Highlights">
-          <span class="thumb"><img alt="REDS CRASH OUT! 🏆 | Liverpool v Crystal Palace Extended Highlights" src="https://i.ytimg.com/vi/ORjF4EVROOM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">REDS CRASH OUT! 🏆 | Liverpool v Crystal Palace Extended Highlights</h3>
-          <div class="meta-line">EFL • 2025-10-30T00:06:21Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=pC10ZIzpXEc" title="SCREAMERS GALORE! 💥 | Juventus 4-4 Borussia Dortmund | UEFA Champions League Highlights">
-          <span class="thumb"><img alt="SCREAMERS GALORE! 💥 | Juventus 4-4 Borussia Dortmund | UEFA Champions League Highlights" src="https://i.ytimg.com/vi/pC10ZIzpXEc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">SCREAMERS GALORE! 💥 | Juventus 4-4 Borussia Dortmund | UEFA Champions League Highlights</h3>
-          <div class="meta-line">TNT Sports Football • 2025-09-16T21:45:36Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=jkgE-H3DvPg" title="Chelsea 1-3 Brighton | HIGHLIGHTS | Premier League 2025/26">
-          <span class="thumb"><img alt="Chelsea 1-3 Brighton | HIGHLIGHTS | Premier League 2025/26" src="https://i.ytimg.com/vi/jkgE-H3DvPg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Chelsea 1-3 Brighton | HIGHLIGHTS | Premier League 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-09-27T21:22:36Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=26ZsQLmMKZ8" title="Queens Park Rangers 0-0 Sheffield United | Extended EFL Championship highlights">
-          <span class="thumb"><img alt="Queens Park Rangers 0-0 Sheffield United | Extended EFL Championship highlights" src="https://i.ytimg.com/vi/26ZsQLmMKZ8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Queens Park Rangers 0-0 Sheffield United | Extended EFL Championship highlights</h3>
-          <div class="meta-line">Sheffield United FC • 2025-11-09T00:00:05Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=bPX6g897UPc" title="Lincoln 1-2 Chelsea | HIGHLIGHTS | Carabao Cup 2025/26">
-          <span class="thumb"><img alt="Lincoln 1-2 Chelsea | HIGHLIGHTS | Carabao Cup 2025/26" src="https://i.ytimg.com/vi/bPX6g897UPc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Lincoln 1-2 Chelsea | HIGHLIGHTS | Carabao Cup 2025/26</h3>
-          <div class="meta-line">Chelsea Football Club • 2025-09-23T23:00:49Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=JOpD8Vk3rAo" title="FIVE GOALS! | Grimsby Town v Brentford Extended Highlights">
-          <span class="thumb"><img alt="FIVE GOALS! | Grimsby Town v Brentford Extended Highlights" src="https://i.ytimg.com/vi/JOpD8Vk3rAo/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">FIVE GOALS! | Grimsby Town v Brentford Extended Highlights</h3>
-          <div class="meta-line">EFL • 2025-10-29T00:48:32Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=r0bHdnKoGWs" title="Highlights: Liverpool 0-3 Crystal Palace | Reds Exit Carabao Cup">
-          <span class="thumb"><img alt="Highlights: Liverpool 0-3 Crystal Palace | Reds Exit Carabao Cup" src="https://i.ytimg.com/vi/r0bHdnKoGWs/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Highlights: Liverpool 0-3 Crystal Palace | Reds Exit Carabao Cup</h3>
-          <div class="meta-line">Liverpool FC • 2025-10-29T23:02:29Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=vZ1BCUcSCSE" title="Kieffer Moore hat-trick SHOCKS Coventry City! 😱 | Wrexham 3-2 Coventry | EFL Highlights">
-          <span class="thumb"><img alt="Kieffer Moore hat-trick SHOCKS Coventry City! 😱 | Wrexham 3-2 Coventry | EFL Highlights" src="https://i.ytimg.com/vi/vZ1BCUcSCSE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Kieffer Moore hat-trick SHOCKS Coventry City! 😱 | Wrexham 3-2 Coventry | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-10-31T22:15:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=i7C6ihyzCHE" title="Sunderland END Arsenal’s clean sheet run! | Sunderland 2-2 Arsenal | Premier League Highlights">
-          <span class="thumb"><img alt="Sunderland END Arsenal’s clean sheet run! | Sunderland 2-2 Arsenal | Premier League Highlights" src="https://i.ytimg.com/vi/i7C6ihyzCHE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Sunderland END Arsenal’s clean sheet run! | Sunderland 2-2 Arsenal | Premier League Highlights</h3>
-          <div class="meta-line">Sky Sports Premier League • 2025-11-08T20:03:14Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=HxzLwgoFVKo" title="UP TO 4TH! | Preston North End v Swansea City extended highlights">
-          <span class="thumb"><img alt="UP TO 4TH! | Preston North End v Swansea City extended highlights" src="https://i.ytimg.com/vi/HxzLwgoFVKo/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">UP TO 4TH! | Preston North End v Swansea City extended highlights</h3>
-          <div class="meta-line">EFL • 2025-11-05T23:33:36Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=SKrobU9H0fw" title="Philogene STUNNER as Ipswich end 16-year derby winless run 🧨| Ipswich 3-1 Norwich | EFL Highlights">
-          <span class="thumb"><img alt="Philogene STUNNER as Ipswich end 16-year derby winless run 🧨| Ipswich 3-1 Norwich | EFL Highlights" src="https://i.ytimg.com/vi/SKrobU9H0fw/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Philogene STUNNER as Ipswich end 16-year derby winless run 🧨| Ipswich 3-1 Norwich | EFL Highlights</h3>
-          <div class="meta-line">Sky Sports Football • 2025-10-05T13:37:57Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=0VJbnTBWvcQ" title="HIGHLIGHTS | Real Madrid 4-0 Valencia | LaLiga">
-          <span class="thumb"><img alt="HIGHLIGHTS | Real Madrid 4-0 Valencia | LaLiga" src="https://i.ytimg.com/vi/0VJbnTBWvcQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Real Madrid 4-0 Valencia | LaLiga</h3>
-          <div class="meta-line">Real Madrid • 2025-11-01T23:00:21Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=LFzrA492gdw" title="HIGHLIGHTS | Real Madrid 2-1 Barcelona | LaLiga">
-          <span class="thumb"><img alt="HIGHLIGHTS | Real Madrid 2-1 Barcelona | LaLiga" src="https://i.ytimg.com/vi/LFzrA492gdw/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Real Madrid 2-1 Barcelona | LaLiga</h3>
-          <div class="meta-line">Real Madrid • 2025-10-26T21:59:42Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=2EGTD_d6Ubo" title="HIGHLIGHTS | Real Madrid 2-1 RCD Mallorca | LaLiga">
-          <span class="thumb"><img alt="HIGHLIGHTS | Real Madrid 2-1 RCD Mallorca | LaLiga" src="https://i.ytimg.com/vi/2EGTD_d6Ubo/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Real Madrid 2-1 RCD Mallorca | LaLiga</h3>
-          <div class="meta-line">Real Madrid • 2025-08-30T22:45:40Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=jsJCSlhhZCk" title="Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025">
-          <span class="thumb"><img alt="Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025" src="https://i.ytimg.com/vi/jsJCSlhhZCk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025</h3>
-          <div class="meta-line">SABIO - سابيو • 2025-10-26T16:12:20Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=YkNCCLAtHkA" title="HIGHLIGHTS | Levante 1-4 Real Madrid | LaLiga">
-          <span class="thumb"><img alt="HIGHLIGHTS | Levante 1-4 Real Madrid | LaLiga" src="https://i.ytimg.com/vi/YkNCCLAtHkA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Levante 1-4 Real Madrid | LaLiga</h3>
-          <div class="meta-line">Real Madrid • 2025-09-23T22:37:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=y_fugeh_YVU" title="HIGHLIGHTS | Real Madrid 2-1 Barcelona | Jude Bellingham shines as hosts prevail in El Clásico">
-          <span class="thumb"><img alt="HIGHLIGHTS | Real Madrid 2-1 Barcelona | Jude Bellingham shines as hosts prevail in El Clásico" src="https://i.ytimg.com/vi/y_fugeh_YVU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Real Madrid 2-1 Barcelona | Jude Bellingham shines as hosts prevail in El Clásico</h3>
-          <div class="meta-line">Premier Sports • 2025-10-26T17:42:15Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=gWqAvSDEsp4" title="HIGHLIGHTS | Celta de Vigo 2-4 Barcelona | Lewandowski hat-trick as Rashford impresses again">
-          <span class="thumb"><img alt="HIGHLIGHTS | Celta de Vigo 2-4 Barcelona | Lewandowski hat-trick as Rashford impresses again" src="https://i.ytimg.com/vi/gWqAvSDEsp4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Celta de Vigo 2-4 Barcelona | Lewandowski hat-trick as Rashford impresses again</h3>
-          <div class="meta-line">Premier Sports • 2025-11-09T22:15:11Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=jsz6qAwlCEg" title="HIGHLIGHTS | Real Madrid 3-1 Villarreal | LaLiga">
-          <span class="thumb"><img alt="HIGHLIGHTS | Real Madrid 3-1 Villarreal | LaLiga" src="https://i.ytimg.com/vi/jsz6qAwlCEg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Real Madrid 3-1 Villarreal | LaLiga</h3>
-          <div class="meta-line">Real Madrid • 2025-10-04T22:09:28Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=TRwxe30ZTLA" title="HIGHLIGHTS | Rayo Vallecano 0-0 Real Madrid | Madrid Derby at Vallecas ends all square">
-          <span class="thumb"><img alt="HIGHLIGHTS | Rayo Vallecano 0-0 Real Madrid | Madrid Derby at Vallecas ends all square" src="https://i.ytimg.com/vi/TRwxe30ZTLA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Rayo Vallecano 0-0 Real Madrid | Madrid Derby at Vallecas ends all square</h3>
-          <div class="meta-line">Premier Sports • 2025-11-09T17:18:26Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=7qv6dvxvkp4" title="All Barcelona Goals – 2024/25 Season (174 Goals)">
-          <span class="thumb"><img alt="All Barcelona Goals – 2024/25 Season (174 Goals)" src="https://i.ytimg.com/vi/7qv6dvxvkp4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">All Barcelona Goals – 2024/25 Season (174 Goals)</h3>
-          <div class="meta-line">FootballWikiHub • 2025-06-13T11:54:38Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=y_R601Sg11k" title="HIGHLIGHTS | Real Madrid 2-0 Espanyol | LaLiga">
-          <span class="thumb"><img alt="HIGHLIGHTS | Real Madrid 2-0 Espanyol | LaLiga" src="https://i.ytimg.com/vi/y_R601Sg11k/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Real Madrid 2-0 Espanyol | LaLiga</h3>
-          <div class="meta-line">Real Madrid • 2025-09-20T21:02:10Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=1Q1FypxVxRI" title="PURE DRAMA! Kane Secures DRAW! | UNION BERLIN - FC BAYERN | Highlights | MD 10 – Bundesliga 2025/26">
-          <span class="thumb"><img alt="PURE DRAMA! Kane Secures DRAW! | UNION BERLIN - FC BAYERN | Highlights | MD 10 – Bundesliga 2025/26" src="https://i.ytimg.com/vi/1Q1FypxVxRI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">PURE DRAMA! Kane Secures DRAW! | UNION BERLIN - FC BAYERN | Highlights | MD 10 – Bundesliga 2025/26</h3>
-          <div class="meta-line">Bundesliga • 2025-11-08T16:44:45Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ipeiJ_3jaAI" title="HIGHLIGHTS | Real Oviedo 0-3 Real Madrid | LaLiga">
-          <span class="thumb"><img alt="HIGHLIGHTS | Real Oviedo 0-3 Real Madrid | LaLiga" src="https://i.ytimg.com/vi/ipeiJ_3jaAI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | Real Oviedo 0-3 Real Madrid | LaLiga</h3>
-          <div class="meta-line">Real Madrid • 2025-08-24T22:19:05Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=nFY_x7Jfz30" title="HIGHLIGHTS | NEWCASTLE 1 vs 2 FC BARCELONA | UEFA CHAMPIONS LEAGUE 🔵🔴">
-          <span class="thumb"><img alt="HIGHLIGHTS | NEWCASTLE 1 vs 2 FC BARCELONA | UEFA CHAMPIONS LEAGUE 🔵🔴" src="https://i.ytimg.com/vi/nFY_x7Jfz30/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">HIGHLIGHTS | NEWCASTLE 1 vs 2 FC BARCELONA | UEFA CHAMPIONS LEAGUE 🔵🔴</h3>
-          <div class="meta-line">FC Barcelona • 2025-09-19T21:00:53Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=wevdkoGaSDA" title="Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025">
-          <span class="thumb"><img alt="Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025" src="https://i.ytimg.com/vi/wevdkoGaSDA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025</h3>
-          <div class="meta-line">SABIO - سابيو • 2025-10-26T17:21:19Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Gyd6iZLmw7E" title="Real Madrid vs Barcelona 4-3 - All Goals &amp; Highlights - 2025">
-          <span class="thumb"><img alt="Real Madrid vs Barcelona 4-3 - All Goals &amp; Highlights - 2025" src="https://i.ytimg.com/vi/Gyd6iZLmw7E/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Real Madrid vs Barcelona 4-3 - All Goals &amp; Highlights - 2025</h3>
-          <div class="meta-line">HEMA GAMING • 2025-10-25T19:30:07Z</div>
-        </a>
-      </article>
+    <section class="list-cards">
+      <a class="card-row" href="/v/7tpMnVkGITI/" title="HIGHLIGHTS | Doku Dismantles Liverpool | Man City 3-0 Liverpool">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/7tpMnVkGITI/hqdefault.jpg" alt="HIGHLIGHTS | Doku Dismantles Liverpool | Man City 3-0 Liverpool" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Doku Dismantles Liverpool | Man City 3-0 Liverpool</h3>
+          <div class="meta-line">Man City • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/hma40Tv5B_4/" title="EXTENDED HIGHLIGHTS | Crystal Palace v Brighton | Premier League">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/hma40Tv5B_4/hqdefault.jpg" alt="EXTENDED HIGHLIGHTS | Crystal Palace v Brighton | Premier League" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">EXTENDED HIGHLIGHTS | Crystal Palace v Brighton | Premier League</h3>
+          <div class="meta-line">Official Brighton & Hove Albion FC • 10 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/VHAJfLBUSyg/" title="Chelsea 3-0 Wolves | HIGHLIGHTS - Extended | Premier League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/VHAJfLBUSyg/hqdefault.jpg" alt="Chelsea 3-0 Wolves | HIGHLIGHTS - Extended | Premier League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Chelsea 3-0 Wolves | HIGHLIGHTS - Extended | Premier League 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 10 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/vTpPiFOeOA0/" title="Gusto&#39;s First Chelsea Goal! | Chelsea 3-0 Wolves | HIGHLIGHTS | Premier League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/vTpPiFOeOA0/hqdefault.jpg" alt="Gusto&#39;s First Chelsea Goal! | Chelsea 3-0 Wolves | HIGHLIGHTS | Premier League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Gusto&#39;s First Chelsea Goal! | Chelsea 3-0 Wolves | HIGHLIGHTS | Premier League 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/QHOS6Sflfdg/" title="Man City dismantle the champions to go second | Man City 3-0 Liverpool | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/QHOS6Sflfdg/hqdefault.jpg" alt="Man City dismantle the champions to go second | Man City 3-0 Liverpool | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Man City dismantle the champions to go second | Man City 3-0 Liverpool | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/nMa2L6xpdc8/" title="Manchester City vs Liverpool (3-0) Highlights | Premier League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/nMa2L6xpdc8/hqdefault.jpg" alt="Manchester City vs Liverpool (3-0) Highlights | Premier League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Manchester City vs Liverpool (3-0) Highlights | Premier League 2025/26</h3>
+          <div class="meta-line">Nexus Football • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/eYcWMYhyuNE/" title="Highlights: Manchester City 3-0 Liverpool | Haaland, Gonzalez &amp; Doku score in Reds defeat">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/eYcWMYhyuNE/hqdefault.jpg" alt="Highlights: Manchester City 3-0 Liverpool | Haaland, Gonzalez &amp; Doku score in Reds defeat" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Highlights: Manchester City 3-0 Liverpool | Haaland, Gonzalez &amp; Doku score in Reds defeat</h3>
+          <div class="meta-line">Liverpool FC • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Qfxs9xGa0gE/" title="Villa THRASH Cherries! | Aston Villa 4-0 Bournemouth | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Qfxs9xGa0gE/hqdefault.jpg" alt="Villa THRASH Cherries! | Aston Villa 4-0 Bournemouth | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Villa THRASH Cherries! | Aston Villa 4-0 Bournemouth | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/lpgn1vdEH-0/" title="BIG THREE POINTS! 🔥 | Nottingham Forest 3-1 Leeds United | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/lpgn1vdEH-0/hqdefault.jpg" alt="BIG THREE POINTS! 🔥 | Nottingham Forest 3-1 Leeds United | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">BIG THREE POINTS! 🔥 | Nottingham Forest 3-1 Leeds United | Premier League Highlights</h3>
+          <div class="meta-line">Nottingham Forest FC  • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/3yyOOYJUJ6U/" title="Best goals of the 2024/2025 Premier League Season Part One 💫">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/3yyOOYJUJ6U/hqdefault.jpg" alt="Best goals of the 2024/2025 Premier League Season Part One 💫" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best goals of the 2024/2025 Premier League Season Part One 💫</h3>
+          <div class="meta-line">Sky Sports Premier League • 26 May 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/_4jqA-mz_Ig/" title="EXTENDED HIGHLIGHTS | City 3-0 Liverpool | Doku stars as City beat Liverpool!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/_4jqA-mz_Ig/hqdefault.jpg" alt="EXTENDED HIGHLIGHTS | City 3-0 Liverpool | Doku stars as City beat Liverpool!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">EXTENDED HIGHLIGHTS | City 3-0 Liverpool | Doku stars as City beat Liverpool!</h3>
+          <div class="meta-line">Man City • 11 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/mYDmyjwOOhI/" title="CRAZY LATE DRAMA | Tottenham Hotspur 2-2 Man Utd | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/mYDmyjwOOhI/hqdefault.jpg" alt="CRAZY LATE DRAMA | Tottenham Hotspur 2-2 Man Utd | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">CRAZY LATE DRAMA | Tottenham Hotspur 2-2 Man Utd | Premier League Highlights</h3>
+          <div class="meta-line">Tottenham Hotspur • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/lWzqf6Y9pZ4/" title="Tottenham vs Manchester United (2-2) Highlights | Premier League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/lWzqf6Y9pZ4/hqdefault.jpg" alt="Tottenham vs Manchester United (2-2) Highlights | Premier League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Tottenham vs Manchester United (2-2) Highlights | Premier League 2025/26</h3>
+          <div class="meta-line">Nexus Football • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/hrO37SOX05k/" title="The Best Goals of the Premier League Season So Far!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/hrO37SOX05k/hqdefault.jpg" alt="The Best Goals of the Premier League Season So Far!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">The Best Goals of the Premier League Season So Far!</h3>
+          <div class="meta-line">Premier League • 13 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/uwvBr2Hy2Ac/" title="Thiago DOUBLE and Schade strike against Toon! | Brentford 3-1 Newcastle | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/uwvBr2Hy2Ac/hqdefault.jpg" alt="Thiago DOUBLE and Schade strike against Toon! | Brentford 3-1 Newcastle | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Thiago DOUBLE and Schade strike against Toon! | Brentford 3-1 Newcastle | Premier League Highlights</h3>
+          <div class="meta-line">Brentford Football Club • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/wpcKyur-kbI/" title="THE BEST PREMIER LEAGUE GOALS OF 2024/25!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/wpcKyur-kbI/hqdefault.jpg" alt="THE BEST PREMIER LEAGUE GOALS OF 2024/25!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">THE BEST PREMIER LEAGUE GOALS OF 2024/25!</h3>
+          <div class="meta-line">Premier League • 11 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/4COdQza_DG8/" title="HIGHLIGHTS | Crystal Palace v Brighton | Premier League">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/4COdQza_DG8/hqdefault.jpg" alt="HIGHLIGHTS | Crystal Palace v Brighton | Premier League" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Crystal Palace v Brighton | Premier League</h3>
+          <div class="meta-line">Official Brighton & Hove Albion FC • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/irYAvHpl3T4/" title="EVERTON 2-0 FULHAM | Premier League highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/irYAvHpl3T4/hqdefault.jpg" alt="EVERTON 2-0 FULHAM | Premier League highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">EVERTON 2-0 FULHAM | Premier League highlights</h3>
+          <div class="meta-line">Everton Football Club • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/hhpdSD0jEoA/" title="Chelsea 1-2 Sunderland | HIGHLIGHTS | Premier League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/hhpdSD0jEoA/hqdefault.jpg" alt="Chelsea 1-2 Sunderland | HIGHLIGHTS | Premier League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Chelsea 1-2 Sunderland | HIGHLIGHTS | Premier League 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 25 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/PJ4-XAJ8Xns/" title="Saka and Trossard extend unbeaten run! | EXTENDED HIGHLIGHTS | Sunderland vs Arsenal (2-2) | EPL">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/PJ4-XAJ8Xns/hqdefault.jpg" alt="Saka and Trossard extend unbeaten run! | EXTENDED HIGHLIGHTS | Sunderland vs Arsenal (2-2) | EPL" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Saka and Trossard extend unbeaten run! | EXTENDED HIGHLIGHTS | Sunderland vs Arsenal (2-2) | EPL</h3>
+          <div class="meta-line">Arsenal • 10 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/SXHoDl2twPg/" title="A point apiece in the North East | HIGHLIGHTS | Sunderland vs Arsenal (2-2) | Saka, Trossard | EPL">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/SXHoDl2twPg/hqdefault.jpg" alt="A point apiece in the North East | HIGHLIGHTS | Sunderland vs Arsenal (2-2) | Saka, Trossard | EPL" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">A point apiece in the North East | HIGHLIGHTS | Sunderland vs Arsenal (2-2) | Saka, Trossard | EPL</h3>
+          <div class="meta-line">Arsenal • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ch_S1gj70Wo/" title="LIVERPOOL 1 vs  0 REAL MADRID  | UEFA Champions League | HIGHLIGHTS  #ucl 2025-26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ch_S1gj70Wo/hqdefault.jpg" alt="LIVERPOOL 1 vs  0 REAL MADRID  | UEFA Champions League | HIGHLIGHTS  #ucl 2025-26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">LIVERPOOL 1 vs  0 REAL MADRID  | UEFA Champions League | HIGHLIGHTS  #ucl 2025-26</h3>
+          <div class="meta-line">SportOzg • 05 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/O56wF0Sf4DU/" title="CPL FINAL HIGHLIGHTS: Atlético Ottawa vs. Cavalry FC 🇨🇦 | Nov. 9, 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/O56wF0Sf4DU/hqdefault.jpg" alt="CPL FINAL HIGHLIGHTS: Atlético Ottawa vs. Cavalry FC 🇨🇦 | Nov. 9, 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">CPL FINAL HIGHLIGHTS: Atlético Ottawa vs. Cavalry FC 🇨🇦 | Nov. 9, 2025</h3>
+          <div class="meta-line">CPL Soccer • 10 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/wgDloG_gGcI/" title="Wait... The GOALIE Scored?! 😱">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/wgDloG_gGcI/hqdefault.jpg" alt="Wait... The GOALIE Scored?! 😱" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Wait... The GOALIE Scored?! 😱</h3>
+          <div class="meta-line">Premier League • 26 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/4uRdbhUXBMs/" title="Extended Premier League Highlights | Sunderland AFC 2 - 2 Arsenal FC">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/4uRdbhUXBMs/hqdefault.jpg" alt="Extended Premier League Highlights | Sunderland AFC 2 - 2 Arsenal FC" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Extended Premier League Highlights | Sunderland AFC 2 - 2 Arsenal FC</h3>
+          <div class="meta-line">Sunderland AFC • 10 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/YpBv9KqNBUo/" title="Tottenham Hotspur 2-2 Man Utd | Extended Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/YpBv9KqNBUo/hqdefault.jpg" alt="Tottenham Hotspur 2-2 Man Utd | Extended Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Tottenham Hotspur 2-2 Man Utd | Extended Premier League Highlights</h3>
+          <div class="meta-line">Tottenham Hotspur • 10 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/jtHALdfBciY/" title="Brobbey Scores 94th-Minute Equaliser | Sunderland AFC 2 - 2 Arsenal FC | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/jtHALdfBciY/hqdefault.jpg" alt="Brobbey Scores 94th-Minute Equaliser | Sunderland AFC 2 - 2 Arsenal FC | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Brobbey Scores 94th-Minute Equaliser | Sunderland AFC 2 - 2 Arsenal FC | Premier League Highlights</h3>
+          <div class="meta-line">Sunderland AFC • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ABM__Eq-VKY/" title="Chelsea 2-1 Liverpool | HIGHLIGHTS - Extended | Premier League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ABM__Eq-VKY/hqdefault.jpg" alt="Chelsea 2-1 Liverpool | HIGHLIGHTS - Extended | Premier League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Chelsea 2-1 Liverpool | HIGHLIGHTS - Extended | Premier League 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 05 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/x11PjV5Y4ck/" title="Haaland, Reijnders &amp; Cherki get Man City off to FLYING start | Wolves 0-4 Man City | EPL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/x11PjV5Y4ck/hqdefault.jpg" alt="Haaland, Reijnders &amp; Cherki get Man City off to FLYING start | Wolves 0-4 Man City | EPL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Haaland, Reijnders &amp; Cherki get Man City off to FLYING start | Wolves 0-4 Man City | EPL Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 16 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/cmb36PylfNw/" title="Amad volley rescues point for Man Utd 🔴 | Nottingham Forest 2-2 Man Utd | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/cmb36PylfNw/hqdefault.jpg" alt="Amad volley rescues point for Man Utd 🔴 | Nottingham Forest 2-2 Man Utd | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Amad volley rescues point for Man Utd 🔴 | Nottingham Forest 2-2 Man Utd | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 01 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/4JI44qJjtcI/" title="The Best Goals, Drama &amp; Highlights | Man City v Liverpool">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/4JI44qJjtcI/hqdefault.jpg" alt="The Best Goals, Drama &amp; Highlights | Man City v Liverpool" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">The Best Goals, Drama &amp; Highlights | Man City v Liverpool</h3>
+          <div class="meta-line">Premier League • 05 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/v-Yz30H4TZc/" title="Trent’s Return Ends In Defeat! 😳 | Liverpool 1-0 Real Madrid | UEFA Champions League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/v-Yz30H4TZc/hqdefault.jpg" alt="Trent’s Return Ends In Defeat! 😳 | Liverpool 1-0 Real Madrid | UEFA Champions League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Trent’s Return Ends In Defeat! 😳 | Liverpool 1-0 Real Madrid | UEFA Champions League Highlights</h3>
+          <div class="meta-line">TNT Sports Football • 04 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Lbxx_hGXCdU/" title="Qarabağ 2-2 Chelsea | HIGHLIGHTS | Champions League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Lbxx_hGXCdU/hqdefault.jpg" alt="Qarabağ 2-2 Chelsea | HIGHLIGHTS | Champions League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Qarabağ 2-2 Chelsea | HIGHLIGHTS | Champions League 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 06 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/naPbZe4vDsE/" title="Man Utd win stormy THRILLER at Old Trafford | Man Utd 2-1 Chelsea | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/naPbZe4vDsE/hqdefault.jpg" alt="Man Utd win stormy THRILLER at Old Trafford | Man Utd 2-1 Chelsea | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Man Utd win stormy THRILLER at Old Trafford | Man Utd 2-1 Chelsea | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 20 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/dqT_w_EyUhU/" title="Highlights: Liverpool 1-0 Real Madrid | Mac Allister Goal! | UEFA Champions League">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/dqT_w_EyUhU/hqdefault.jpg" alt="Highlights: Liverpool 1-0 Real Madrid | Mac Allister Goal! | UEFA Champions League" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Highlights: Liverpool 1-0 Real Madrid | Mac Allister Goal! | UEFA Champions League</h3>
+          <div class="meta-line">Liverpool FC • 06 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/-XkzqtB3cN0/" title="Black Cats return to the PL with a BANG! | Sunderland 3-0 West Ham | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/-XkzqtB3cN0/hqdefault.jpg" alt="Black Cats return to the PL with a BANG! | Sunderland 3-0 West Ham | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Black Cats return to the PL with a BANG! | Sunderland 3-0 West Ham | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 16 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ApPZcCitzwE/" title="Brighton 2-2 Tottenham Hotspur | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ApPZcCitzwE/hqdefault.jpg" alt="Brighton 2-2 Tottenham Hotspur | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Brighton 2-2 Tottenham Hotspur | Premier League Highlights</h3>
+          <div class="meta-line">Tottenham Hotspur • 20 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Swyd6T5HkpU/" title="SIX defeats in seven as Reds crash out! 😳 | Liverpool 0-3 Crystal Palace | Carabao Cup Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Swyd6T5HkpU/hqdefault.jpg" alt="SIX defeats in seven as Reds crash out! 😳 | Liverpool 0-3 Crystal Palace | Carabao Cup Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">SIX defeats in seven as Reds crash out! 😳 | Liverpool 0-3 Crystal Palace | Carabao Cup Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 29 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/yl1h1j0-i9M/" title="Mateta nets hat-trick! | Crystal Palace 3-3 Bournemouth | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/yl1h1j0-i9M/hqdefault.jpg" alt="Mateta nets hat-trick! | Crystal Palace 3-3 Bournemouth | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Mateta nets hat-trick! | Crystal Palace 3-3 Bournemouth | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 18 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/NCpP541MM3c/" title="Nketiah ends Liverpool unbeaten run! | Crystal Palace 2-1 Liverpool | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/NCpP541MM3c/hqdefault.jpg" alt="Nketiah ends Liverpool unbeaten run! | Crystal Palace 2-1 Liverpool | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Nketiah ends Liverpool unbeaten run! | Crystal Palace 2-1 Liverpool | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 27 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/8rtgjHYx1sk/" title="Late Haaland brace in Man City DEMOLITION job! | Manchester City 5-1 Burnley | EPL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/8rtgjHYx1sk/hqdefault.jpg" alt="Late Haaland brace in Man City DEMOLITION job! | Manchester City 5-1 Burnley | EPL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Late Haaland brace in Man City DEMOLITION job! | Manchester City 5-1 Burnley | EPL Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 27 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/BBEs2m7GdZI/" title="Van Hecke own goal rescues Spurs! | Brighton 2-2 Spurs | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/BBEs2m7GdZI/hqdefault.jpg" alt="Van Hecke own goal rescues Spurs! | Brighton 2-2 Spurs | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Van Hecke own goal rescues Spurs! | Brighton 2-2 Spurs | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 20 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/R9k3zrb7Fyc/" title="Van De Ven Goal Of The Season! 🤯 | Tottenham 4-0 Copenhagen | UEFA Champions League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/R9k3zrb7Fyc/hqdefault.jpg" alt="Van De Ven Goal Of The Season! 🤯 | Tottenham 4-0 Copenhagen | UEFA Champions League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Van De Ven Goal Of The Season! 🤯 | Tottenham 4-0 Copenhagen | UEFA Champions League Highlights</h3>
+          <div class="meta-line">TNT Sports Football • 04 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/R5WnNJUsIOA/" title="Norwich City 1-2 Leicester City | Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/R5WnNJUsIOA/hqdefault.jpg" alt="Norwich City 1-2 Leicester City | Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Norwich City 1-2 Leicester City | Highlights</h3>
+          <div class="meta-line">Norwich City Football Club • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/D7rBOd9nZRw/" title="Newcastle United 1 Arsenal 2 | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/D7rBOd9nZRw/hqdefault.jpg" alt="Newcastle United 1 Arsenal 2 | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Newcastle United 1 Arsenal 2 | Premier League Highlights</h3>
+          <div class="meta-line">Newcastle United • 28 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/VGGa-scpPrk/" title="ESTEWOW! 🤩 | Chelsea 2-1 Liverpool | HIGHLIGHTS | Premier League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/VGGa-scpPrk/hqdefault.jpg" alt="ESTEWOW! 🤩 | Chelsea 2-1 Liverpool | HIGHLIGHTS | Premier League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">ESTEWOW! 🤩 | Chelsea 2-1 Liverpool | HIGHLIGHTS | Premier League 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 04 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/x6DuhArJwao/" title="Estêvão scores DRAMATIC stoppage-time winner! | Chelsea 2-1 Liverpool | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/x6DuhArJwao/hqdefault.jpg" alt="Estêvão scores DRAMATIC stoppage-time winner! | Chelsea 2-1 Liverpool | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Estêvão scores DRAMATIC stoppage-time winner! | Chelsea 2-1 Liverpool | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 04 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/GDYzMFhlUmk/" title="Tottenham Hotspur 1-2 Aston Villa | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/GDYzMFhlUmk/hqdefault.jpg" alt="Tottenham Hotspur 1-2 Aston Villa | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Tottenham Hotspur 1-2 Aston Villa | Premier League Highlights</h3>
+          <div class="meta-line">Tottenham Hotspur • 19 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/7p2XxgAoXgs/" title="UP TO THIRD! | Cheltenham Town v Notts County Extended Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/7p2XxgAoXgs/hqdefault.jpg" alt="UP TO THIRD! | Cheltenham Town v Notts County Extended Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">UP TO THIRD! | Cheltenham Town v Notts County Extended Highlights</h3>
+          <div class="meta-line">EFL • 10 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/QD192S6eTjs/" title="Twine free kick cancels out SUPERB Watford opener! 🔥 | Watford 1-1 Bristol City | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/QD192S6eTjs/hqdefault.jpg" alt="Twine free kick cancels out SUPERB Watford opener! 🔥 | Watford 1-1 Bristol City | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Twine free kick cancels out SUPERB Watford opener! 🔥 | Watford 1-1 Bristol City | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 07 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/vgh24Uropw4/" title="Burgess nets two own goals against old club Ipswich 🚜 | Swansea 1-4 Ipswich | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/vgh24Uropw4/hqdefault.jpg" alt="Burgess nets two own goals against old club Ipswich 🚜 | Swansea 1-4 Ipswich | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Burgess nets two own goals against old club Ipswich 🚜 | Swansea 1-4 Ipswich | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/1dnl9yrlGIQ/" title="Saints make it two wins from two! 👏 | Southampton 3-1 Sheffield Wednesday | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/1dnl9yrlGIQ/hqdefault.jpg" alt="Saints make it two wins from two! 👏 | Southampton 3-1 Sheffield Wednesday | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Saints make it two wins from two! 👏 | Southampton 3-1 Sheffield Wednesday | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ewda01ESltQ/" title="HIGHLIGHTS: Southampton 3-1 Sheffield Wednesday | Championship">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ewda01ESltQ/hqdefault.jpg" alt="HIGHLIGHTS: Southampton 3-1 Sheffield Wednesday | Championship" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS: Southampton 3-1 Sheffield Wednesday | Championship</h3>
+          <div class="meta-line">Southampton FC • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/EInkXvoo5ZM/" title="James stoppage-time winner DENIES Norwich first home point | Norwich 1-2 Leicester | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/EInkXvoo5ZM/hqdefault.jpg" alt="James stoppage-time winner DENIES Norwich first home point | Norwich 1-2 Leicester | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">James stoppage-time winner DENIES Norwich first home point | Norwich 1-2 Leicester | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/NNSJp70l050/" title="Managerless Saints end losing run! ✅ | QPR 1-2 Southampton | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/NNSJp70l050/hqdefault.jpg" alt="Managerless Saints end losing run! ✅ | QPR 1-2 Southampton | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Managerless Saints end losing run! ✅ | QPR 1-2 Southampton | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 05 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/uylUTnNtPDg/" title="TOP 2 BATTLE! | Stoke City v Coventry City extended highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/uylUTnNtPDg/hqdefault.jpg" alt="TOP 2 BATTLE! | Stoke City v Coventry City extended highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">TOP 2 BATTLE! | Stoke City v Coventry City extended highlights</h3>
+          <div class="meta-line">EFL • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/gFt4K7CgHqQ/" title="Rams ruin Rovers&#39; anniversary celebrations! | Blackburn 1-2 Derby | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/gFt4K7CgHqQ/hqdefault.jpg" alt="Rams ruin Rovers&#39; anniversary celebrations! | Blackburn 1-2 Derby | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Rams ruin Rovers&#39; anniversary celebrations! | Blackburn 1-2 Derby | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/SR6c62EQvj4/" title="Barry Bannan scores STUNNER! 🤩 | Sheffield Wednesday 1-1 Norwich | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/SR6c62EQvj4/hqdefault.jpg" alt="Barry Bannan scores STUNNER! 🤩 | Sheffield Wednesday 1-1 Norwich | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Barry Bannan scores STUNNER! 🤩 | Sheffield Wednesday 1-1 Norwich | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 05 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/X_vQFpdyRFE/" title="Boro go second with home win 📈 | Middlesbrough 2-1 Birmingham | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/X_vQFpdyRFE/hqdefault.jpg" alt="Boro go second with home win 📈 | Middlesbrough 2-1 Birmingham | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Boro go second with home win 📈 | Middlesbrough 2-1 Birmingham | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/g0Y0ngnjQ8E/" title="Sheffield United 0-0 Queens Park Rangers | EFL Championship highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/g0Y0ngnjQ8E/hqdefault.jpg" alt="Sheffield United 0-0 Queens Park Rangers | EFL Championship highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Sheffield United 0-0 Queens Park Rangers | EFL Championship highlights</h3>
+          <div class="meta-line">Sheffield United FC • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ZWnjtZQ70ao/" title="Stoke City vs Coventry City | EFL Championship | 2025/26 | Full Match Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ZWnjtZQ70ao/hqdefault.jpg" alt="Stoke City vs Coventry City | EFL Championship | 2025/26 | Full Match Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Stoke City vs Coventry City | EFL Championship | 2025/26 | Full Match Highlights</h3>
+          <div class="meta-line">FanCode • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/a4nBDlmj8T0/" title="Coventry City 3-1 Sheffield United | EFL Championship highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/a4nBDlmj8T0/hqdefault.jpg" alt="Coventry City 3-1 Sheffield United | EFL Championship highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Coventry City 3-1 Sheffield United | EFL Championship highlights</h3>
+          <div class="meta-line">Sheffield United FC • 04 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/-lQrlFSaWGQ/" title="TOP TWO! | Middlesbrough v Birmingham City extended highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/-lQrlFSaWGQ/hqdefault.jpg" alt="TOP TWO! | Middlesbrough v Birmingham City extended highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">TOP TWO! | Middlesbrough v Birmingham City extended highlights</h3>
+          <div class="meta-line">EFL • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/VANmRNRu96c/" title="Thiago SHINES as Bees beat Magpies | Brentford 3-1 Newcastle | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/VANmRNRu96c/hqdefault.jpg" alt="Thiago SHINES as Bees beat Magpies | Brentford 3-1 Newcastle | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Thiago SHINES as Bees beat Magpies | Brentford 3-1 Newcastle | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/jckRHI2oVHM/" title="SAVAGE STARS! 🏴󠁧󠁢󠁷󠁬󠁳󠁿 | Reading v Stevenage Extended Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/jckRHI2oVHM/hqdefault.jpg" alt="SAVAGE STARS! 🏴󠁧󠁢󠁷󠁬󠁳󠁿 | Reading v Stevenage Extended Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">SAVAGE STARS! 🏴󠁧󠁢󠁷󠁬󠁳󠁿 | Reading v Stevenage Extended Highlights</h3>
+          <div class="meta-line">EFL • 06 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/kMVeXyhix5I/" title="Late goals from Marmoush &amp; Cherki spare Man City | Swansea 1-3 Man City | Carabao Cup Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/kMVeXyhix5I/hqdefault.jpg" alt="Late goals from Marmoush &amp; Cherki spare Man City | Swansea 1-3 Man City | Carabao Cup Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Late goals from Marmoush &amp; Cherki spare Man City | Swansea 1-3 Man City | Carabao Cup Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 29 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/jPbaP7C8CjE/" title="SAKA SHINES! 💫 | Arsenal v Brighton &amp; Hove Albion Extended Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/jPbaP7C8CjE/hqdefault.jpg" alt="SAKA SHINES! 💫 | Arsenal v Brighton &amp; Hove Albion Extended Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">SAKA SHINES! 💫 | Arsenal v Brighton &amp; Hove Albion Extended Highlights</h3>
+          <div class="meta-line">EFL • 30 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Aqe6C9iQ-HQ/" title="Chelsea 1-2 Sunderland | HIGHLIGHTS - Extended | Premier League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Aqe6C9iQ-HQ/hqdefault.jpg" alt="Chelsea 1-2 Sunderland | HIGHLIGHTS - Extended | Premier League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Chelsea 1-2 Sunderland | HIGHLIGHTS - Extended | Premier League 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 27 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/BsYIs_jJ1XQ/" title="Champions League Highlights: Newcastle Utd v Athletic Bilbao">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/BsYIs_jJ1XQ/hqdefault.jpg" alt="Champions League Highlights: Newcastle Utd v Athletic Bilbao" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Champions League Highlights: Newcastle Utd v Athletic Bilbao</h3>
+          <div class="meta-line">RTÉ Sport • 06 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/BiY23rb4des/" title="Small scores SENSATIONAL strike! 🚀 | Preston 2-1 Swansea | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/BiY23rb4des/hqdefault.jpg" alt="Small scores SENSATIONAL strike! 🚀 | Preston 2-1 Swansea | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Small scores SENSATIONAL strike! 🚀 | Preston 2-1 Swansea | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 05 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/9VVX3HOt88U/" title="Hull END Blues 29-game unbeaten home run! 🤯| Birmingham 2-3 Hull City | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/9VVX3HOt88U/hqdefault.jpg" alt="Hull END Blues 29-game unbeaten home run! 🤯| Birmingham 2-3 Hull City | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Hull END Blues 29-game unbeaten home run! 🤯| Birmingham 2-3 Hull City | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 18 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Su63RLbh4yY/" title="Bayern Munich 3-1 Chelsea | HIGHLIGHTS | Champions League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Su63RLbh4yY/hqdefault.jpg" alt="Bayern Munich 3-1 Chelsea | HIGHLIGHTS | Champions League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Bayern Munich 3-1 Chelsea | HIGHLIGHTS | Champions League 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 18 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/t7xD6mVBL2M/" title="Chelsea 1-0 Benfica | HIGHLIGHTS | Champions League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/t7xD6mVBL2M/hqdefault.jpg" alt="Chelsea 1-0 Benfica | HIGHLIGHTS | Champions League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Chelsea 1-0 Benfica | HIGHLIGHTS | Champions League 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 01 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ORjF4EVROOM/" title="REDS CRASH OUT! 🏆 | Liverpool v Crystal Palace Extended Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ORjF4EVROOM/hqdefault.jpg" alt="REDS CRASH OUT! 🏆 | Liverpool v Crystal Palace Extended Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">REDS CRASH OUT! 🏆 | Liverpool v Crystal Palace Extended Highlights</h3>
+          <div class="meta-line">EFL • 30 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/pC10ZIzpXEc/" title="SCREAMERS GALORE! 💥 | Juventus 4-4 Borussia Dortmund | UEFA Champions League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/pC10ZIzpXEc/hqdefault.jpg" alt="SCREAMERS GALORE! 💥 | Juventus 4-4 Borussia Dortmund | UEFA Champions League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">SCREAMERS GALORE! 💥 | Juventus 4-4 Borussia Dortmund | UEFA Champions League Highlights</h3>
+          <div class="meta-line">TNT Sports Football • 16 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/jkgE-H3DvPg/" title="Chelsea 1-3 Brighton | HIGHLIGHTS | Premier League 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/jkgE-H3DvPg/hqdefault.jpg" alt="Chelsea 1-3 Brighton | HIGHLIGHTS | Premier League 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Chelsea 1-3 Brighton | HIGHLIGHTS | Premier League 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 27 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/26ZsQLmMKZ8/" title="Queens Park Rangers 0-0 Sheffield United | Extended EFL Championship highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/26ZsQLmMKZ8/hqdefault.jpg" alt="Queens Park Rangers 0-0 Sheffield United | Extended EFL Championship highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Queens Park Rangers 0-0 Sheffield United | Extended EFL Championship highlights</h3>
+          <div class="meta-line">Sheffield United FC • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/bPX6g897UPc/" title="Lincoln 1-2 Chelsea | HIGHLIGHTS | Carabao Cup 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/bPX6g897UPc/hqdefault.jpg" alt="Lincoln 1-2 Chelsea | HIGHLIGHTS | Carabao Cup 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Lincoln 1-2 Chelsea | HIGHLIGHTS | Carabao Cup 2025/26</h3>
+          <div class="meta-line">Chelsea Football Club • 23 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/JOpD8Vk3rAo/" title="FIVE GOALS! | Grimsby Town v Brentford Extended Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/JOpD8Vk3rAo/hqdefault.jpg" alt="FIVE GOALS! | Grimsby Town v Brentford Extended Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">FIVE GOALS! | Grimsby Town v Brentford Extended Highlights</h3>
+          <div class="meta-line">EFL • 29 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/r0bHdnKoGWs/" title="Highlights: Liverpool 0-3 Crystal Palace | Reds Exit Carabao Cup">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/r0bHdnKoGWs/hqdefault.jpg" alt="Highlights: Liverpool 0-3 Crystal Palace | Reds Exit Carabao Cup" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Highlights: Liverpool 0-3 Crystal Palace | Reds Exit Carabao Cup</h3>
+          <div class="meta-line">Liverpool FC • 29 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/vZ1BCUcSCSE/" title="Kieffer Moore hat-trick SHOCKS Coventry City! 😱 | Wrexham 3-2 Coventry | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/vZ1BCUcSCSE/hqdefault.jpg" alt="Kieffer Moore hat-trick SHOCKS Coventry City! 😱 | Wrexham 3-2 Coventry | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Kieffer Moore hat-trick SHOCKS Coventry City! 😱 | Wrexham 3-2 Coventry | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 31 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/i7C6ihyzCHE/" title="Sunderland END Arsenal’s clean sheet run! | Sunderland 2-2 Arsenal | Premier League Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/i7C6ihyzCHE/hqdefault.jpg" alt="Sunderland END Arsenal’s clean sheet run! | Sunderland 2-2 Arsenal | Premier League Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Sunderland END Arsenal’s clean sheet run! | Sunderland 2-2 Arsenal | Premier League Highlights</h3>
+          <div class="meta-line">Sky Sports Premier League • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/HxzLwgoFVKo/" title="UP TO 4TH! | Preston North End v Swansea City extended highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/HxzLwgoFVKo/hqdefault.jpg" alt="UP TO 4TH! | Preston North End v Swansea City extended highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">UP TO 4TH! | Preston North End v Swansea City extended highlights</h3>
+          <div class="meta-line">EFL • 05 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/SKrobU9H0fw/" title="Philogene STUNNER as Ipswich end 16-year derby winless run 🧨| Ipswich 3-1 Norwich | EFL Highlights">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/SKrobU9H0fw/hqdefault.jpg" alt="Philogene STUNNER as Ipswich end 16-year derby winless run 🧨| Ipswich 3-1 Norwich | EFL Highlights" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Philogene STUNNER as Ipswich end 16-year derby winless run 🧨| Ipswich 3-1 Norwich | EFL Highlights</h3>
+          <div class="meta-line">Sky Sports Football • 05 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/0VJbnTBWvcQ/" title="HIGHLIGHTS | Real Madrid 4-0 Valencia | LaLiga">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/0VJbnTBWvcQ/hqdefault.jpg" alt="HIGHLIGHTS | Real Madrid 4-0 Valencia | LaLiga" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Real Madrid 4-0 Valencia | LaLiga</h3>
+          <div class="meta-line">Real Madrid • 01 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/LFzrA492gdw/" title="HIGHLIGHTS | Real Madrid 2-1 Barcelona | LaLiga">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/LFzrA492gdw/hqdefault.jpg" alt="HIGHLIGHTS | Real Madrid 2-1 Barcelona | LaLiga" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Real Madrid 2-1 Barcelona | LaLiga</h3>
+          <div class="meta-line">Real Madrid • 26 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/2EGTD_d6Ubo/" title="HIGHLIGHTS | Real Madrid 2-1 RCD Mallorca | LaLiga">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/2EGTD_d6Ubo/hqdefault.jpg" alt="HIGHLIGHTS | Real Madrid 2-1 RCD Mallorca | LaLiga" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Real Madrid 2-1 RCD Mallorca | LaLiga</h3>
+          <div class="meta-line">Real Madrid • 30 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/jsJCSlhhZCk/" title="Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/jsJCSlhhZCk/hqdefault.jpg" alt="Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025</h3>
+          <div class="meta-line">SABIO - سابيو • 26 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/YkNCCLAtHkA/" title="HIGHLIGHTS | Levante 1-4 Real Madrid | LaLiga">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/YkNCCLAtHkA/hqdefault.jpg" alt="HIGHLIGHTS | Levante 1-4 Real Madrid | LaLiga" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Levante 1-4 Real Madrid | LaLiga</h3>
+          <div class="meta-line">Real Madrid • 23 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/y_fugeh_YVU/" title="HIGHLIGHTS | Real Madrid 2-1 Barcelona | Jude Bellingham shines as hosts prevail in El Clásico">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/y_fugeh_YVU/hqdefault.jpg" alt="HIGHLIGHTS | Real Madrid 2-1 Barcelona | Jude Bellingham shines as hosts prevail in El Clásico" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Real Madrid 2-1 Barcelona | Jude Bellingham shines as hosts prevail in El Clásico</h3>
+          <div class="meta-line">Premier Sports • 26 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/gWqAvSDEsp4/" title="HIGHLIGHTS | Celta de Vigo 2-4 Barcelona | Lewandowski hat-trick as Rashford impresses again">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/gWqAvSDEsp4/hqdefault.jpg" alt="HIGHLIGHTS | Celta de Vigo 2-4 Barcelona | Lewandowski hat-trick as Rashford impresses again" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Celta de Vigo 2-4 Barcelona | Lewandowski hat-trick as Rashford impresses again</h3>
+          <div class="meta-line">Premier Sports • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/jsz6qAwlCEg/" title="HIGHLIGHTS | Real Madrid 3-1 Villarreal | LaLiga">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/jsz6qAwlCEg/hqdefault.jpg" alt="HIGHLIGHTS | Real Madrid 3-1 Villarreal | LaLiga" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Real Madrid 3-1 Villarreal | LaLiga</h3>
+          <div class="meta-line">Real Madrid • 04 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/TRwxe30ZTLA/" title="HIGHLIGHTS | Rayo Vallecano 0-0 Real Madrid | Madrid Derby at Vallecas ends all square">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/TRwxe30ZTLA/hqdefault.jpg" alt="HIGHLIGHTS | Rayo Vallecano 0-0 Real Madrid | Madrid Derby at Vallecas ends all square" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Rayo Vallecano 0-0 Real Madrid | Madrid Derby at Vallecas ends all square</h3>
+          <div class="meta-line">Premier Sports • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/7qv6dvxvkp4/" title="All Barcelona Goals – 2024/25 Season (174 Goals)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/7qv6dvxvkp4/hqdefault.jpg" alt="All Barcelona Goals – 2024/25 Season (174 Goals)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">All Barcelona Goals – 2024/25 Season (174 Goals)</h3>
+          <div class="meta-line">FootballWikiHub • 13 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/y_R601Sg11k/" title="HIGHLIGHTS | Real Madrid 2-0 Espanyol | LaLiga">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/y_R601Sg11k/hqdefault.jpg" alt="HIGHLIGHTS | Real Madrid 2-0 Espanyol | LaLiga" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Real Madrid 2-0 Espanyol | LaLiga</h3>
+          <div class="meta-line">Real Madrid • 20 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/1Q1FypxVxRI/" title="PURE DRAMA! Kane Secures DRAW! | UNION BERLIN - FC BAYERN | Highlights | MD 10 – Bundesliga 2025/26">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/1Q1FypxVxRI/hqdefault.jpg" alt="PURE DRAMA! Kane Secures DRAW! | UNION BERLIN - FC BAYERN | Highlights | MD 10 – Bundesliga 2025/26" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">PURE DRAMA! Kane Secures DRAW! | UNION BERLIN - FC BAYERN | Highlights | MD 10 – Bundesliga 2025/26</h3>
+          <div class="meta-line">Bundesliga • 08 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ipeiJ_3jaAI/" title="HIGHLIGHTS | Real Oviedo 0-3 Real Madrid | LaLiga">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ipeiJ_3jaAI/hqdefault.jpg" alt="HIGHLIGHTS | Real Oviedo 0-3 Real Madrid | LaLiga" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | Real Oviedo 0-3 Real Madrid | LaLiga</h3>
+          <div class="meta-line">Real Madrid • 24 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/nFY_x7Jfz30/" title="HIGHLIGHTS | NEWCASTLE 1 vs 2 FC BARCELONA | UEFA CHAMPIONS LEAGUE 🔵🔴">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/nFY_x7Jfz30/hqdefault.jpg" alt="HIGHLIGHTS | NEWCASTLE 1 vs 2 FC BARCELONA | UEFA CHAMPIONS LEAGUE 🔵🔴" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">HIGHLIGHTS | NEWCASTLE 1 vs 2 FC BARCELONA | UEFA CHAMPIONS LEAGUE 🔵🔴</h3>
+          <div class="meta-line">FC Barcelona • 19 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/wevdkoGaSDA/" title="Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/wevdkoGaSDA/hqdefault.jpg" alt="Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Real Madrid vs Barcelona 2-1 - All Goals &amp; Highlights - 2025</h3>
+          <div class="meta-line">SABIO - سابيو • 26 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Gyd6iZLmw7E/" title="Real Madrid vs Barcelona 4-3 - All Goals &amp; Highlights - 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Gyd6iZLmw7E/hqdefault.jpg" alt="Real Madrid vs Barcelona 4-3 - All Goals &amp; Highlights - 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Real Madrid vs Barcelona 4-3 - All Goals &amp; Highlights - 2025</h3>
+          <div class="meta-line">HEMA GAMING • 25 Oct 2025</div>
+        </div>
+      </a>
     </section>
 
-    <!-- AD #2 MID -->
+    <!-- AD: Mid -->
     <ins class="adsbygoogle"
-         style="display:block; text-align:center; margin:30px auto;"
+         style="display:block; text-align:center; margin:24px auto;"
          data-ad-client="ca-pub-8959777846553693"
          data-ad-slot="2222222222"
          data-ad-format="auto"

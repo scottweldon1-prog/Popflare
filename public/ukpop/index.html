@@ -23,14 +23,21 @@
     .wrap { max-width: 1100px; margin: 0 auto; padding: 1rem; }
     .page-title { font-size: 1.6rem; margin: 1rem 0; }
     .lead { color:#aaa; margin-bottom: 1rem; }
-    .grid-cards { display:grid; gap:1rem; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); }
-    .card a { text-decoration:none; color:inherit; display:block; }
+    .list-cards { display:flex; flex-direction:column; gap:1rem; margin-top: 1rem; }
+    .card-row { display:flex; gap:1rem; padding:0.75rem; border-radius:0.75rem; background:#111; text-decoration:none; color:inherit; }
+    .card-row:hover { background:#181818; }
+    .thumb { flex: 0 0 220px; aspect-ratio:16/9; background:#000; border-radius:.5rem; overflow:hidden; }
+    .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+    .card-body { flex:1; display:flex; flex-direction:column; }
+    .card-title { font-size:1rem; margin:0 0 .35rem 0; }
+    .meta-line { color:#999; font-size:.85rem; margin-bottom:.25rem; }
     .chip { display:inline-block; padding:.25rem .6rem; border:1px solid #333; border-radius:999px; font-size:.8rem; color:#bbb; }
-    .meta-line { color:#999; font-size:.9rem; margin:.25rem 0 .5rem; }
-    .thumb { width:100%; aspect-ratio:16/9; background:#111; border-radius:.75rem; overflow:hidden; display:block }
-    .thumb img { width:100%; height:100%; object-fit:cover; display:block }
-    .footer-links { text-align:center; margin:2rem 0; color:#999; font-size:.9rem}
-    .footer-links a{ color:#FF3366; text-decoration:none }
+    .footer-links { text-align:center; margin:2rem 0; color:#999; font-size:.9rem;}
+    .footer-links a{ color:#FF3366; text-decoration:none; }
+    @media (max-width: 700px) {
+      .card-row { flex-direction:column; }
+      .thumb { width:100%; }
+    }
   </style>
 </head>
 <body>
@@ -53,7 +60,7 @@
 
   <main class="wrap">
 
-    <!-- AD #1 TOP -->
+    <!-- AD: Top -->
     <ins class="adsbygoogle"
          style="display:block; text-align:center; margin:20px auto;"
          data-ad-client="ca-pub-8959777846553693"
@@ -65,446 +72,446 @@
     <h1 class="page-title">UK Pop Top 100</h1>
     <p class="lead">Chart-topping UK pop hits and the freshest new releases.</p>
     <p class="meta-line"><span class="chip">Updated 11 Nov 2025</span></p>
-    <section class="grid-cards">
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=uXyxFMbqKYA" title="Luke Combs - When It Rains It Pours (Official Video)">
-          <span class="thumb"><img alt="Luke Combs - When It Rains It Pours (Official Video)" src="https://i.ytimg.com/vi/uXyxFMbqKYA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Luke Combs - When It Rains It Pours (Official Video)</h3>
-          <div class="meta-line">LukeCombsVEVO • 2017-08-15T07:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=kWP7hDlOtpY" title="New Order Blue Monday 🔥 Best Shuffle Dance Music Video 2023 on a viral TikTok Song">
-          <span class="thumb"><img alt="New Order Blue Monday 🔥 Best Shuffle Dance Music Video 2023 on a viral TikTok Song" src="https://i.ytimg.com/vi/kWP7hDlOtpY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">New Order Blue Monday 🔥 Best Shuffle Dance Music Video 2023 on a viral TikTok Song</h3>
-          <div class="meta-line">Shuffling Studio • 2022-10-27T13:40:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=sOK8NHuCkv4" title="Top 100 music videos of all time (RYM)">
-          <span class="thumb"><img alt="Top 100 music videos of all time (RYM)" src="https://i.ytimg.com/vi/sOK8NHuCkv4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Top 100 music videos of all time (RYM)</h3>
-          <div class="meta-line">Radio Jazel • 2025-05-30T18:35:34Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=OZU2fSpJHkw" title="TOP 100 MOST VIEWED MUSIC VIDEOS ⭐ 10/10 #music">
-          <span class="thumb"><img alt="TOP 100 MOST VIEWED MUSIC VIDEOS ⭐ 10/10 #music" src="https://i.ytimg.com/vi/OZU2fSpJHkw/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">TOP 100 MOST VIEWED MUSIC VIDEOS ⭐ 10/10 #music</h3>
-          <div class="meta-line">vaults.mp3 • 2025-05-14T20:49:43Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=2GWwZnlIxT8" title="Top 10 Most Viewed Music Videos Of All Time On YouTube">
-          <span class="thumb"><img alt="Top 10 Most Viewed Music Videos Of All Time On YouTube" src="https://i.ytimg.com/vi/2GWwZnlIxT8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Top 10 Most Viewed Music Videos Of All Time On YouTube</h3>
-          <div class="meta-line">DJ GallixC • 2023-09-12T14:45:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=k2qgadSvNyU" title="Dua Lipa - New Rules (Official Music Video)">
-          <span class="thumb"><img alt="Dua Lipa - New Rules (Official Music Video)" src="https://i.ytimg.com/vi/k2qgadSvNyU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Dua Lipa - New Rules (Official Music Video)</h3>
-          <div class="meta-line">Dua Lipa • 2017-07-07T09:00:05Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=E9L-0x92vXk" title="Steps - It&#39;s the Way You Make Me Feel (Official Video)">
-          <span class="thumb"><img alt="Steps - It&#39;s the Way You Make Me Feel (Official Video)" src="https://i.ytimg.com/vi/E9L-0x92vXk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Steps - It&#39;s the Way You Make Me Feel (Official Video)</h3>
-          <div class="meta-line">StepsVEVO • 2009-10-25T18:57:43Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=BC19kwABFwc" title="Dua Lipa - Love Again (Official Music Video)">
-          <span class="thumb"><img alt="Dua Lipa - Love Again (Official Music Video)" src="https://i.ytimg.com/vi/BC19kwABFwc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Dua Lipa - Love Again (Official Music Video)</h3>
-          <div class="meta-line">Dua Lipa • 2021-06-04T12:00:11Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=qqob4D3BoZc" title="Anne-Marie - Ciao Adios [Official Video]">
-          <span class="thumb"><img alt="Anne-Marie - Ciao Adios [Official Video]" src="https://i.ytimg.com/vi/qqob4D3BoZc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Anne-Marie - Ciao Adios [Official Video]</h3>
-          <div class="meta-line">Anne-Marie • 2017-03-09T15:48:09Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=MkElfR_NPBI" title="Little Mix - Black Magic (Official Video)">
-          <span class="thumb"><img alt="Little Mix - Black Magic (Official Video)" src="https://i.ytimg.com/vi/MkElfR_NPBI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Little Mix - Black Magic (Official Video)</h3>
-          <div class="meta-line">littlemixVEVO • 2015-05-29T07:00:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=lioR42laQBQ" title="Sunanda Sharma – Dilbar (Official Video) | Latest Punjabi Song 2025 | Kaptaan | Geet">
-          <span class="thumb"><img alt="Sunanda Sharma – Dilbar (Official Video) | Latest Punjabi Song 2025 | Kaptaan | Geet" src="https://i.ytimg.com/vi/lioR42laQBQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Sunanda Sharma – Dilbar (Official Video) | Latest Punjabi Song 2025 | Kaptaan | Geet</h3>
-          <div class="meta-line">Sunanda Sharma • 2025-11-10T11:30:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=pfxyk1glEq4" title="Chris Brown - Under The Influence (Official Video)">
-          <span class="thumb"><img alt="Chris Brown - Under The Influence (Official Video)" src="https://i.ytimg.com/vi/pfxyk1glEq4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Chris Brown - Under The Influence (Official Video)</h3>
-          <div class="meta-line">ChrisBrownVEVO • 2022-10-20T16:00:10Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=nfs8NYg7yQM" title="Charlie Puth - Attention [Official Video]">
-          <span class="thumb"><img alt="Charlie Puth - Attention [Official Video]" src="https://i.ytimg.com/vi/nfs8NYg7yQM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Charlie Puth - Attention [Official Video]</h3>
-          <div class="meta-line">Charlie Puth • 2017-04-24T17:00:05Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=qgy7vEje5-w" title="Little Mix - Secret Love Song (Official Video) ft. Jason Derulo">
-          <span class="thumb"><img alt="Little Mix - Secret Love Song (Official Video) ft. Jason Derulo" src="https://i.ytimg.com/vi/qgy7vEje5-w/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Little Mix - Secret Love Song (Official Video) ft. Jason Derulo</h3>
-          <div class="meta-line">littlemixVEVO • 2016-02-03T08:00:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=X3Ai6osw3Mk" title="Omah Lay - Understand (Official Music Video)">
-          <span class="thumb"><img alt="Omah Lay - Understand (Official Music Video)" src="https://i.ytimg.com/vi/X3Ai6osw3Mk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Omah Lay - Understand (Official Music Video)</h3>
-          <div class="meta-line">Omah Lay • 2021-07-29T14:00:04Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=TUVcZfQe-Kw" title="Dua Lipa - Levitating Featuring DaBaby (Official Music Video)">
-          <span class="thumb"><img alt="Dua Lipa - Levitating Featuring DaBaby (Official Music Video)" src="https://i.ytimg.com/vi/TUVcZfQe-Kw/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Dua Lipa - Levitating Featuring DaBaby (Official Music Video)</h3>
-          <div class="meta-line">Dua Lipa • 2020-10-02T12:00:12Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=qetW6R9Jxs4" title="Eric Prydz – Call On Me (Official Music Video) | Ministry of Sound">
-          <span class="thumb"><img alt="Eric Prydz – Call On Me (Official Music Video) | Ministry of Sound" src="https://i.ytimg.com/vi/qetW6R9Jxs4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Eric Prydz – Call On Me (Official Music Video) | Ministry of Sound</h3>
-          <div class="meta-line">Ministry of Sound • 2020-02-04T10:00:11Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Il-an3K9pjg" title="Anne-Marie - 2002 [Official Video]">
-          <span class="thumb"><img alt="Anne-Marie - 2002 [Official Video]" src="https://i.ytimg.com/vi/Il-an3K9pjg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Anne-Marie - 2002 [Official Video]</h3>
-          <div class="meta-line">Anne-Marie • 2018-05-08T11:05:08Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=oorVWW9ywG0" title="POP SMOKE - DIOR (OFFICIAL VIDEO)">
-          <span class="thumb"><img alt="POP SMOKE - DIOR (OFFICIAL VIDEO)" src="https://i.ytimg.com/vi/oorVWW9ywG0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">POP SMOKE - DIOR (OFFICIAL VIDEO)</h3>
-          <div class="meta-line">POP SMOKE • 2019-09-03T21:00:11Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=qBB_QOZNEdc" title="Hailee Steinfeld - Most Girls (Official Video)">
-          <span class="thumb"><img alt="Hailee Steinfeld - Most Girls (Official Video)" src="https://i.ytimg.com/vi/qBB_QOZNEdc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Hailee Steinfeld - Most Girls (Official Video)</h3>
-          <div class="meta-line">HaileeSteinfeldVEVO • 2017-05-23T04:00:02Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ucVUEmjKsko" title="Regard - Ride It (Official Video)">
-          <span class="thumb"><img alt="Regard - Ride It (Official Video)" src="https://i.ytimg.com/vi/ucVUEmjKsko/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Regard - Ride It (Official Video)</h3>
-          <div class="meta-line">Dj Regard Official • 2019-10-04T08:00:09Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=av5JD1dfj_c" title="Sam Smith, Normani - Dancing With A Stranger (Official Music Video)">
-          <span class="thumb"><img alt="Sam Smith, Normani - Dancing With A Stranger (Official Music Video)" src="https://i.ytimg.com/vi/av5JD1dfj_c/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Sam Smith, Normani - Dancing With A Stranger (Official Music Video)</h3>
-          <div class="meta-line">SamSmithVEVO • 2019-01-29T08:00:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=pSY3i5XHHXo" title="Central Cee x Dave - Sprinter [Music Video]">
-          <span class="thumb"><img alt="Central Cee x Dave - Sprinter [Music Video]" src="https://i.ytimg.com/vi/pSY3i5XHHXo/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Central Cee x Dave - Sprinter [Music Video]</h3>
-          <div class="meta-line">Central Cee • 2023-06-01T20:00:10Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=8ui9umU0C2g" title="Manchester Orchestra - The Silence (Official Music Video)">
-          <span class="thumb"><img alt="Manchester Orchestra - The Silence (Official Music Video)" src="https://i.ytimg.com/vi/8ui9umU0C2g/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Manchester Orchestra - The Silence (Official Music Video)</h3>
-          <div class="meta-line">manchesterorchVEVO • 2018-12-13T05:00:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=M11SvDtPBhA" title="Miley Cyrus - Party In The U.S.A. (Official Video)">
-          <span class="thumb"><img alt="Miley Cyrus - Party In The U.S.A. (Official Video)" src="https://i.ytimg.com/vi/M11SvDtPBhA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Miley Cyrus - Party In The U.S.A. (Official Video)</h3>
-          <div class="meta-line">HollywoodRecordsVEVO • 2009-09-25T22:56:39Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=C-u5WLJ9Yk4" title="Britney Spears - ...Baby One More Time (Official Video)">
-          <span class="thumb"><img alt="Britney Spears - ...Baby One More Time (Official Video)" src="https://i.ytimg.com/vi/C-u5WLJ9Yk4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Britney Spears - ...Baby One More Time (Official Video)</h3>
-          <div class="meta-line">BritneySpearsVEVO • 2009-10-25T07:08:26Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=IPfJnp1guPc" title="Khalid - Young Dumb &amp; Broke (Official Video)">
-          <span class="thumb"><img alt="Khalid - Young Dumb &amp; Broke (Official Video)" src="https://i.ytimg.com/vi/IPfJnp1guPc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Khalid - Young Dumb &amp; Broke (Official Video)</h3>
-          <div class="meta-line">KhalidVEVO • 2017-08-01T14:00:02Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Mgfe5tIwOj0" title="Dua Lipa - IDGAF (Official Music Video)">
-          <span class="thumb"><img alt="Dua Lipa - IDGAF (Official Music Video)" src="https://i.ytimg.com/vi/Mgfe5tIwOj0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Dua Lipa - IDGAF (Official Music Video)</h3>
-          <div class="meta-line">Dua Lipa • 2018-01-12T12:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=5JD6ejmlpa8" title="Spice Girls - Stop (Official Music Video)">
-          <span class="thumb"><img alt="Spice Girls - Stop (Official Music Video)" src="https://i.ytimg.com/vi/5JD6ejmlpa8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Spice Girls - Stop (Official Music Video)</h3>
-          <div class="meta-line">SpiceGirlsVEVO • 2009-03-12T03:57:05Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=UNZqm3dxd2w" title="Roddy Ricch - The Box [Official Music Video]">
-          <span class="thumb"><img alt="Roddy Ricch - The Box [Official Music Video]" src="https://i.ytimg.com/vi/UNZqm3dxd2w/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Roddy Ricch - The Box [Official Music Video]</h3>
-          <div class="meta-line">Roddy Ricch • 2020-02-28T23:00:10Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=3b4lo3lV4bg" title="Gunna - wgft (feat. Burna Boy) [Official Video]">
-          <span class="thumb"><img alt="Gunna - wgft (feat. Burna Boy) [Official Video]" src="https://i.ytimg.com/vi/3b4lo3lV4bg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Gunna - wgft (feat. Burna Boy) [Official Video]</h3>
-          <div class="meta-line">Gunna • 2025-11-04T18:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=N2ICtCO8TCw" title="Take That - Back for Good (Official Video)">
-          <span class="thumb"><img alt="Take That - Back for Good (Official Video)" src="https://i.ytimg.com/vi/N2ICtCO8TCw/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Take That - Back for Good (Official Video)</h3>
-          <div class="meta-line">TakeThatVEVO • 2009-10-25T19:00:28Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=CGyEd0aKWZE" title="Ellie Goulding - Burn (Official Video)">
-          <span class="thumb"><img alt="Ellie Goulding - Burn (Official Video)" src="https://i.ytimg.com/vi/CGyEd0aKWZE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Ellie Goulding - Burn (Official Video)</h3>
-          <div class="meta-line">EllieGouldingVEVO • 2013-07-07T23:00:13Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Q_yuO8UNGmY" title="Ed Sheeran &amp; Elton John - Merry Christmas [Official Video]">
-          <span class="thumb"><img alt="Ed Sheeran &amp; Elton John - Merry Christmas [Official Video]" src="https://i.ytimg.com/vi/Q_yuO8UNGmY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Ed Sheeran &amp; Elton John - Merry Christmas [Official Video]</h3>
-          <div class="meta-line">Ed Sheeran • 2021-12-03T08:00:10Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=OT5msu-dap8" title="Backstreet Boys - Shape Of My Heart (Official HD Video)">
-          <span class="thumb"><img alt="Backstreet Boys - Shape Of My Heart (Official HD Video)" src="https://i.ytimg.com/vi/OT5msu-dap8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Backstreet Boys - Shape Of My Heart (Official HD Video)</h3>
-          <div class="meta-line">BackstreetBoysVEVO • 2011-05-25T11:34:30Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=YQ5Jv4x_Hp0" title="Now United - How We Do It ft. Badshah (Official Music Video)">
-          <span class="thumb"><img alt="Now United - How We Do It ft. Badshah (Official Music Video)" src="https://i.ytimg.com/vi/YQ5Jv4x_Hp0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Now United - How We Do It ft. Badshah (Official Music Video)</h3>
-          <div class="meta-line">NOW UNITED • 2018-12-15T15:57:47Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=RSNmgE6L8AU" title="Keane - Everybody&#39;s Changing (Official Music Video)">
-          <span class="thumb"><img alt="Keane - Everybody&#39;s Changing (Official Music Video)" src="https://i.ytimg.com/vi/RSNmgE6L8AU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Keane - Everybody&#39;s Changing (Official Music Video)</h3>
-          <div class="meta-line">KeaneVEVO • 2009-10-09T01:52:29Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ebXbLfLACGM" title="Calvin Harris - Summer (Official Video)">
-          <span class="thumb"><img alt="Calvin Harris - Summer (Official Video)" src="https://i.ytimg.com/vi/ebXbLfLACGM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Calvin Harris - Summer (Official Video)</h3>
-          <div class="meta-line">CalvinHarrisVEVO • 2014-04-06T23:00:01Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=GVuh1lfrEwE" title="Sia &amp; David Guetta - Beautiful people (Music Video 2025) | Sora">
-          <span class="thumb"><img alt="Sia &amp; David Guetta - Beautiful people (Music Video 2025) | Sora" src="https://i.ytimg.com/vi/GVuh1lfrEwE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Sia &amp; David Guetta - Beautiful people (Music Video 2025) | Sora</h3>
-          <div class="meta-line">NeoCraft • 2025-03-29T11:23:53Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=yH1fk7WLiMc" title="Maluma - BRONCEADOR (Official Video)">
-          <span class="thumb"><img alt="Maluma - BRONCEADOR (Official Video)" src="https://i.ytimg.com/vi/yH1fk7WLiMc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Maluma - BRONCEADOR (Official Video)</h3>
-          <div class="meta-line">MalumaVEVO • 2025-07-18T00:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=SZpiiixlHWY" title="Tyla - IS IT (Official Music Video)">
-          <span class="thumb"><img alt="Tyla - IS IT (Official Music Video)" src="https://i.ytimg.com/vi/SZpiiixlHWY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Tyla - IS IT (Official Music Video)</h3>
-          <div class="meta-line">TylaVEVO • 2025-07-11T04:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=vaGf8fmtBr4" title="Maroon 5 - Priceless ft. LISA (Official Video)">
-          <span class="thumb"><img alt="Maroon 5 - Priceless ft. LISA (Official Video)" src="https://i.ytimg.com/vi/vaGf8fmtBr4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Maroon 5 - Priceless ft. LISA (Official Video)</h3>
-          <div class="meta-line">Maroon5VEVO • 2025-05-02T04:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=uvY8fdgezLQ" title="Zara Larsson - Midnight Sun (Official Music Video)">
-          <span class="thumb"><img alt="Zara Larsson - Midnight Sun (Official Music Video)" src="https://i.ytimg.com/vi/uvY8fdgezLQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Zara Larsson - Midnight Sun (Official Music Video)</h3>
-          <div class="meta-line">ZaraLarssonMusicVEVO • 2025-06-24T04:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ko70cExuzZM" title="Taylor Swift - The Fate of Ophelia (Official Music Video)">
-          <span class="thumb"><img alt="Taylor Swift - The Fate of Ophelia (Official Music Video)" src="https://i.ytimg.com/vi/ko70cExuzZM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Taylor Swift - The Fate of Ophelia (Official Music Video)</h3>
-          <div class="meta-line">Taylor Swift • 2025-10-05T23:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=aSugSGCC12I" title="Sabrina Carpenter - Manchild (Official Video)">
-          <span class="thumb"><img alt="Sabrina Carpenter - Manchild (Official Video)" src="https://i.ytimg.com/vi/aSugSGCC12I/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Sabrina Carpenter - Manchild (Official Video)</h3>
-          <div class="meta-line">SabrinaCarpenterVEVO • 2025-06-06T14:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=X4g30-XY9Ck" title="Chris Brown - Holy Blindfold (Official Video)">
-          <span class="thumb"><img alt="Chris Brown - Holy Blindfold (Official Video)" src="https://i.ytimg.com/vi/X4g30-XY9Ck/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Chris Brown - Holy Blindfold (Official Video)</h3>
-          <div class="meta-line">ChrisBrownVEVO • 2025-07-30T14:00:49Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=JEmbyx8NLxA" title="Calvin Harris, Clementine Douglas - Blessings (Official Video)">
-          <span class="thumb"><img alt="Calvin Harris, Clementine Douglas - Blessings (Official Video)" src="https://i.ytimg.com/vi/JEmbyx8NLxA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Calvin Harris, Clementine Douglas - Blessings (Official Video)</h3>
-          <div class="meta-line">CalvinHarrisVEVO • 2025-06-13T12:00:36Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=S1lfgz6RbOU" title="Eminem ft. Billie Eilish - One Last Goodbye [Music Video 2025]">
-          <span class="thumb"><img alt="Eminem ft. Billie Eilish - One Last Goodbye [Music Video 2025]" src="https://i.ytimg.com/vi/S1lfgz6RbOU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Eminem ft. Billie Eilish - One Last Goodbye [Music Video 2025]</h3>
-          <div class="meta-line">Rearview • 2025-05-23T15:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=S2fSojJqyNY" title="David Guetta &amp; Sia - Beautiful People (Official Video)">
-          <span class="thumb"><img alt="David Guetta &amp; Sia - Beautiful People (Official Video)" src="https://i.ytimg.com/vi/S2fSojJqyNY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">David Guetta &amp; Sia - Beautiful People (Official Video)</h3>
-          <div class="meta-line">David Guetta • 2025-03-13T16:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=6fJI7xydShM" title="Lewis Capaldi - Survive (Official Video)">
-          <span class="thumb"><img alt="Lewis Capaldi - Survive (Official Video)" src="https://i.ytimg.com/vi/6fJI7xydShM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Lewis Capaldi - Survive (Official Video)</h3>
-          <div class="meta-line">LewisCapaldiVEVO • 2025-06-27T07:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=pPmhuHLkfFM" title="Blue - One Last Time (Official Music Video)">
-          <span class="thumb"><img alt="Blue - One Last Time (Official Music Video)" src="https://i.ytimg.com/vi/pPmhuHLkfFM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Blue - One Last Time (Official Music Video)</h3>
-          <div class="meta-line">Official Blue • 2025-09-14T17:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=B4u1nXhh5ck" title="Maroon 5 - Love is Like ft. Lil Wayne (Official Video)">
-          <span class="thumb"><img alt="Maroon 5 - Love is Like ft. Lil Wayne (Official Video)" src="https://i.ytimg.com/vi/B4u1nXhh5ck/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Maroon 5 - Love is Like ft. Lil Wayne (Official Video)</h3>
-          <div class="meta-line">Maroon5VEVO • 2025-08-15T04:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=V9PVRfjEBTI" title="Billie Eilish - BIRDS OF A FEATHER (Official Music Video)">
-          <span class="thumb"><img alt="Billie Eilish - BIRDS OF A FEATHER (Official Music Video)" src="https://i.ytimg.com/vi/V9PVRfjEBTI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Billie Eilish - BIRDS OF A FEATHER (Official Music Video)</h3>
-          <div class="meta-line">BillieEilishVEVO • 2024-09-27T15:00:38Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=CQIYbytAyVQ" title="Tyla x Wizkid - DYNAMITE (Official Music Video)">
-          <span class="thumb"><img alt="Tyla x Wizkid - DYNAMITE (Official Music Video)" src="https://i.ytimg.com/vi/CQIYbytAyVQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Tyla x Wizkid - DYNAMITE (Official Music Video)</h3>
-          <div class="meta-line">TylaVEVO • 2025-08-04T19:30:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=tGLuMoaVG1E" title="Ciara, Tyga - Dance With Me (Official Music Video)">
-          <span class="thumb"><img alt="Ciara, Tyga - Dance With Me (Official Music Video)" src="https://i.ytimg.com/vi/tGLuMoaVG1E/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Ciara, Tyga - Dance With Me (Official Music Video)</h3>
-          <div class="meta-line">Ciara • 2025-08-22T04:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=5RQb1Ij5te8" title="Eminem - When I Die (Music Video) [2025]">
-          <span class="thumb"><img alt="Eminem - When I Die (Music Video) [2025]" src="https://i.ytimg.com/vi/5RQb1Ij5te8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Eminem - When I Die (Music Video) [2025]</h3>
-          <div class="meta-line">FMR Remix • 2025-01-08T18:47:21Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=_NPe8d6n8qU" title="Mariah Carey - Type Dangerous (Official Music Video)">
-          <span class="thumb"><img alt="Mariah Carey - Type Dangerous (Official Music Video)" src="https://i.ytimg.com/vi/_NPe8d6n8qU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Mariah Carey - Type Dangerous (Official Music Video)</h3>
-          <div class="meta-line">MariahCareyVEVO • 2025-06-14T19:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=O0rad064Um4" title="Lewis Capaldi - Survive (In Bloom Official Video)">
-          <span class="thumb"><img alt="Lewis Capaldi - Survive (In Bloom Official Video)" src="https://i.ytimg.com/vi/O0rad064Um4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Lewis Capaldi - Survive (In Bloom Official Video)</h3>
-          <div class="meta-line">LewisCapaldiVEVO • 2025-07-17T15:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=xSJy3LvWGkw" title="Sam Smith - To Be Free (Official Video)">
-          <span class="thumb"><img alt="Sam Smith - To Be Free (Official Video)" src="https://i.ytimg.com/vi/xSJy3LvWGkw/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Sam Smith - To Be Free (Official Video)</h3>
-          <div class="meta-line">SamSmithVEVO • 2025-07-24T16:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=GurljGjfrVs" title="Dean Lewis - With You (Official Video)">
-          <span class="thumb"><img alt="Dean Lewis - With You (Official Video)" src="https://i.ytimg.com/vi/GurljGjfrVs/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Dean Lewis - With You (Official Video)</h3>
-          <div class="meta-line">DeanLewisVEVO • 2025-01-09T13:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=MI9ZpIKgyf0" title="Ed Sheeran - Azizam (Official Music Video)">
-          <span class="thumb"><img alt="Ed Sheeran - Azizam (Official Music Video)" src="https://i.ytimg.com/vi/MI9ZpIKgyf0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Ed Sheeran - Azizam (Official Music Video)</h3>
-          <div class="meta-line">Ed Sheeran • 2025-04-17T16:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=O_0Wn73AnC8" title="Ed Sheeran - A Little More (Official Music Video)">
-          <span class="thumb"><img alt="Ed Sheeran - A Little More (Official Music Video)" src="https://i.ytimg.com/vi/O_0Wn73AnC8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Ed Sheeran - A Little More (Official Music Video)</h3>
-          <div class="meta-line">Ed Sheeran • 2025-08-07T15:00:06Z</div>
-        </a>
-      </article>
+    <section class="list-cards">
+      <a class="card-row" href="/v/uXyxFMbqKYA/" title="Luke Combs - When It Rains It Pours (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/uXyxFMbqKYA/hqdefault.jpg" alt="Luke Combs - When It Rains It Pours (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Luke Combs - When It Rains It Pours (Official Video)</h3>
+          <div class="meta-line">LukeCombsVEVO • 15 Aug 2017</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/kWP7hDlOtpY/" title="New Order Blue Monday 🔥 Best Shuffle Dance Music Video 2023 on a viral TikTok Song">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/kWP7hDlOtpY/hqdefault.jpg" alt="New Order Blue Monday 🔥 Best Shuffle Dance Music Video 2023 on a viral TikTok Song" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">New Order Blue Monday 🔥 Best Shuffle Dance Music Video 2023 on a viral TikTok Song</h3>
+          <div class="meta-line">Shuffling Studio • 27 Oct 2022</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/sOK8NHuCkv4/" title="Top 100 music videos of all time (RYM)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/sOK8NHuCkv4/hqdefault.jpg" alt="Top 100 music videos of all time (RYM)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Top 100 music videos of all time (RYM)</h3>
+          <div class="meta-line">Radio Jazel • 30 May 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/OZU2fSpJHkw/" title="TOP 100 MOST VIEWED MUSIC VIDEOS ⭐ 10/10 #music">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/OZU2fSpJHkw/hqdefault.jpg" alt="TOP 100 MOST VIEWED MUSIC VIDEOS ⭐ 10/10 #music" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">TOP 100 MOST VIEWED MUSIC VIDEOS ⭐ 10/10 #music</h3>
+          <div class="meta-line">vaults.mp3 • 14 May 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/2GWwZnlIxT8/" title="Top 10 Most Viewed Music Videos Of All Time On YouTube">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/2GWwZnlIxT8/hqdefault.jpg" alt="Top 10 Most Viewed Music Videos Of All Time On YouTube" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Top 10 Most Viewed Music Videos Of All Time On YouTube</h3>
+          <div class="meta-line">DJ GallixC • 12 Sep 2023</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/k2qgadSvNyU/" title="Dua Lipa - New Rules (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/k2qgadSvNyU/hqdefault.jpg" alt="Dua Lipa - New Rules (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Dua Lipa - New Rules (Official Music Video)</h3>
+          <div class="meta-line">Dua Lipa • 07 Jul 2017</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/E9L-0x92vXk/" title="Steps - It&#39;s the Way You Make Me Feel (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/E9L-0x92vXk/hqdefault.jpg" alt="Steps - It&#39;s the Way You Make Me Feel (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Steps - It&#39;s the Way You Make Me Feel (Official Video)</h3>
+          <div class="meta-line">StepsVEVO • 25 Oct 2009</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/BC19kwABFwc/" title="Dua Lipa - Love Again (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/BC19kwABFwc/hqdefault.jpg" alt="Dua Lipa - Love Again (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Dua Lipa - Love Again (Official Music Video)</h3>
+          <div class="meta-line">Dua Lipa • 04 Jun 2021</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/qqob4D3BoZc/" title="Anne-Marie - Ciao Adios [Official Video]">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/qqob4D3BoZc/hqdefault.jpg" alt="Anne-Marie - Ciao Adios [Official Video]" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Anne-Marie - Ciao Adios [Official Video]</h3>
+          <div class="meta-line">Anne-Marie • 09 Mar 2017</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/MkElfR_NPBI/" title="Little Mix - Black Magic (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/MkElfR_NPBI/hqdefault.jpg" alt="Little Mix - Black Magic (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Little Mix - Black Magic (Official Video)</h3>
+          <div class="meta-line">littlemixVEVO • 29 May 2015</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/lioR42laQBQ/" title="Sunanda Sharma – Dilbar (Official Video) | Latest Punjabi Song 2025 | Kaptaan | Geet">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/lioR42laQBQ/hqdefault.jpg" alt="Sunanda Sharma – Dilbar (Official Video) | Latest Punjabi Song 2025 | Kaptaan | Geet" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Sunanda Sharma – Dilbar (Official Video) | Latest Punjabi Song 2025 | Kaptaan | Geet</h3>
+          <div class="meta-line">Sunanda Sharma • 10 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/pfxyk1glEq4/" title="Chris Brown - Under The Influence (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/pfxyk1glEq4/hqdefault.jpg" alt="Chris Brown - Under The Influence (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Chris Brown - Under The Influence (Official Video)</h3>
+          <div class="meta-line">ChrisBrownVEVO • 20 Oct 2022</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/nfs8NYg7yQM/" title="Charlie Puth - Attention [Official Video]">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/nfs8NYg7yQM/hqdefault.jpg" alt="Charlie Puth - Attention [Official Video]" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Charlie Puth - Attention [Official Video]</h3>
+          <div class="meta-line">Charlie Puth • 24 Apr 2017</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/qgy7vEje5-w/" title="Little Mix - Secret Love Song (Official Video) ft. Jason Derulo">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/qgy7vEje5-w/hqdefault.jpg" alt="Little Mix - Secret Love Song (Official Video) ft. Jason Derulo" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Little Mix - Secret Love Song (Official Video) ft. Jason Derulo</h3>
+          <div class="meta-line">littlemixVEVO • 03 Feb 2016</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/X3Ai6osw3Mk/" title="Omah Lay - Understand (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/X3Ai6osw3Mk/hqdefault.jpg" alt="Omah Lay - Understand (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Omah Lay - Understand (Official Music Video)</h3>
+          <div class="meta-line">Omah Lay • 29 Jul 2021</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/TUVcZfQe-Kw/" title="Dua Lipa - Levitating Featuring DaBaby (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/TUVcZfQe-Kw/hqdefault.jpg" alt="Dua Lipa - Levitating Featuring DaBaby (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Dua Lipa - Levitating Featuring DaBaby (Official Music Video)</h3>
+          <div class="meta-line">Dua Lipa • 02 Oct 2020</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/qetW6R9Jxs4/" title="Eric Prydz – Call On Me (Official Music Video) | Ministry of Sound">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/qetW6R9Jxs4/hqdefault.jpg" alt="Eric Prydz – Call On Me (Official Music Video) | Ministry of Sound" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Eric Prydz – Call On Me (Official Music Video) | Ministry of Sound</h3>
+          <div class="meta-line">Ministry of Sound • 04 Feb 2020</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Il-an3K9pjg/" title="Anne-Marie - 2002 [Official Video]">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Il-an3K9pjg/hqdefault.jpg" alt="Anne-Marie - 2002 [Official Video]" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Anne-Marie - 2002 [Official Video]</h3>
+          <div class="meta-line">Anne-Marie • 08 May 2018</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/oorVWW9ywG0/" title="POP SMOKE - DIOR (OFFICIAL VIDEO)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/oorVWW9ywG0/hqdefault.jpg" alt="POP SMOKE - DIOR (OFFICIAL VIDEO)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">POP SMOKE - DIOR (OFFICIAL VIDEO)</h3>
+          <div class="meta-line">POP SMOKE • 03 Sep 2019</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/qBB_QOZNEdc/" title="Hailee Steinfeld - Most Girls (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/qBB_QOZNEdc/hqdefault.jpg" alt="Hailee Steinfeld - Most Girls (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Hailee Steinfeld - Most Girls (Official Video)</h3>
+          <div class="meta-line">HaileeSteinfeldVEVO • 23 May 2017</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ucVUEmjKsko/" title="Regard - Ride It (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ucVUEmjKsko/hqdefault.jpg" alt="Regard - Ride It (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Regard - Ride It (Official Video)</h3>
+          <div class="meta-line">Dj Regard Official • 04 Oct 2019</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/av5JD1dfj_c/" title="Sam Smith, Normani - Dancing With A Stranger (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/av5JD1dfj_c/hqdefault.jpg" alt="Sam Smith, Normani - Dancing With A Stranger (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Sam Smith, Normani - Dancing With A Stranger (Official Music Video)</h3>
+          <div class="meta-line">SamSmithVEVO • 29 Jan 2019</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/pSY3i5XHHXo/" title="Central Cee x Dave - Sprinter [Music Video]">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/pSY3i5XHHXo/hqdefault.jpg" alt="Central Cee x Dave - Sprinter [Music Video]" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Central Cee x Dave - Sprinter [Music Video]</h3>
+          <div class="meta-line">Central Cee • 01 Jun 2023</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/8ui9umU0C2g/" title="Manchester Orchestra - The Silence (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/8ui9umU0C2g/hqdefault.jpg" alt="Manchester Orchestra - The Silence (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Manchester Orchestra - The Silence (Official Music Video)</h3>
+          <div class="meta-line">manchesterorchVEVO • 13 Dec 2018</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/M11SvDtPBhA/" title="Miley Cyrus - Party In The U.S.A. (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/M11SvDtPBhA/hqdefault.jpg" alt="Miley Cyrus - Party In The U.S.A. (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Miley Cyrus - Party In The U.S.A. (Official Video)</h3>
+          <div class="meta-line">HollywoodRecordsVEVO • 25 Sep 2009</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/C-u5WLJ9Yk4/" title="Britney Spears - ...Baby One More Time (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/C-u5WLJ9Yk4/hqdefault.jpg" alt="Britney Spears - ...Baby One More Time (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Britney Spears - ...Baby One More Time (Official Video)</h3>
+          <div class="meta-line">BritneySpearsVEVO • 25 Oct 2009</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/IPfJnp1guPc/" title="Khalid - Young Dumb &amp; Broke (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/IPfJnp1guPc/hqdefault.jpg" alt="Khalid - Young Dumb &amp; Broke (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Khalid - Young Dumb &amp; Broke (Official Video)</h3>
+          <div class="meta-line">KhalidVEVO • 01 Aug 2017</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Mgfe5tIwOj0/" title="Dua Lipa - IDGAF (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Mgfe5tIwOj0/hqdefault.jpg" alt="Dua Lipa - IDGAF (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Dua Lipa - IDGAF (Official Music Video)</h3>
+          <div class="meta-line">Dua Lipa • 12 Jan 2018</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/5JD6ejmlpa8/" title="Spice Girls - Stop (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/5JD6ejmlpa8/hqdefault.jpg" alt="Spice Girls - Stop (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Spice Girls - Stop (Official Music Video)</h3>
+          <div class="meta-line">SpiceGirlsVEVO • 12 Mar 2009</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/UNZqm3dxd2w/" title="Roddy Ricch - The Box [Official Music Video]">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/UNZqm3dxd2w/hqdefault.jpg" alt="Roddy Ricch - The Box [Official Music Video]" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Roddy Ricch - The Box [Official Music Video]</h3>
+          <div class="meta-line">Roddy Ricch • 28 Feb 2020</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/3b4lo3lV4bg/" title="Gunna - wgft (feat. Burna Boy) [Official Video]">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/3b4lo3lV4bg/hqdefault.jpg" alt="Gunna - wgft (feat. Burna Boy) [Official Video]" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Gunna - wgft (feat. Burna Boy) [Official Video]</h3>
+          <div class="meta-line">Gunna • 04 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/N2ICtCO8TCw/" title="Take That - Back for Good (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/N2ICtCO8TCw/hqdefault.jpg" alt="Take That - Back for Good (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Take That - Back for Good (Official Video)</h3>
+          <div class="meta-line">TakeThatVEVO • 25 Oct 2009</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/CGyEd0aKWZE/" title="Ellie Goulding - Burn (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/CGyEd0aKWZE/hqdefault.jpg" alt="Ellie Goulding - Burn (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Ellie Goulding - Burn (Official Video)</h3>
+          <div class="meta-line">EllieGouldingVEVO • 07 Jul 2013</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Q_yuO8UNGmY/" title="Ed Sheeran &amp; Elton John - Merry Christmas [Official Video]">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Q_yuO8UNGmY/hqdefault.jpg" alt="Ed Sheeran &amp; Elton John - Merry Christmas [Official Video]" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Ed Sheeran &amp; Elton John - Merry Christmas [Official Video]</h3>
+          <div class="meta-line">Ed Sheeran • 03 Dec 2021</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/OT5msu-dap8/" title="Backstreet Boys - Shape Of My Heart (Official HD Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/OT5msu-dap8/hqdefault.jpg" alt="Backstreet Boys - Shape Of My Heart (Official HD Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Backstreet Boys - Shape Of My Heart (Official HD Video)</h3>
+          <div class="meta-line">BackstreetBoysVEVO • 25 May 2011</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/YQ5Jv4x_Hp0/" title="Now United - How We Do It ft. Badshah (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/YQ5Jv4x_Hp0/hqdefault.jpg" alt="Now United - How We Do It ft. Badshah (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Now United - How We Do It ft. Badshah (Official Music Video)</h3>
+          <div class="meta-line">NOW UNITED • 15 Dec 2018</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/RSNmgE6L8AU/" title="Keane - Everybody&#39;s Changing (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/RSNmgE6L8AU/hqdefault.jpg" alt="Keane - Everybody&#39;s Changing (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Keane - Everybody&#39;s Changing (Official Music Video)</h3>
+          <div class="meta-line">KeaneVEVO • 09 Oct 2009</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ebXbLfLACGM/" title="Calvin Harris - Summer (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ebXbLfLACGM/hqdefault.jpg" alt="Calvin Harris - Summer (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Calvin Harris - Summer (Official Video)</h3>
+          <div class="meta-line">CalvinHarrisVEVO • 06 Apr 2014</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/GVuh1lfrEwE/" title="Sia &amp; David Guetta - Beautiful people (Music Video 2025) | Sora">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/GVuh1lfrEwE/hqdefault.jpg" alt="Sia &amp; David Guetta - Beautiful people (Music Video 2025) | Sora" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Sia &amp; David Guetta - Beautiful people (Music Video 2025) | Sora</h3>
+          <div class="meta-line">NeoCraft • 29 Mar 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/yH1fk7WLiMc/" title="Maluma - BRONCEADOR (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/yH1fk7WLiMc/hqdefault.jpg" alt="Maluma - BRONCEADOR (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Maluma - BRONCEADOR (Official Video)</h3>
+          <div class="meta-line">MalumaVEVO • 18 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/SZpiiixlHWY/" title="Tyla - IS IT (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/SZpiiixlHWY/hqdefault.jpg" alt="Tyla - IS IT (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Tyla - IS IT (Official Music Video)</h3>
+          <div class="meta-line">TylaVEVO • 11 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/vaGf8fmtBr4/" title="Maroon 5 - Priceless ft. LISA (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/vaGf8fmtBr4/hqdefault.jpg" alt="Maroon 5 - Priceless ft. LISA (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Maroon 5 - Priceless ft. LISA (Official Video)</h3>
+          <div class="meta-line">Maroon5VEVO • 02 May 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/uvY8fdgezLQ/" title="Zara Larsson - Midnight Sun (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/uvY8fdgezLQ/hqdefault.jpg" alt="Zara Larsson - Midnight Sun (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Zara Larsson - Midnight Sun (Official Music Video)</h3>
+          <div class="meta-line">ZaraLarssonMusicVEVO • 24 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ko70cExuzZM/" title="Taylor Swift - The Fate of Ophelia (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ko70cExuzZM/hqdefault.jpg" alt="Taylor Swift - The Fate of Ophelia (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Taylor Swift - The Fate of Ophelia (Official Music Video)</h3>
+          <div class="meta-line">Taylor Swift • 05 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/aSugSGCC12I/" title="Sabrina Carpenter - Manchild (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/aSugSGCC12I/hqdefault.jpg" alt="Sabrina Carpenter - Manchild (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Sabrina Carpenter - Manchild (Official Video)</h3>
+          <div class="meta-line">SabrinaCarpenterVEVO • 06 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/X4g30-XY9Ck/" title="Chris Brown - Holy Blindfold (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/X4g30-XY9Ck/hqdefault.jpg" alt="Chris Brown - Holy Blindfold (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Chris Brown - Holy Blindfold (Official Video)</h3>
+          <div class="meta-line">ChrisBrownVEVO • 30 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/JEmbyx8NLxA/" title="Calvin Harris, Clementine Douglas - Blessings (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/JEmbyx8NLxA/hqdefault.jpg" alt="Calvin Harris, Clementine Douglas - Blessings (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Calvin Harris, Clementine Douglas - Blessings (Official Video)</h3>
+          <div class="meta-line">CalvinHarrisVEVO • 13 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/S1lfgz6RbOU/" title="Eminem ft. Billie Eilish - One Last Goodbye [Music Video 2025]">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/S1lfgz6RbOU/hqdefault.jpg" alt="Eminem ft. Billie Eilish - One Last Goodbye [Music Video 2025]" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Eminem ft. Billie Eilish - One Last Goodbye [Music Video 2025]</h3>
+          <div class="meta-line">Rearview • 23 May 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/S2fSojJqyNY/" title="David Guetta &amp; Sia - Beautiful People (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/S2fSojJqyNY/hqdefault.jpg" alt="David Guetta &amp; Sia - Beautiful People (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">David Guetta &amp; Sia - Beautiful People (Official Video)</h3>
+          <div class="meta-line">David Guetta • 13 Mar 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/6fJI7xydShM/" title="Lewis Capaldi - Survive (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/6fJI7xydShM/hqdefault.jpg" alt="Lewis Capaldi - Survive (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Lewis Capaldi - Survive (Official Video)</h3>
+          <div class="meta-line">LewisCapaldiVEVO • 27 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/pPmhuHLkfFM/" title="Blue - One Last Time (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/pPmhuHLkfFM/hqdefault.jpg" alt="Blue - One Last Time (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Blue - One Last Time (Official Music Video)</h3>
+          <div class="meta-line">Official Blue • 14 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/B4u1nXhh5ck/" title="Maroon 5 - Love is Like ft. Lil Wayne (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/B4u1nXhh5ck/hqdefault.jpg" alt="Maroon 5 - Love is Like ft. Lil Wayne (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Maroon 5 - Love is Like ft. Lil Wayne (Official Video)</h3>
+          <div class="meta-line">Maroon5VEVO • 15 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/V9PVRfjEBTI/" title="Billie Eilish - BIRDS OF A FEATHER (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/V9PVRfjEBTI/hqdefault.jpg" alt="Billie Eilish - BIRDS OF A FEATHER (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Billie Eilish - BIRDS OF A FEATHER (Official Music Video)</h3>
+          <div class="meta-line">BillieEilishVEVO • 27 Sep 2024</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/CQIYbytAyVQ/" title="Tyla x Wizkid - DYNAMITE (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/CQIYbytAyVQ/hqdefault.jpg" alt="Tyla x Wizkid - DYNAMITE (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Tyla x Wizkid - DYNAMITE (Official Music Video)</h3>
+          <div class="meta-line">TylaVEVO • 04 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/tGLuMoaVG1E/" title="Ciara, Tyga - Dance With Me (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/tGLuMoaVG1E/hqdefault.jpg" alt="Ciara, Tyga - Dance With Me (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Ciara, Tyga - Dance With Me (Official Music Video)</h3>
+          <div class="meta-line">Ciara • 22 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/5RQb1Ij5te8/" title="Eminem - When I Die (Music Video) [2025]">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/5RQb1Ij5te8/hqdefault.jpg" alt="Eminem - When I Die (Music Video) [2025]" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Eminem - When I Die (Music Video) [2025]</h3>
+          <div class="meta-line">FMR Remix • 08 Jan 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/_NPe8d6n8qU/" title="Mariah Carey - Type Dangerous (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/_NPe8d6n8qU/hqdefault.jpg" alt="Mariah Carey - Type Dangerous (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Mariah Carey - Type Dangerous (Official Music Video)</h3>
+          <div class="meta-line">MariahCareyVEVO • 14 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/O0rad064Um4/" title="Lewis Capaldi - Survive (In Bloom Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/O0rad064Um4/hqdefault.jpg" alt="Lewis Capaldi - Survive (In Bloom Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Lewis Capaldi - Survive (In Bloom Official Video)</h3>
+          <div class="meta-line">LewisCapaldiVEVO • 17 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/xSJy3LvWGkw/" title="Sam Smith - To Be Free (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/xSJy3LvWGkw/hqdefault.jpg" alt="Sam Smith - To Be Free (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Sam Smith - To Be Free (Official Video)</h3>
+          <div class="meta-line">SamSmithVEVO • 24 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/GurljGjfrVs/" title="Dean Lewis - With You (Official Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/GurljGjfrVs/hqdefault.jpg" alt="Dean Lewis - With You (Official Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Dean Lewis - With You (Official Video)</h3>
+          <div class="meta-line">DeanLewisVEVO • 09 Jan 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/MI9ZpIKgyf0/" title="Ed Sheeran - Azizam (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/MI9ZpIKgyf0/hqdefault.jpg" alt="Ed Sheeran - Azizam (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Ed Sheeran - Azizam (Official Music Video)</h3>
+          <div class="meta-line">Ed Sheeran • 17 Apr 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/O_0Wn73AnC8/" title="Ed Sheeran - A Little More (Official Music Video)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/O_0Wn73AnC8/hqdefault.jpg" alt="Ed Sheeran - A Little More (Official Music Video)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Ed Sheeran - A Little More (Official Music Video)</h3>
+          <div class="meta-line">Ed Sheeran • 07 Aug 2025</div>
+        </div>
+      </a>
     </section>
 
-    <!-- AD #2 MID -->
+    <!-- AD: Mid -->
     <ins class="adsbygoogle"
-         style="display:block; text-align:center; margin:30px auto;"
+         style="display:block; text-align:center; margin:24px auto;"
          data-ad-client="ca-pub-8959777846553693"
          data-ad-slot="2222222222"
          data-ad-format="auto"

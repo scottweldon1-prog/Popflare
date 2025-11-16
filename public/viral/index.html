@@ -23,14 +23,21 @@
     .wrap { max-width: 1100px; margin: 0 auto; padding: 1rem; }
     .page-title { font-size: 1.6rem; margin: 1rem 0; }
     .lead { color:#aaa; margin-bottom: 1rem; }
-    .grid-cards { display:grid; gap:1rem; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); }
-    .card a { text-decoration:none; color:inherit; display:block; }
+    .list-cards { display:flex; flex-direction:column; gap:1rem; margin-top: 1rem; }
+    .card-row { display:flex; gap:1rem; padding:0.75rem; border-radius:0.75rem; background:#111; text-decoration:none; color:inherit; }
+    .card-row:hover { background:#181818; }
+    .thumb { flex: 0 0 220px; aspect-ratio:16/9; background:#000; border-radius:.5rem; overflow:hidden; }
+    .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+    .card-body { flex:1; display:flex; flex-direction:column; }
+    .card-title { font-size:1rem; margin:0 0 .35rem 0; }
+    .meta-line { color:#999; font-size:.85rem; margin-bottom:.25rem; }
     .chip { display:inline-block; padding:.25rem .6rem; border:1px solid #333; border-radius:999px; font-size:.8rem; color:#bbb; }
-    .meta-line { color:#999; font-size:.9rem; margin:.25rem 0 .5rem; }
-    .thumb { width:100%; aspect-ratio:16/9; background:#111; border-radius:.75rem; overflow:hidden; display:block }
-    .thumb img { width:100%; height:100%; object-fit:cover; display:block }
-    .footer-links { text-align:center; margin:2rem 0; color:#999; font-size:.9rem}
-    .footer-links a{ color:#FF3366; text-decoration:none }
+    .footer-links { text-align:center; margin:2rem 0; color:#999; font-size:.9rem;}
+    .footer-links a{ color:#FF3366; text-decoration:none; }
+    @media (max-width: 700px) {
+      .card-row { flex-direction:column; }
+      .thumb { width:100%; }
+    }
   </style>
 </head>
 <body>
@@ -53,7 +60,7 @@
 
   <main class="wrap">
 
-    <!-- AD #1 TOP -->
+    <!-- AD: Top -->
     <ins class="adsbygoogle"
          style="display:block; text-align:center; margin:20px auto;"
          data-ad-client="ca-pub-8959777846553693"
@@ -65,712 +72,712 @@
     <h1 class="page-title">Viral Videos</h1>
     <p class="lead">Can’t-miss viral clips trending across the web right now.</p>
     <p class="meta-line"><span class="chip">Updated 11 Nov 2025</span></p>
-    <section class="grid-cards">
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=o3LzynlMA54" title="Epic Fails Gone Viral 😂 Top Funny Videos 2025">
-          <span class="thumb"><img alt="Epic Fails Gone Viral 😂 Top Funny Videos 2025" src="https://i.ytimg.com/vi/o3LzynlMA54/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Epic Fails Gone Viral 😂 Top Funny Videos 2025</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-11-10T15:01:35Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=lSGtRtKeRE4" title="Try Not to Laugh Challenge 🤣 Best Fails of April 2025">
-          <span class="thumb"><img alt="Try Not to Laugh Challenge 🤣 Best Fails of April 2025" src="https://i.ytimg.com/vi/lSGtRtKeRE4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh Challenge 🤣 Best Fails of April 2025</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-04-24T14:01:13Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=k7Q60-V4qaI" title="Top New Funniest Comedy Video 😂 Most Watch Viral Funny Video 2025 Episode 427 By my family">
-          <span class="thumb"><img alt="Top New Funniest Comedy Video 😂 Most Watch Viral Funny Video 2025 Episode 427 By my family" src="https://i.ytimg.com/vi/k7Q60-V4qaI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Top New Funniest Comedy Video 😂 Most Watch Viral Funny Video 2025 Episode 427 By my family</h3>
-          <div class="meta-line">MY FAMILY • 2025-11-11T05:53:45Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=QnXm1CmyCo4" title="Best Fails of August 2025 😂 Try Not to Laugh Challenge">
-          <span class="thumb"><img alt="Best Fails of August 2025 😂 Try Not to Laugh Challenge" src="https://i.ytimg.com/vi/QnXm1CmyCo4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of August 2025 😂 Try Not to Laugh Challenge</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-08-21T14:00:42Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=pGU1W-F7oD0" title="Best TikToks of 2025 So Far 😂 Funniest Viral Videos">
-          <span class="thumb"><img alt="Best TikToks of 2025 So Far 😂 Funniest Viral Videos" src="https://i.ytimg.com/vi/pGU1W-F7oD0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best TikToks of 2025 So Far 😂 Funniest Viral Videos</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-04-28T14:01:19Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=725Sqwpalws" title="2025 Fails in Review 🤣 Funniest Fails of the Year So Far">
-          <span class="thumb"><img alt="2025 Fails in Review 🤣 Funniest Fails of the Year So Far" src="https://i.ytimg.com/vi/725Sqwpalws/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">2025 Fails in Review 🤣 Funniest Fails of the Year So Far</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-07-10T14:00:08Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=J0nkRMxCjPk" title="Try Not to Laugh Challenge 🤣 Best Fails of September 2025">
-          <span class="thumb"><img alt="Try Not to Laugh Challenge 🤣 Best Fails of September 2025" src="https://i.ytimg.com/vi/J0nkRMxCjPk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh Challenge 🤣 Best Fails of September 2025</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-09-18T14:00:38Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=JzoX5_PT_NA" title="How 2025 is Going So Far 😂 Best Fails of the Week">
-          <span class="thumb"><img alt="How 2025 is Going So Far 😂 Best Fails of the Week" src="https://i.ytimg.com/vi/JzoX5_PT_NA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">How 2025 is Going So Far 😂 Best Fails of the Week</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-01-02T15:00:19Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=v-s4njLYbxw" title="Best Fails of the Year So Far 🤣 Funniest Fails of 2025">
-          <span class="thumb"><img alt="Best Fails of the Year So Far 🤣 Funniest Fails of 2025" src="https://i.ytimg.com/vi/v-s4njLYbxw/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of the Year So Far 🤣 Funniest Fails of 2025</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-05-26T14:01:23Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=FfFyuM1jrP4" title="Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025">
-          <span class="thumb"><img alt="Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025" src="https://i.ytimg.com/vi/FfFyuM1jrP4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-07-03T14:00:24Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=O0UB4kuPhHo" title="Funniest Fails you Missed🤣 Best Fails of the Week">
-          <span class="thumb"><img alt="Funniest Fails you Missed🤣 Best Fails of the Week" src="https://i.ytimg.com/vi/O0UB4kuPhHo/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Funniest Fails you Missed🤣 Best Fails of the Week</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-10-16T14:00:40Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=G8sFiUWVFV8" title="Funny Videos Gone WRONG 🫣 Best Fails of the Week">
-          <span class="thumb"><img alt="Funny Videos Gone WRONG 🫣 Best Fails of the Week" src="https://i.ytimg.com/vi/G8sFiUWVFV8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Funny Videos Gone WRONG 🫣 Best Fails of the Week</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-09-25T14:00:26Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=xr5-LZeB_9k" title="Best Viral Moments | Best Fails and Wipeouts">
-          <span class="thumb"><img alt="Best Viral Moments | Best Fails and Wipeouts" src="https://i.ytimg.com/vi/xr5-LZeB_9k/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Viral Moments | Best Fails and Wipeouts</h3>
-          <div class="meta-line">FailArmy • 2025-08-13T13:01:50Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=BYeWNfsWQa8" title="FUNNIEST Dad Moves! 😆 Best Fail Videos 2025">
-          <span class="thumb"><img alt="FUNNIEST Dad Moves! 😆 Best Fail Videos 2025" src="https://i.ytimg.com/vi/BYeWNfsWQa8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">FUNNIEST Dad Moves! 😆 Best Fail Videos 2025</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-06-14T14:00:21Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=sdMMyfBtYGc" title="Caught in 4K! 🤣 Funny Fails Caught on Camera">
-          <span class="thumb"><img alt="Caught in 4K! 🤣 Funny Fails Caught on Camera" src="https://i.ytimg.com/vi/sdMMyfBtYGc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Caught in 4K! 🤣 Funny Fails Caught on Camera</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-09-22T14:01:35Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=ZyQaVHOu_Wk" title="Best TikToks of Summer 2025 😆 Top Viral Funny Videos">
-          <span class="thumb"><img alt="Best TikToks of Summer 2025 😆 Top Viral Funny Videos" src="https://i.ytimg.com/vi/ZyQaVHOu_Wk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best TikToks of Summer 2025 😆 Top Viral Funny Videos</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-09-04T14:00:53Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=tX-6XdbAC7E" title="Why did he do this? 😭">
-          <span class="thumb"><img alt="Why did he do this? 😭" src="https://i.ytimg.com/vi/tX-6XdbAC7E/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Why did he do this? 😭</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-08-26T01:00:49Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=AqNgOBIs8jk" title="Funny Videos That Went Very Wrong 🤣 Best Fails of the Week">
-          <span class="thumb"><img alt="Funny Videos That Went Very Wrong 🤣 Best Fails of the Week" src="https://i.ytimg.com/vi/AqNgOBIs8jk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Funny Videos That Went Very Wrong 🤣 Best Fails of the Week</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-10-09T14:00:17Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=QbaPPujsWW8" title="Halloween Fails 2025🎃 Funniest Spooky Fails Caught on Camera">
-          <span class="thumb"><img alt="Halloween Fails 2025🎃 Funniest Spooky Fails Caught on Camera" src="https://i.ytimg.com/vi/QbaPPujsWW8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Halloween Fails 2025🎃 Funniest Spooky Fails Caught on Camera</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-10-13T14:00:44Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=DwnN62nNzC4" title="Funniest Messy Fails😱 Ultimate Fails Caught on Camera">
-          <span class="thumb"><img alt="Funniest Messy Fails😱 Ultimate Fails Caught on Camera" src="https://i.ytimg.com/vi/DwnN62nNzC4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Funniest Messy Fails😱 Ultimate Fails Caught on Camera</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-09-01T14:00:20Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=06o1AppgIH0" title="Caught in 4K! 😂 Best Security Camera Fails of 2025 So Far">
-          <span class="thumb"><img alt="Caught in 4K! 😂 Best Security Camera Fails of 2025 So Far" src="https://i.ytimg.com/vi/06o1AppgIH0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Caught in 4K! 😂 Best Security Camera Fails of 2025 So Far</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-06-09T14:00:02Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=uMyGxJCuVqk" title="Where EVERYTHING Went Wrong! 😂 Best Fails of May 2025">
-          <span class="thumb"><img alt="Where EVERYTHING Went Wrong! 😂 Best Fails of May 2025" src="https://i.ytimg.com/vi/uMyGxJCuVqk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Where EVERYTHING Went Wrong! 😂 Best Fails of May 2025</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-05-29T14:01:23Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=DBr2HHSIX8U" title="Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025">
-          <span class="thumb"><img alt="Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025" src="https://i.ytimg.com/vi/DBr2HHSIX8U/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-07-31T14:00:16Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=N4z5YRdjJQ4" title="ISSEI funny video 😂😂😂 Funny effects!">
-          <span class="thumb"><img alt="ISSEI funny video 😂😂😂 Funny effects!" src="https://i.ytimg.com/vi/N4z5YRdjJQ4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">ISSEI funny video 😂😂😂 Funny effects!</h3>
-          <div class="meta-line">ISSEI / いっせい • 2022-08-02T11:30:16Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Tjrho4MWuTM" title="Try not to laugh ❗ | 401 #funny">
-          <span class="thumb"><img alt="Try not to laugh ❗ | 401 #funny" src="https://i.ytimg.com/vi/Tjrho4MWuTM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try not to laugh ❗ | 401 #funny</h3>
-          <div class="meta-line">Panda Shorts • 2025-01-02T12:35:46Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=39ColarOWKo" title="Funniest Animal Videos Ever (Part 1)">
-          <span class="thumb"><img alt="Funniest Animal Videos Ever (Part 1)" src="https://i.ytimg.com/vi/39ColarOWKo/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Funniest Animal Videos Ever (Part 1)</h3>
-          <div class="meta-line">Daily Dose Of Internet • 2025-04-12T17:22:02Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=zu4hYsUiHyM" title="Gravity Said NOPE! 😁 Funniest Fails of October 2025">
-          <span class="thumb"><img alt="Gravity Said NOPE! 😁 Funniest Fails of October 2025" src="https://i.ytimg.com/vi/zu4hYsUiHyM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Gravity Said NOPE! 😁 Funniest Fails of October 2025</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-10-23T14:01:37Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=q6wFT_CtBV4" title="World&#39;s *HARDEST* TRY NOT TO LAUGH Challenge! (IMPOSSIBLE) | Best Funny Videos Of 2025 😂">
-          <span class="thumb"><img alt="World&#39;s *HARDEST* TRY NOT TO LAUGH Challenge! (IMPOSSIBLE) | Best Funny Videos Of 2025 😂" src="https://i.ytimg.com/vi/q6wFT_CtBV4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">World&#39;s *HARDEST* TRY NOT TO LAUGH Challenge! (IMPOSSIBLE) | Best Funny Videos Of 2025 😂</h3>
-          <div class="meta-line">Top Things • 2025-11-09T13:10:56Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=FFi-AU09ZUY" title="Best TikTok Videos Ever! 🤣 Funniest Viral Fails">
-          <span class="thumb"><img alt="Best TikTok Videos Ever! 🤣 Funniest Viral Fails" src="https://i.ytimg.com/vi/FFi-AU09ZUY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best TikTok Videos Ever! 🤣 Funniest Viral Fails</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-01-30T15:00:25Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=VBd80rxIj7I" title="Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)">
-          <span class="thumb"><img alt="Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)" src="https://i.ytimg.com/vi/VBd80rxIj7I/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)</h3>
-          <div class="meta-line">Top Things • 2025-10-26T20:04:53Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=3c9QF8blViI" title="Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos">
-          <span class="thumb"><img alt="Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos" src="https://i.ytimg.com/vi/3c9QF8blViI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos</h3>
-          <div class="meta-line">Top Things • 2025-08-24T14:00:05Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=YFUGXoSxxUQ" title="When Things Go From Bad to WORSE! 😭 Funniest Fail Videos">
-          <span class="thumb"><img alt="When Things Go From Bad to WORSE! 😭 Funniest Fail Videos" src="https://i.ytimg.com/vi/YFUGXoSxxUQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">When Things Go From Bad to WORSE! 😭 Funniest Fail Videos</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-01-16T15:00:48Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Z_Z9gBFGiXM" title="Top 100 Funniest Videos From Around The World 😂😁 Try Not To Laugh || Memes Part 15">
-          <span class="thumb"><img alt="Top 100 Funniest Videos From Around The World 😂😁 Try Not To Laugh || Memes Part 15" src="https://i.ytimg.com/vi/Z_Z9gBFGiXM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Top 100 Funniest Videos From Around The World 😂😁 Try Not To Laugh || Memes Part 15</h3>
-          <div class="meta-line">H2T - FailNation • 2025-09-06T13:01:09Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=iqkNoO2dRrg" title="Best Scare Pranks of the Year So Far 🤣 Funniest Scares of 2025">
-          <span class="thumb"><img alt="Best Scare Pranks of the Year So Far 🤣 Funniest Scares of 2025" src="https://i.ytimg.com/vi/iqkNoO2dRrg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Scare Pranks of the Year So Far 🤣 Funniest Scares of 2025</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-06-02T14:01:11Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=R9VvNR2QwlQ" title="google meme teacher | google reading funny | google spelling funny">
-          <span class="thumb"><img alt="google meme teacher | google reading funny | google spelling funny" src="https://i.ytimg.com/vi/R9VvNR2QwlQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">google meme teacher | google reading funny | google spelling funny</h3>
-          <div class="meta-line">Let's Laugh Together • 2019-05-29T06:05:46Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=yW8ysn5LbrY" title="Extreme funniest videos on tiktok 2025, try not to laugh, part 21">
-          <span class="thumb"><img alt="Extreme funniest videos on tiktok 2025, try not to laugh, part 21" src="https://i.ytimg.com/vi/yW8ysn5LbrY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Extreme funniest videos on tiktok 2025, try not to laugh, part 21</h3>
-          <div class="meta-line">Funny joint  • 2025-09-12T14:45:09Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=QMAnClz2M64" title="That&#39;s one way to spell it 🤣 #afv #funny #fail">
-          <span class="thumb"><img alt="That&#39;s one way to spell it 🤣 #afv #funny #fail" src="https://i.ytimg.com/vi/QMAnClz2M64/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">That&#39;s one way to spell it 🤣 #afv #funny #fail</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2024-11-01T14:00:29Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=8Jt2XEyMLCA" title="100% Funny Fails 🤣 Instant Regret Compilation">
-          <span class="thumb"><img alt="100% Funny Fails 🤣 Instant Regret Compilation" src="https://i.ytimg.com/vi/8Jt2XEyMLCA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">100% Funny Fails 🤣 Instant Regret Compilation</h3>
-          <div class="meta-line">America's Funniest Home Videos • 2025-10-20T14:00:19Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=wCjV55xYHI0" title="🤣🤣🤣🤣 #babymatifa #funny #tiktok #babyluke #dubai matifa #comedy #family #humor #luke #mdr #humor">
-          <span class="thumb"><img alt="🤣🤣🤣🤣 #babymatifa #funny #tiktok #babyluke #dubai matifa #comedy #family #humor #luke #mdr #humor" src="https://i.ytimg.com/vi/wCjV55xYHI0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">🤣🤣🤣🤣 #babymatifa #funny #tiktok #babyluke #dubai matifa #comedy #family #humor #luke #mdr #humor</h3>
-          <div class="meta-line">MatiFamily Officiel • 2023-11-02T17:48:16Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=7OdwB7aor8w" title="চাপাবাজিতে কে সেরা? 🤣 Trending Comedy Video 2025 😂 Amazing Funny Video 2024">
-          <span class="thumb"><img alt="চাপাবাজিতে কে সেরা? 🤣 Trending Comedy Video 2025 😂 Amazing Funny Video 2024" src="https://i.ytimg.com/vi/7OdwB7aor8w/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">চাপাবাজিতে কে সেরা? 🤣 Trending Comedy Video 2025 😂 Amazing Funny Video 2024</h3>
-          <div class="meta-line">Puchir Ma • 2025-02-04T11:04:13Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=DqSNF3G1S5M" title="Best Viral Fails of the Year 2025 | Try Not To Laugh Challenge">
-          <span class="thumb"><img alt="Best Viral Fails of the Year 2025 | Try Not To Laugh Challenge" src="https://i.ytimg.com/vi/DqSNF3G1S5M/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Viral Fails of the Year 2025 | Try Not To Laugh Challenge</h3>
-          <div class="meta-line">FailArmy • 2025-07-02T13:00:22Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=JRJjDUB3RhM" title="I&#39;m Totally Going Viral | Best FailArmy Fails ">
-          <span class="thumb"><img alt="I&#39;m Totally Going Viral | Best FailArmy Fails " src="https://i.ytimg.com/vi/JRJjDUB3RhM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">I&#39;m Totally Going Viral | Best FailArmy Fails </h3>
-          <div class="meta-line">FailArmy • 2025-11-05T14:00:38Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=3WJcMvLFQ7s" title="Best Scary Fails 2025 | Pranks and Close Calls 😱">
-          <span class="thumb"><img alt="Best Scary Fails 2025 | Pranks and Close Calls 😱" src="https://i.ytimg.com/vi/3WJcMvLFQ7s/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Scary Fails 2025 | Pranks and Close Calls 😱</h3>
-          <div class="meta-line">FailArmy • 2025-10-29T13:00:08Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=7LzXghN8Y4k" title="Try Not to Laugh! | Best Fails of the Week">
-          <span class="thumb"><img alt="Try Not to Laugh! | Best Fails of the Week" src="https://i.ytimg.com/vi/7LzXghN8Y4k/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh! | Best Fails of the Week</h3>
-          <div class="meta-line">FailArmy • 2025-10-17T13:00:10Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=VHcFqxDLuV4" title="Expensive Fails and Crashes | Best Fails of the Week">
-          <span class="thumb"><img alt="Expensive Fails and Crashes | Best Fails of the Week" src="https://i.ytimg.com/vi/VHcFqxDLuV4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Expensive Fails and Crashes | Best Fails of the Week</h3>
-          <div class="meta-line">FailArmy • 2025-11-07T14:00:52Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=taTGjKXSrfo" title="Chaos Caught on Camera! | Best Fails of the Week">
-          <span class="thumb"><img alt="Chaos Caught on Camera! | Best Fails of the Week" src="https://i.ytimg.com/vi/taTGjKXSrfo/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Chaos Caught on Camera! | Best Fails of the Week</h3>
-          <div class="meta-line">FailArmy • 2025-09-19T13:02:03Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=WNzt-EMjYdY" title="Fails You Missed 2025 | Best of Asia ">
-          <span class="thumb"><img alt="Fails You Missed 2025 | Best of Asia " src="https://i.ytimg.com/vi/WNzt-EMjYdY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Fails You Missed 2025 | Best of Asia </h3>
-          <div class="meta-line">FailArmy • 2025-09-03T13:01:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=LvSrgbnrQN0" title="Best Fails of the Week | Summer 2025 Fails">
-          <span class="thumb"><img alt="Best Fails of the Week | Summer 2025 Fails" src="https://i.ytimg.com/vi/LvSrgbnrQN0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of the Week | Summer 2025 Fails</h3>
-          <div class="meta-line">FailArmy • 2025-06-06T13:00:37Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=FXyGMwhJmT0" title="Absolute Chaos and Destruction | Best Fails of the Week">
-          <span class="thumb"><img alt="Absolute Chaos and Destruction | Best Fails of the Week" src="https://i.ytimg.com/vi/FXyGMwhJmT0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Absolute Chaos and Destruction | Best Fails of the Week</h3>
-          <div class="meta-line">FailArmy • 2025-09-12T13:00:36Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=g5fc1bYfjqM" title="100% Embarrassing | Best Fails of the Week">
-          <span class="thumb"><img alt="100% Embarrassing | Best Fails of the Week" src="https://i.ytimg.com/vi/g5fc1bYfjqM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">100% Embarrassing | Best Fails of the Week</h3>
-          <div class="meta-line">FailArmy • 2025-10-03T13:01:34Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=hrDlcU1JfwU" title="Stupidity Caught on Camera | Best Fails of the Week 🤪">
-          <span class="thumb"><img alt="Stupidity Caught on Camera | Best Fails of the Week 🤪" src="https://i.ytimg.com/vi/hrDlcU1JfwU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Stupidity Caught on Camera | Best Fails of the Week 🤪</h3>
-          <div class="meta-line">FailArmy • 2025-09-05T13:01:24Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=4NYVYwkF01w" title="Best Submissions of 2025 So Far">
-          <span class="thumb"><img alt="Best Submissions of 2025 So Far" src="https://i.ytimg.com/vi/4NYVYwkF01w/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Submissions of 2025 So Far</h3>
-          <div class="meta-line">FailArmy 2.0 • 2025-07-08T18:32:23Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=bjXAj4CC4PI" title="Year of the Fails | How 2025 is Going So Far">
-          <span class="thumb"><img alt="Year of the Fails | How 2025 is Going So Far" src="https://i.ytimg.com/vi/bjXAj4CC4PI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Year of the Fails | How 2025 is Going So Far</h3>
-          <div class="meta-line">FailArmy • 2025-03-12T13:00:52Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=aB3EO0EiApE" title="Big Ball Fails | Best of the Month">
-          <span class="thumb"><img alt="Big Ball Fails | Best of the Month" src="https://i.ytimg.com/vi/aB3EO0EiApE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Big Ball Fails | Best of the Month</h3>
-          <div class="meta-line">FailArmy • 2025-09-24T13:00:03Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=Hygv4TGAkGE" title="Best New Fails of the Week | Viral Crash Outs!">
-          <span class="thumb"><img alt="Best New Fails of the Week | Viral Crash Outs!" src="https://i.ytimg.com/vi/Hygv4TGAkGE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best New Fails of the Week | Viral Crash Outs!</h3>
-          <div class="meta-line">FailArmy • 2025-10-24T13:00:42Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=eX9Gqc55lQQ" title="Best Fails of the Week | Fails You Can Feel  ">
-          <span class="thumb"><img alt="Best Fails of the Week | Fails You Can Feel  " src="https://i.ytimg.com/vi/eX9Gqc55lQQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of the Week | Fails You Can Feel  </h3>
-          <div class="meta-line">FailArmy • 2025-08-22T13:01:19Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=1JDeBp_hy1k" title="Best Summer Fails | Try Not to Laugh😂">
-          <span class="thumb"><img alt="Best Summer Fails | Try Not to Laugh😂" src="https://i.ytimg.com/vi/1JDeBp_hy1k/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Summer Fails | Try Not to Laugh😂</h3>
-          <div class="meta-line">FailArmy • 2025-07-30T13:00:05Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=kRbh7l7MspM" title="Try Not To Laugh 🤣 Best of FailArmy Fails">
-          <span class="thumb"><img alt="Try Not To Laugh 🤣 Best of FailArmy Fails" src="https://i.ytimg.com/vi/kRbh7l7MspM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not To Laugh 🤣 Best of FailArmy Fails</h3>
-          <div class="meta-line">FailArmy • 2025-10-22T13:01:36Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=QO0_-iTWj4E" title="Best Fails of the Week | Epic Try Not to Laugh Challenge  😆 😆">
-          <span class="thumb"><img alt="Best Fails of the Week | Epic Try Not to Laugh Challenge  😆 😆" src="https://i.ytimg.com/vi/QO0_-iTWj4E/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of the Week | Epic Try Not to Laugh Challenge  😆 😆</h3>
-          <div class="meta-line">FailArmy • 2025-07-18T13:00:49Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=2RCoP_N3KQk" title="Best Fails of September 2025 😂 Try Not to Laugh Challenge">
-          <span class="thumb"><img alt="Best Fails of September 2025 😂 Try Not to Laugh Challenge" src="https://i.ytimg.com/vi/2RCoP_N3KQk/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of September 2025 😂 Try Not to Laugh Challenge</h3>
-          <div class="meta-line">BRAIN TIME • 2025-09-28T13:01:35Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=GJKZN-ncnL4" title="Best Vehicle Fails of 2025 So Far |  Wild Wednesday Fails!">
-          <span class="thumb"><img alt="Best Vehicle Fails of 2025 So Far |  Wild Wednesday Fails!" src="https://i.ytimg.com/vi/GJKZN-ncnL4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Vehicle Fails of 2025 So Far |  Wild Wednesday Fails!</h3>
-          <div class="meta-line">FailArmy • 2025-06-18T13:00:36Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=WCLFHLDdOoI" title="Best Fails You Missed 2025 | Instant Karma!">
-          <span class="thumb"><img alt="Best Fails You Missed 2025 | Instant Karma!" src="https://i.ytimg.com/vi/WCLFHLDdOoI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails You Missed 2025 | Instant Karma!</h3>
-          <div class="meta-line">FailArmy • 2025-07-23T13:00:56Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=q9ecsoFHcjQ" title="Crazy Viral Fails Compilation | Chaos in 2025">
-          <span class="thumb"><img alt="Crazy Viral Fails Compilation | Chaos in 2025" src="https://i.ytimg.com/vi/q9ecsoFHcjQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Crazy Viral Fails Compilation | Chaos in 2025</h3>
-          <div class="meta-line">FailArmy 2.0 • 2025-03-11T13:01:13Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=tHcejkXhRYM" title="Crazy Fails You Can&#39;t Miss 2025">
-          <span class="thumb"><img alt="Crazy Fails You Can&#39;t Miss 2025" src="https://i.ytimg.com/vi/tHcejkXhRYM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Crazy Fails You Can&#39;t Miss 2025</h3>
-          <div class="meta-line">FailArmy • 2025-06-11T13:01:37Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=7zT4oSvoHls" title="Viral Crash-outs and Chaos | Best of the Week">
-          <span class="thumb"><img alt="Viral Crash-outs and Chaos | Best of the Week" src="https://i.ytimg.com/vi/7zT4oSvoHls/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Viral Crash-outs and Chaos | Best of the Week</h3>
-          <div class="meta-line">FailArmy • 2025-08-29T13:00:25Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=nU-_EC8TVr0" title="Parenting Gone Wrong 😂 | Best Fails of 2025">
-          <span class="thumb"><img alt="Parenting Gone Wrong 😂 | Best Fails of 2025" src="https://i.ytimg.com/vi/nU-_EC8TVr0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Parenting Gone Wrong 😂 | Best Fails of 2025</h3>
-          <div class="meta-line">FailArmy • 2025-02-26T14:01:03Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=rHMNISBVqSY" title="Best Fails of the Week | Close Calls and Crazy People 😆">
-          <span class="thumb"><img alt="Best Fails of the Week | Close Calls and Crazy People 😆" src="https://i.ytimg.com/vi/rHMNISBVqSY/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of the Week | Close Calls and Crazy People 😆</h3>
-          <div class="meta-line">FailArmy • 2025-07-11T13:01:48Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=uvhmuF1xMX8" title="4K Viral Fails Caught on Camera | Best of FailArmy">
-          <span class="thumb"><img alt="4K Viral Fails Caught on Camera | Best of FailArmy" src="https://i.ytimg.com/vi/uvhmuF1xMX8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">4K Viral Fails Caught on Camera | Best of FailArmy</h3>
-          <div class="meta-line">FailArmy • 2025-10-15T13:02:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=g5U9rmGUF_U" title="Worst Fails of the Year | Try Not to Laugh 💩">
-          <span class="thumb"><img alt="Worst Fails of the Year | Try Not to Laugh 💩" src="https://i.ytimg.com/vi/g5U9rmGUF_U/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Worst Fails of the Year | Try Not to Laugh 💩</h3>
-          <div class="meta-line">FailArmy • 2024-12-31T14:00:46Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=6CqxdJoyfYQ" title="Scary Close Calls | Final Destination IRL">
-          <span class="thumb"><img alt="Scary Close Calls | Final Destination IRL" src="https://i.ytimg.com/vi/6CqxdJoyfYQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Scary Close Calls | Final Destination IRL</h3>
-          <div class="meta-line">FailArmy • 2025-10-01T13:00:14Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=3ofBzgkKWNs" title="Best Fails of the Week | Chaos Caught on Camera!">
-          <span class="thumb"><img alt="Best Fails of the Week | Chaos Caught on Camera!" src="https://i.ytimg.com/vi/3ofBzgkKWNs/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of the Week | Chaos Caught on Camera!</h3>
-          <div class="meta-line">FailArmy • 2025-08-15T13:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=y-rmfcZ0o3c" title="Best Fails Ever | Epic Try Not to Laugh 😂">
-          <span class="thumb"><img alt="Best Fails Ever | Epic Try Not to Laugh 😂" src="https://i.ytimg.com/vi/y-rmfcZ0o3c/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails Ever | Epic Try Not to Laugh 😂</h3>
-          <div class="meta-line">FailArmy • 2025-07-09T13:02:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=foSqpzE2ZDE" title="Best Viral Fails You Missed | Chaos and Stupidity🤣">
-          <span class="thumb"><img alt="Best Viral Fails You Missed | Chaos and Stupidity🤣" src="https://i.ytimg.com/vi/foSqpzE2ZDE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Viral Fails You Missed | Chaos and Stupidity🤣</h3>
-          <div class="meta-line">FailArmy • 2025-09-10T13:01:31Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=LRH7JLvAIus" title="Best Fails of the Month | International Fails">
-          <span class="thumb"><img alt="Best Fails of the Month | International Fails" src="https://i.ytimg.com/vi/LRH7JLvAIus/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of the Month | International Fails</h3>
-          <div class="meta-line">FailArmy International • 2025-08-28T13:00:43Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=RiWgdjal290" title="Big Giant Trashy Fails | World&#39;s Most Expensive">
-          <span class="thumb"><img alt="Big Giant Trashy Fails | World&#39;s Most Expensive" src="https://i.ytimg.com/vi/RiWgdjal290/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Big Giant Trashy Fails | World&#39;s Most Expensive</h3>
-          <div class="meta-line">FailArmy • 2025-10-08T13:01:01Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=llKoAFM-Ggw" title="Best Fails of the Week | Try Not to Laugh!">
-          <span class="thumb"><img alt="Best Fails of the Week | Try Not to Laugh!" src="https://i.ytimg.com/vi/llKoAFM-Ggw/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of the Week | Try Not to Laugh!</h3>
-          <div class="meta-line">FailArmy • 2025-06-27T13:01:35Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=kFk7Ar8Y9Fg" title="Moments of Instant Regret | Embarrassing Fails">
-          <span class="thumb"><img alt="Moments of Instant Regret | Embarrassing Fails" src="https://i.ytimg.com/vi/kFk7Ar8Y9Fg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Moments of Instant Regret | Embarrassing Fails</h3>
-          <div class="meta-line">FailArmy International • 2025-08-14T13:01:20Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=0ii0cSvpVx0" title="Karens Caught on Camera! | Humanity is Doomed!">
-          <span class="thumb"><img alt="Karens Caught on Camera! | Humanity is Doomed!" src="https://i.ytimg.com/vi/0ii0cSvpVx0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Karens Caught on Camera! | Humanity is Doomed!</h3>
-          <div class="meta-line">FailArmy • 2025-09-17T13:00:01Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=JcymlnlXPOA" title="Funny Embarrassing Fails | People Being Idiots">
-          <span class="thumb"><img alt="Funny Embarrassing Fails | People Being Idiots" src="https://i.ytimg.com/vi/JcymlnlXPOA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Funny Embarrassing Fails | People Being Idiots</h3>
-          <div class="meta-line">FailArmy International • 2025-06-22T13:00:36Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=iuKXA7i0Guo" title="Best Backyard Fails | Yard Work Gone Wrong">
-          <span class="thumb"><img alt="Best Backyard Fails | Yard Work Gone Wrong" src="https://i.ytimg.com/vi/iuKXA7i0Guo/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Backyard Fails | Yard Work Gone Wrong</h3>
-          <div class="meta-line">FailArmy 2.0 • 2025-09-23T13:01:29Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=t71GphcRrr4" title="Crazy Summer Fails 2025 🌊| Brutal Try Not to Laugh">
-          <span class="thumb"><img alt="Crazy Summer Fails 2025 🌊| Brutal Try Not to Laugh" src="https://i.ytimg.com/vi/t71GphcRrr4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Crazy Summer Fails 2025 🌊| Brutal Try Not to Laugh</h3>
-          <div class="meta-line">FailArmy • 2024-08-21T13:01:04Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=_iv-309_F1E" title="Fails that Only Get Worse | Funniest Fails Ever">
-          <span class="thumb"><img alt="Fails that Only Get Worse | Funniest Fails Ever" src="https://i.ytimg.com/vi/_iv-309_F1E/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Fails that Only Get Worse | Funniest Fails Ever</h3>
-          <div class="meta-line">FailArmy 2.0 • 2025-10-14T13:01:14Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=4KVW-LAM-zA" title="Best Videos You Can&#39;t Miss 🤣 Men Caught on Camera">
-          <span class="thumb"><img alt="Best Videos You Can&#39;t Miss 🤣 Men Caught on Camera" src="https://i.ytimg.com/vi/4KVW-LAM-zA/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Videos You Can&#39;t Miss 🤣 Men Caught on Camera</h3>
-          <div class="meta-line">FailArmy • 2025-08-27T13:00:07Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=3OXN4UgEGhI" title="Outrageous Airline and Sky Fails | Wild Wednesday Fails!">
-          <span class="thumb"><img alt="Outrageous Airline and Sky Fails | Wild Wednesday Fails!" src="https://i.ytimg.com/vi/3OXN4UgEGhI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Outrageous Airline and Sky Fails | Wild Wednesday Fails!</h3>
-          <div class="meta-line">FailArmy • 2025-06-25T13:00:12Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=w6urQm7Prs4" title="Best Fails Of The Year | Try Not To Laugh">
-          <span class="thumb"><img alt="Best Fails Of The Year | Try Not To Laugh" src="https://i.ytimg.com/vi/w6urQm7Prs4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails Of The Year | Try Not To Laugh</h3>
-          <div class="meta-line">FailArmy • 2022-12-07T14:00:21Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=KjkVMnl0cas" title="General Fails You Can&#39;t Miss! FailArmy">
-          <span class="thumb"><img alt="General Fails You Can&#39;t Miss! FailArmy" src="https://i.ytimg.com/vi/KjkVMnl0cas/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">General Fails You Can&#39;t Miss! FailArmy</h3>
-          <div class="meta-line">FailArmy • 2025-02-19T14:00:31Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=NmsRKp-q5vs" title="Cringiest Viral Fails | Best Fails of the Month">
-          <span class="thumb"><img alt="Cringiest Viral Fails | Best Fails of the Month" src="https://i.ytimg.com/vi/NmsRKp-q5vs/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Cringiest Viral Fails | Best Fails of the Month</h3>
-          <div class="meta-line">FailArmy 2.0 • 2025-10-25T13:00:49Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=PP68eOKN8Ds" title="Best Fails of the Week | Funniest Crash Out Moments">
-          <span class="thumb"><img alt="Best Fails of the Week | Funniest Crash Out Moments" src="https://i.ytimg.com/vi/PP68eOKN8Ds/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Fails of the Week | Funniest Crash Out Moments</h3>
-          <div class="meta-line">FailArmy • 2025-08-01T13:00:54Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=e70kLxpphDg" title="1 hour Memes of 2025 | Try Not To Laugh Impossible">
-          <span class="thumb"><img alt="1 hour Memes of 2025 | Try Not To Laugh Impossible" src="https://i.ytimg.com/vi/e70kLxpphDg/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">1 hour Memes of 2025 | Try Not To Laugh Impossible</h3>
-          <div class="meta-line">Viral Memes • 2025-02-02T10:19:15Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=7WzQN86i7uc" title="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025">
-          <span class="thumb"><img alt="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025" src="https://i.ytimg.com/vi/7WzQN86i7uc/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025</h3>
-          <div class="meta-line">TreyJam • 2025-04-11T20:47:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=MOIgDpVTySI" title="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes 2025 #2">
-          <span class="thumb"><img alt="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes 2025 #2" src="https://i.ytimg.com/vi/MOIgDpVTySI/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes 2025 #2</h3>
-          <div class="meta-line">TreyJam • 2025-06-13T18:17:01Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=J3t7EYyj6j8" title="Try Not to Laugh Challenge 🤣 Best Fails of September 2025">
-          <span class="thumb"><img alt="Try Not to Laugh Challenge 🤣 Best Fails of September 2025" src="https://i.ytimg.com/vi/J3t7EYyj6j8/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh Challenge 🤣 Best Fails of September 2025</h3>
-          <div class="meta-line">Life Awesome • 2025-09-27T13:00:06Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=dkY_O4dEyu4" title="Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)">
-          <span class="thumb"><img alt="Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)" src="https://i.ytimg.com/vi/dkY_O4dEyu4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)</h3>
-          <div class="meta-line">Top Things • 2025-11-01T15:56:31Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=1YZ1y16H8S0" title="Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos">
-          <span class="thumb"><img alt="Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos" src="https://i.ytimg.com/vi/1YZ1y16H8S0/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos</h3>
-          <div class="meta-line">Top Things • 2025-08-30T14:50:22Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=8p-hs-5tKmM" title="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025">
-          <span class="thumb"><img alt="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025" src="https://i.ytimg.com/vi/8p-hs-5tKmM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025</h3>
-          <div class="meta-line">TreyJam • 2025-03-14T20:17:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=-5owdbat9f4" title="Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025">
-          <span class="thumb"><img alt="Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025" src="https://i.ytimg.com/vi/-5owdbat9f4/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025</h3>
-          <div class="meta-line">Life Awesome • 2025-07-15T13:00:00Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=cZ7Lp6ED4EQ" title="Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025">
-          <span class="thumb"><img alt="Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025" src="https://i.ytimg.com/vi/cZ7Lp6ED4EQ/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025</h3>
-          <div class="meta-line">Life Awesome • 2025-08-05T13:01:22Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=JMYMOwHYWlE" title="Best Funny Videos Of 2025 😂 TRY NOT TO LAUGH Funny Videos">
-          <span class="thumb"><img alt="Best Funny Videos Of 2025 😂 TRY NOT TO LAUGH Funny Videos" src="https://i.ytimg.com/vi/JMYMOwHYWlE/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Best Funny Videos Of 2025 😂 TRY NOT TO LAUGH Funny Videos</h3>
-          <div class="meta-line">Top Things • 2025-07-05T16:09:55Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=vY4nBa_JWrM" title="1 hour of memes but you laugh you restart">
-          <span class="thumb"><img alt="1 hour of memes but you laugh you restart" src="https://i.ytimg.com/vi/vY4nBa_JWrM/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">1 hour of memes but you laugh you restart</h3>
-          <div class="meta-line">The Meme Sheep • 2025-09-06T15:09:47Z</div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="https://www.youtube.com/watch?v=VDAzCfNTxlU" title="Try Not to Laugh Challenge (IMPOSSIBLE) Laugh and You Lose! Part 18">
-          <span class="thumb"><img alt="Try Not to Laugh Challenge (IMPOSSIBLE) Laugh and You Lose! Part 18" src="https://i.ytimg.com/vi/VDAzCfNTxlU/hqdefault.jpg" loading="lazy"/></span>
-          <h3 class="page-title" style="font-size:1rem;margin:.5rem 0;">Try Not to Laugh Challenge (IMPOSSIBLE) Laugh and You Lose! Part 18</h3>
-          <div class="meta-line">Laugh Trapped • 2025-07-22T14:00:48Z</div>
-        </a>
-      </article>
+    <section class="list-cards">
+      <a class="card-row" href="/v/o3LzynlMA54/" title="Epic Fails Gone Viral 😂 Top Funny Videos 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/o3LzynlMA54/hqdefault.jpg" alt="Epic Fails Gone Viral 😂 Top Funny Videos 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Epic Fails Gone Viral 😂 Top Funny Videos 2025</h3>
+          <div class="meta-line">America's Funniest Home Videos • 10 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/lSGtRtKeRE4/" title="Try Not to Laugh Challenge 🤣 Best Fails of April 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/lSGtRtKeRE4/hqdefault.jpg" alt="Try Not to Laugh Challenge 🤣 Best Fails of April 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh Challenge 🤣 Best Fails of April 2025</h3>
+          <div class="meta-line">America's Funniest Home Videos • 24 Apr 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/k7Q60-V4qaI/" title="Top New Funniest Comedy Video 😂 Most Watch Viral Funny Video 2025 Episode 427 By my family">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/k7Q60-V4qaI/hqdefault.jpg" alt="Top New Funniest Comedy Video 😂 Most Watch Viral Funny Video 2025 Episode 427 By my family" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Top New Funniest Comedy Video 😂 Most Watch Viral Funny Video 2025 Episode 427 By my family</h3>
+          <div class="meta-line">MY FAMILY • 11 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/QnXm1CmyCo4/" title="Best Fails of August 2025 😂 Try Not to Laugh Challenge">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/QnXm1CmyCo4/hqdefault.jpg" alt="Best Fails of August 2025 😂 Try Not to Laugh Challenge" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of August 2025 😂 Try Not to Laugh Challenge</h3>
+          <div class="meta-line">America's Funniest Home Videos • 21 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/pGU1W-F7oD0/" title="Best TikToks of 2025 So Far 😂 Funniest Viral Videos">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/pGU1W-F7oD0/hqdefault.jpg" alt="Best TikToks of 2025 So Far 😂 Funniest Viral Videos" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best TikToks of 2025 So Far 😂 Funniest Viral Videos</h3>
+          <div class="meta-line">America's Funniest Home Videos • 28 Apr 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/725Sqwpalws/" title="2025 Fails in Review 🤣 Funniest Fails of the Year So Far">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/725Sqwpalws/hqdefault.jpg" alt="2025 Fails in Review 🤣 Funniest Fails of the Year So Far" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">2025 Fails in Review 🤣 Funniest Fails of the Year So Far</h3>
+          <div class="meta-line">America's Funniest Home Videos • 10 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/J0nkRMxCjPk/" title="Try Not to Laugh Challenge 🤣 Best Fails of September 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/J0nkRMxCjPk/hqdefault.jpg" alt="Try Not to Laugh Challenge 🤣 Best Fails of September 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh Challenge 🤣 Best Fails of September 2025</h3>
+          <div class="meta-line">America's Funniest Home Videos • 18 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/JzoX5_PT_NA/" title="How 2025 is Going So Far 😂 Best Fails of the Week">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/JzoX5_PT_NA/hqdefault.jpg" alt="How 2025 is Going So Far 😂 Best Fails of the Week" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">How 2025 is Going So Far 😂 Best Fails of the Week</h3>
+          <div class="meta-line">America's Funniest Home Videos • 02 Jan 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/v-s4njLYbxw/" title="Best Fails of the Year So Far 🤣 Funniest Fails of 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/v-s4njLYbxw/hqdefault.jpg" alt="Best Fails of the Year So Far 🤣 Funniest Fails of 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of the Year So Far 🤣 Funniest Fails of 2025</h3>
+          <div class="meta-line">America's Funniest Home Videos • 26 May 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/FfFyuM1jrP4/" title="Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/FfFyuM1jrP4/hqdefault.jpg" alt="Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025</h3>
+          <div class="meta-line">America's Funniest Home Videos • 03 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/O0UB4kuPhHo/" title="Funniest Fails you Missed🤣 Best Fails of the Week">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/O0UB4kuPhHo/hqdefault.jpg" alt="Funniest Fails you Missed🤣 Best Fails of the Week" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Funniest Fails you Missed🤣 Best Fails of the Week</h3>
+          <div class="meta-line">America's Funniest Home Videos • 16 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/G8sFiUWVFV8/" title="Funny Videos Gone WRONG 🫣 Best Fails of the Week">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/G8sFiUWVFV8/hqdefault.jpg" alt="Funny Videos Gone WRONG 🫣 Best Fails of the Week" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Funny Videos Gone WRONG 🫣 Best Fails of the Week</h3>
+          <div class="meta-line">America's Funniest Home Videos • 25 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/xr5-LZeB_9k/" title="Best Viral Moments | Best Fails and Wipeouts">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/xr5-LZeB_9k/hqdefault.jpg" alt="Best Viral Moments | Best Fails and Wipeouts" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Viral Moments | Best Fails and Wipeouts</h3>
+          <div class="meta-line">FailArmy • 13 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/BYeWNfsWQa8/" title="FUNNIEST Dad Moves! 😆 Best Fail Videos 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/BYeWNfsWQa8/hqdefault.jpg" alt="FUNNIEST Dad Moves! 😆 Best Fail Videos 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">FUNNIEST Dad Moves! 😆 Best Fail Videos 2025</h3>
+          <div class="meta-line">America's Funniest Home Videos • 14 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/sdMMyfBtYGc/" title="Caught in 4K! 🤣 Funny Fails Caught on Camera">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/sdMMyfBtYGc/hqdefault.jpg" alt="Caught in 4K! 🤣 Funny Fails Caught on Camera" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Caught in 4K! 🤣 Funny Fails Caught on Camera</h3>
+          <div class="meta-line">America's Funniest Home Videos • 22 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/ZyQaVHOu_Wk/" title="Best TikToks of Summer 2025 😆 Top Viral Funny Videos">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/ZyQaVHOu_Wk/hqdefault.jpg" alt="Best TikToks of Summer 2025 😆 Top Viral Funny Videos" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best TikToks of Summer 2025 😆 Top Viral Funny Videos</h3>
+          <div class="meta-line">America's Funniest Home Videos • 04 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/tX-6XdbAC7E/" title="Why did he do this? 😭">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/tX-6XdbAC7E/hqdefault.jpg" alt="Why did he do this? 😭" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Why did he do this? 😭</h3>
+          <div class="meta-line">America's Funniest Home Videos • 26 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/AqNgOBIs8jk/" title="Funny Videos That Went Very Wrong 🤣 Best Fails of the Week">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/AqNgOBIs8jk/hqdefault.jpg" alt="Funny Videos That Went Very Wrong 🤣 Best Fails of the Week" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Funny Videos That Went Very Wrong 🤣 Best Fails of the Week</h3>
+          <div class="meta-line">America's Funniest Home Videos • 09 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/QbaPPujsWW8/" title="Halloween Fails 2025🎃 Funniest Spooky Fails Caught on Camera">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/QbaPPujsWW8/hqdefault.jpg" alt="Halloween Fails 2025🎃 Funniest Spooky Fails Caught on Camera" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Halloween Fails 2025🎃 Funniest Spooky Fails Caught on Camera</h3>
+          <div class="meta-line">America's Funniest Home Videos • 13 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/DwnN62nNzC4/" title="Funniest Messy Fails😱 Ultimate Fails Caught on Camera">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/DwnN62nNzC4/hqdefault.jpg" alt="Funniest Messy Fails😱 Ultimate Fails Caught on Camera" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Funniest Messy Fails😱 Ultimate Fails Caught on Camera</h3>
+          <div class="meta-line">America's Funniest Home Videos • 01 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/06o1AppgIH0/" title="Caught in 4K! 😂 Best Security Camera Fails of 2025 So Far">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/06o1AppgIH0/hqdefault.jpg" alt="Caught in 4K! 😂 Best Security Camera Fails of 2025 So Far" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Caught in 4K! 😂 Best Security Camera Fails of 2025 So Far</h3>
+          <div class="meta-line">America's Funniest Home Videos • 09 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/uMyGxJCuVqk/" title="Where EVERYTHING Went Wrong! 😂 Best Fails of May 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/uMyGxJCuVqk/hqdefault.jpg" alt="Where EVERYTHING Went Wrong! 😂 Best Fails of May 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Where EVERYTHING Went Wrong! 😂 Best Fails of May 2025</h3>
+          <div class="meta-line">America's Funniest Home Videos • 29 May 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/DBr2HHSIX8U/" title="Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/DBr2HHSIX8U/hqdefault.jpg" alt="Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025</h3>
+          <div class="meta-line">America's Funniest Home Videos • 31 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/N4z5YRdjJQ4/" title="ISSEI funny video 😂😂😂 Funny effects!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/N4z5YRdjJQ4/hqdefault.jpg" alt="ISSEI funny video 😂😂😂 Funny effects!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">ISSEI funny video 😂😂😂 Funny effects!</h3>
+          <div class="meta-line">ISSEI / いっせい • 02 Aug 2022</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Tjrho4MWuTM/" title="Try not to laugh ❗ | 401 #funny">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Tjrho4MWuTM/hqdefault.jpg" alt="Try not to laugh ❗ | 401 #funny" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try not to laugh ❗ | 401 #funny</h3>
+          <div class="meta-line">Panda Shorts • 02 Jan 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/39ColarOWKo/" title="Funniest Animal Videos Ever (Part 1)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/39ColarOWKo/hqdefault.jpg" alt="Funniest Animal Videos Ever (Part 1)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Funniest Animal Videos Ever (Part 1)</h3>
+          <div class="meta-line">Daily Dose Of Internet • 12 Apr 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/zu4hYsUiHyM/" title="Gravity Said NOPE! 😁 Funniest Fails of October 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/zu4hYsUiHyM/hqdefault.jpg" alt="Gravity Said NOPE! 😁 Funniest Fails of October 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Gravity Said NOPE! 😁 Funniest Fails of October 2025</h3>
+          <div class="meta-line">America's Funniest Home Videos • 23 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/q6wFT_CtBV4/" title="World&#39;s *HARDEST* TRY NOT TO LAUGH Challenge! (IMPOSSIBLE) | Best Funny Videos Of 2025 😂">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/q6wFT_CtBV4/hqdefault.jpg" alt="World&#39;s *HARDEST* TRY NOT TO LAUGH Challenge! (IMPOSSIBLE) | Best Funny Videos Of 2025 😂" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">World&#39;s *HARDEST* TRY NOT TO LAUGH Challenge! (IMPOSSIBLE) | Best Funny Videos Of 2025 😂</h3>
+          <div class="meta-line">Top Things • 09 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/FFi-AU09ZUY/" title="Best TikTok Videos Ever! 🤣 Funniest Viral Fails">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/FFi-AU09ZUY/hqdefault.jpg" alt="Best TikTok Videos Ever! 🤣 Funniest Viral Fails" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best TikTok Videos Ever! 🤣 Funniest Viral Fails</h3>
+          <div class="meta-line">America's Funniest Home Videos • 30 Jan 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/VBd80rxIj7I/" title="Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/VBd80rxIj7I/hqdefault.jpg" alt="Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)</h3>
+          <div class="meta-line">Top Things • 26 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/3c9QF8blViI/" title="Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/3c9QF8blViI/hqdefault.jpg" alt="Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos</h3>
+          <div class="meta-line">Top Things • 24 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/YFUGXoSxxUQ/" title="When Things Go From Bad to WORSE! 😭 Funniest Fail Videos">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/YFUGXoSxxUQ/hqdefault.jpg" alt="When Things Go From Bad to WORSE! 😭 Funniest Fail Videos" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">When Things Go From Bad to WORSE! 😭 Funniest Fail Videos</h3>
+          <div class="meta-line">America's Funniest Home Videos • 16 Jan 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Z_Z9gBFGiXM/" title="Top 100 Funniest Videos From Around The World 😂😁 Try Not To Laugh || Memes Part 15">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Z_Z9gBFGiXM/hqdefault.jpg" alt="Top 100 Funniest Videos From Around The World 😂😁 Try Not To Laugh || Memes Part 15" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Top 100 Funniest Videos From Around The World 😂😁 Try Not To Laugh || Memes Part 15</h3>
+          <div class="meta-line">H2T - FailNation • 06 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/iqkNoO2dRrg/" title="Best Scare Pranks of the Year So Far 🤣 Funniest Scares of 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/iqkNoO2dRrg/hqdefault.jpg" alt="Best Scare Pranks of the Year So Far 🤣 Funniest Scares of 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Scare Pranks of the Year So Far 🤣 Funniest Scares of 2025</h3>
+          <div class="meta-line">America's Funniest Home Videos • 02 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/R9VvNR2QwlQ/" title="google meme teacher | google reading funny | google spelling funny">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/R9VvNR2QwlQ/hqdefault.jpg" alt="google meme teacher | google reading funny | google spelling funny" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">google meme teacher | google reading funny | google spelling funny</h3>
+          <div class="meta-line">Let's Laugh Together • 29 May 2019</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/yW8ysn5LbrY/" title="Extreme funniest videos on tiktok 2025, try not to laugh, part 21">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/yW8ysn5LbrY/hqdefault.jpg" alt="Extreme funniest videos on tiktok 2025, try not to laugh, part 21" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Extreme funniest videos on tiktok 2025, try not to laugh, part 21</h3>
+          <div class="meta-line">Funny joint  • 12 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/QMAnClz2M64/" title="That&#39;s one way to spell it 🤣 #afv #funny #fail">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/QMAnClz2M64/hqdefault.jpg" alt="That&#39;s one way to spell it 🤣 #afv #funny #fail" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">That&#39;s one way to spell it 🤣 #afv #funny #fail</h3>
+          <div class="meta-line">America's Funniest Home Videos • 01 Nov 2024</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/8Jt2XEyMLCA/" title="100% Funny Fails 🤣 Instant Regret Compilation">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/8Jt2XEyMLCA/hqdefault.jpg" alt="100% Funny Fails 🤣 Instant Regret Compilation" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">100% Funny Fails 🤣 Instant Regret Compilation</h3>
+          <div class="meta-line">America's Funniest Home Videos • 20 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/wCjV55xYHI0/" title="🤣🤣🤣🤣 #babymatifa #funny #tiktok #babyluke #dubai matifa #comedy #family #humor #luke #mdr #humor">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/wCjV55xYHI0/hqdefault.jpg" alt="🤣🤣🤣🤣 #babymatifa #funny #tiktok #babyluke #dubai matifa #comedy #family #humor #luke #mdr #humor" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">🤣🤣🤣🤣 #babymatifa #funny #tiktok #babyluke #dubai matifa #comedy #family #humor #luke #mdr #humor</h3>
+          <div class="meta-line">MatiFamily Officiel • 02 Nov 2023</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/7OdwB7aor8w/" title="চাপাবাজিতে কে সেরা? 🤣 Trending Comedy Video 2025 😂 Amazing Funny Video 2024">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/7OdwB7aor8w/hqdefault.jpg" alt="চাপাবাজিতে কে সেরা? 🤣 Trending Comedy Video 2025 😂 Amazing Funny Video 2024" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">চাপাবাজিতে কে সেরা? 🤣 Trending Comedy Video 2025 😂 Amazing Funny Video 2024</h3>
+          <div class="meta-line">Puchir Ma • 04 Feb 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/DqSNF3G1S5M/" title="Best Viral Fails of the Year 2025 | Try Not To Laugh Challenge">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/DqSNF3G1S5M/hqdefault.jpg" alt="Best Viral Fails of the Year 2025 | Try Not To Laugh Challenge" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Viral Fails of the Year 2025 | Try Not To Laugh Challenge</h3>
+          <div class="meta-line">FailArmy • 02 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/JRJjDUB3RhM/" title="I&#39;m Totally Going Viral | Best FailArmy Fails ">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/JRJjDUB3RhM/hqdefault.jpg" alt="I&#39;m Totally Going Viral | Best FailArmy Fails " loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">I&#39;m Totally Going Viral | Best FailArmy Fails </h3>
+          <div class="meta-line">FailArmy • 05 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/3WJcMvLFQ7s/" title="Best Scary Fails 2025 | Pranks and Close Calls 😱">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/3WJcMvLFQ7s/hqdefault.jpg" alt="Best Scary Fails 2025 | Pranks and Close Calls 😱" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Scary Fails 2025 | Pranks and Close Calls 😱</h3>
+          <div class="meta-line">FailArmy • 29 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/7LzXghN8Y4k/" title="Try Not to Laugh! | Best Fails of the Week">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/7LzXghN8Y4k/hqdefault.jpg" alt="Try Not to Laugh! | Best Fails of the Week" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh! | Best Fails of the Week</h3>
+          <div class="meta-line">FailArmy • 17 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/VHcFqxDLuV4/" title="Expensive Fails and Crashes | Best Fails of the Week">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/VHcFqxDLuV4/hqdefault.jpg" alt="Expensive Fails and Crashes | Best Fails of the Week" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Expensive Fails and Crashes | Best Fails of the Week</h3>
+          <div class="meta-line">FailArmy • 07 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/taTGjKXSrfo/" title="Chaos Caught on Camera! | Best Fails of the Week">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/taTGjKXSrfo/hqdefault.jpg" alt="Chaos Caught on Camera! | Best Fails of the Week" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Chaos Caught on Camera! | Best Fails of the Week</h3>
+          <div class="meta-line">FailArmy • 19 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/WNzt-EMjYdY/" title="Fails You Missed 2025 | Best of Asia ">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/WNzt-EMjYdY/hqdefault.jpg" alt="Fails You Missed 2025 | Best of Asia " loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Fails You Missed 2025 | Best of Asia </h3>
+          <div class="meta-line">FailArmy • 03 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/LvSrgbnrQN0/" title="Best Fails of the Week | Summer 2025 Fails">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/LvSrgbnrQN0/hqdefault.jpg" alt="Best Fails of the Week | Summer 2025 Fails" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of the Week | Summer 2025 Fails</h3>
+          <div class="meta-line">FailArmy • 06 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/FXyGMwhJmT0/" title="Absolute Chaos and Destruction | Best Fails of the Week">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/FXyGMwhJmT0/hqdefault.jpg" alt="Absolute Chaos and Destruction | Best Fails of the Week" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Absolute Chaos and Destruction | Best Fails of the Week</h3>
+          <div class="meta-line">FailArmy • 12 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/g5fc1bYfjqM/" title="100% Embarrassing | Best Fails of the Week">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/g5fc1bYfjqM/hqdefault.jpg" alt="100% Embarrassing | Best Fails of the Week" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">100% Embarrassing | Best Fails of the Week</h3>
+          <div class="meta-line">FailArmy • 03 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/hrDlcU1JfwU/" title="Stupidity Caught on Camera | Best Fails of the Week 🤪">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/hrDlcU1JfwU/hqdefault.jpg" alt="Stupidity Caught on Camera | Best Fails of the Week 🤪" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Stupidity Caught on Camera | Best Fails of the Week 🤪</h3>
+          <div class="meta-line">FailArmy • 05 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/4NYVYwkF01w/" title="Best Submissions of 2025 So Far">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/4NYVYwkF01w/hqdefault.jpg" alt="Best Submissions of 2025 So Far" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Submissions of 2025 So Far</h3>
+          <div class="meta-line">FailArmy 2.0 • 08 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/bjXAj4CC4PI/" title="Year of the Fails | How 2025 is Going So Far">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/bjXAj4CC4PI/hqdefault.jpg" alt="Year of the Fails | How 2025 is Going So Far" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Year of the Fails | How 2025 is Going So Far</h3>
+          <div class="meta-line">FailArmy • 12 Mar 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/aB3EO0EiApE/" title="Big Ball Fails | Best of the Month">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/aB3EO0EiApE/hqdefault.jpg" alt="Big Ball Fails | Best of the Month" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Big Ball Fails | Best of the Month</h3>
+          <div class="meta-line">FailArmy • 24 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/Hygv4TGAkGE/" title="Best New Fails of the Week | Viral Crash Outs!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/Hygv4TGAkGE/hqdefault.jpg" alt="Best New Fails of the Week | Viral Crash Outs!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best New Fails of the Week | Viral Crash Outs!</h3>
+          <div class="meta-line">FailArmy • 24 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/eX9Gqc55lQQ/" title="Best Fails of the Week | Fails You Can Feel  ">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/eX9Gqc55lQQ/hqdefault.jpg" alt="Best Fails of the Week | Fails You Can Feel  " loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of the Week | Fails You Can Feel  </h3>
+          <div class="meta-line">FailArmy • 22 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/1JDeBp_hy1k/" title="Best Summer Fails | Try Not to Laugh😂">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/1JDeBp_hy1k/hqdefault.jpg" alt="Best Summer Fails | Try Not to Laugh😂" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Summer Fails | Try Not to Laugh😂</h3>
+          <div class="meta-line">FailArmy • 30 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/kRbh7l7MspM/" title="Try Not To Laugh 🤣 Best of FailArmy Fails">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/kRbh7l7MspM/hqdefault.jpg" alt="Try Not To Laugh 🤣 Best of FailArmy Fails" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not To Laugh 🤣 Best of FailArmy Fails</h3>
+          <div class="meta-line">FailArmy • 22 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/QO0_-iTWj4E/" title="Best Fails of the Week | Epic Try Not to Laugh Challenge  😆 😆">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/QO0_-iTWj4E/hqdefault.jpg" alt="Best Fails of the Week | Epic Try Not to Laugh Challenge  😆 😆" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of the Week | Epic Try Not to Laugh Challenge  😆 😆</h3>
+          <div class="meta-line">FailArmy • 18 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/2RCoP_N3KQk/" title="Best Fails of September 2025 😂 Try Not to Laugh Challenge">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/2RCoP_N3KQk/hqdefault.jpg" alt="Best Fails of September 2025 😂 Try Not to Laugh Challenge" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of September 2025 😂 Try Not to Laugh Challenge</h3>
+          <div class="meta-line">BRAIN TIME • 28 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/GJKZN-ncnL4/" title="Best Vehicle Fails of 2025 So Far |  Wild Wednesday Fails!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/GJKZN-ncnL4/hqdefault.jpg" alt="Best Vehicle Fails of 2025 So Far |  Wild Wednesday Fails!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Vehicle Fails of 2025 So Far |  Wild Wednesday Fails!</h3>
+          <div class="meta-line">FailArmy • 18 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/WCLFHLDdOoI/" title="Best Fails You Missed 2025 | Instant Karma!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/WCLFHLDdOoI/hqdefault.jpg" alt="Best Fails You Missed 2025 | Instant Karma!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails You Missed 2025 | Instant Karma!</h3>
+          <div class="meta-line">FailArmy • 23 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/q9ecsoFHcjQ/" title="Crazy Viral Fails Compilation | Chaos in 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/q9ecsoFHcjQ/hqdefault.jpg" alt="Crazy Viral Fails Compilation | Chaos in 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Crazy Viral Fails Compilation | Chaos in 2025</h3>
+          <div class="meta-line">FailArmy 2.0 • 11 Mar 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/tHcejkXhRYM/" title="Crazy Fails You Can&#39;t Miss 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/tHcejkXhRYM/hqdefault.jpg" alt="Crazy Fails You Can&#39;t Miss 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Crazy Fails You Can&#39;t Miss 2025</h3>
+          <div class="meta-line">FailArmy • 11 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/7zT4oSvoHls/" title="Viral Crash-outs and Chaos | Best of the Week">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/7zT4oSvoHls/hqdefault.jpg" alt="Viral Crash-outs and Chaos | Best of the Week" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Viral Crash-outs and Chaos | Best of the Week</h3>
+          <div class="meta-line">FailArmy • 29 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/nU-_EC8TVr0/" title="Parenting Gone Wrong 😂 | Best Fails of 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/nU-_EC8TVr0/hqdefault.jpg" alt="Parenting Gone Wrong 😂 | Best Fails of 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Parenting Gone Wrong 😂 | Best Fails of 2025</h3>
+          <div class="meta-line">FailArmy • 26 Feb 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/rHMNISBVqSY/" title="Best Fails of the Week | Close Calls and Crazy People 😆">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/rHMNISBVqSY/hqdefault.jpg" alt="Best Fails of the Week | Close Calls and Crazy People 😆" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of the Week | Close Calls and Crazy People 😆</h3>
+          <div class="meta-line">FailArmy • 11 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/uvhmuF1xMX8/" title="4K Viral Fails Caught on Camera | Best of FailArmy">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/uvhmuF1xMX8/hqdefault.jpg" alt="4K Viral Fails Caught on Camera | Best of FailArmy" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">4K Viral Fails Caught on Camera | Best of FailArmy</h3>
+          <div class="meta-line">FailArmy • 15 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/g5U9rmGUF_U/" title="Worst Fails of the Year | Try Not to Laugh 💩">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/g5U9rmGUF_U/hqdefault.jpg" alt="Worst Fails of the Year | Try Not to Laugh 💩" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Worst Fails of the Year | Try Not to Laugh 💩</h3>
+          <div class="meta-line">FailArmy • 31 Dec 2024</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/6CqxdJoyfYQ/" title="Scary Close Calls | Final Destination IRL">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/6CqxdJoyfYQ/hqdefault.jpg" alt="Scary Close Calls | Final Destination IRL" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Scary Close Calls | Final Destination IRL</h3>
+          <div class="meta-line">FailArmy • 01 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/3ofBzgkKWNs/" title="Best Fails of the Week | Chaos Caught on Camera!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/3ofBzgkKWNs/hqdefault.jpg" alt="Best Fails of the Week | Chaos Caught on Camera!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of the Week | Chaos Caught on Camera!</h3>
+          <div class="meta-line">FailArmy • 15 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/y-rmfcZ0o3c/" title="Best Fails Ever | Epic Try Not to Laugh 😂">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/y-rmfcZ0o3c/hqdefault.jpg" alt="Best Fails Ever | Epic Try Not to Laugh 😂" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails Ever | Epic Try Not to Laugh 😂</h3>
+          <div class="meta-line">FailArmy • 09 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/foSqpzE2ZDE/" title="Best Viral Fails You Missed | Chaos and Stupidity🤣">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/foSqpzE2ZDE/hqdefault.jpg" alt="Best Viral Fails You Missed | Chaos and Stupidity🤣" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Viral Fails You Missed | Chaos and Stupidity🤣</h3>
+          <div class="meta-line">FailArmy • 10 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/LRH7JLvAIus/" title="Best Fails of the Month | International Fails">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/LRH7JLvAIus/hqdefault.jpg" alt="Best Fails of the Month | International Fails" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of the Month | International Fails</h3>
+          <div class="meta-line">FailArmy International • 28 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/RiWgdjal290/" title="Big Giant Trashy Fails | World&#39;s Most Expensive">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/RiWgdjal290/hqdefault.jpg" alt="Big Giant Trashy Fails | World&#39;s Most Expensive" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Big Giant Trashy Fails | World&#39;s Most Expensive</h3>
+          <div class="meta-line">FailArmy • 08 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/llKoAFM-Ggw/" title="Best Fails of the Week | Try Not to Laugh!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/llKoAFM-Ggw/hqdefault.jpg" alt="Best Fails of the Week | Try Not to Laugh!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of the Week | Try Not to Laugh!</h3>
+          <div class="meta-line">FailArmy • 27 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/kFk7Ar8Y9Fg/" title="Moments of Instant Regret | Embarrassing Fails">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/kFk7Ar8Y9Fg/hqdefault.jpg" alt="Moments of Instant Regret | Embarrassing Fails" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Moments of Instant Regret | Embarrassing Fails</h3>
+          <div class="meta-line">FailArmy International • 14 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/0ii0cSvpVx0/" title="Karens Caught on Camera! | Humanity is Doomed!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/0ii0cSvpVx0/hqdefault.jpg" alt="Karens Caught on Camera! | Humanity is Doomed!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Karens Caught on Camera! | Humanity is Doomed!</h3>
+          <div class="meta-line">FailArmy • 17 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/JcymlnlXPOA/" title="Funny Embarrassing Fails | People Being Idiots">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/JcymlnlXPOA/hqdefault.jpg" alt="Funny Embarrassing Fails | People Being Idiots" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Funny Embarrassing Fails | People Being Idiots</h3>
+          <div class="meta-line">FailArmy International • 22 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/iuKXA7i0Guo/" title="Best Backyard Fails | Yard Work Gone Wrong">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/iuKXA7i0Guo/hqdefault.jpg" alt="Best Backyard Fails | Yard Work Gone Wrong" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Backyard Fails | Yard Work Gone Wrong</h3>
+          <div class="meta-line">FailArmy 2.0 • 23 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/t71GphcRrr4/" title="Crazy Summer Fails 2025 🌊| Brutal Try Not to Laugh">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/t71GphcRrr4/hqdefault.jpg" alt="Crazy Summer Fails 2025 🌊| Brutal Try Not to Laugh" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Crazy Summer Fails 2025 🌊| Brutal Try Not to Laugh</h3>
+          <div class="meta-line">FailArmy • 21 Aug 2024</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/_iv-309_F1E/" title="Fails that Only Get Worse | Funniest Fails Ever">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/_iv-309_F1E/hqdefault.jpg" alt="Fails that Only Get Worse | Funniest Fails Ever" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Fails that Only Get Worse | Funniest Fails Ever</h3>
+          <div class="meta-line">FailArmy 2.0 • 14 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/4KVW-LAM-zA/" title="Best Videos You Can&#39;t Miss 🤣 Men Caught on Camera">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/4KVW-LAM-zA/hqdefault.jpg" alt="Best Videos You Can&#39;t Miss 🤣 Men Caught on Camera" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Videos You Can&#39;t Miss 🤣 Men Caught on Camera</h3>
+          <div class="meta-line">FailArmy • 27 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/3OXN4UgEGhI/" title="Outrageous Airline and Sky Fails | Wild Wednesday Fails!">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/3OXN4UgEGhI/hqdefault.jpg" alt="Outrageous Airline and Sky Fails | Wild Wednesday Fails!" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Outrageous Airline and Sky Fails | Wild Wednesday Fails!</h3>
+          <div class="meta-line">FailArmy • 25 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/w6urQm7Prs4/" title="Best Fails Of The Year | Try Not To Laugh">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/w6urQm7Prs4/hqdefault.jpg" alt="Best Fails Of The Year | Try Not To Laugh" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails Of The Year | Try Not To Laugh</h3>
+          <div class="meta-line">FailArmy • 07 Dec 2022</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/KjkVMnl0cas/" title="General Fails You Can&#39;t Miss! FailArmy">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/KjkVMnl0cas/hqdefault.jpg" alt="General Fails You Can&#39;t Miss! FailArmy" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">General Fails You Can&#39;t Miss! FailArmy</h3>
+          <div class="meta-line">FailArmy • 19 Feb 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/NmsRKp-q5vs/" title="Cringiest Viral Fails | Best Fails of the Month">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/NmsRKp-q5vs/hqdefault.jpg" alt="Cringiest Viral Fails | Best Fails of the Month" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Cringiest Viral Fails | Best Fails of the Month</h3>
+          <div class="meta-line">FailArmy 2.0 • 25 Oct 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/PP68eOKN8Ds/" title="Best Fails of the Week | Funniest Crash Out Moments">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/PP68eOKN8Ds/hqdefault.jpg" alt="Best Fails of the Week | Funniest Crash Out Moments" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Fails of the Week | Funniest Crash Out Moments</h3>
+          <div class="meta-line">FailArmy • 01 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/e70kLxpphDg/" title="1 hour Memes of 2025 | Try Not To Laugh Impossible">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/e70kLxpphDg/hqdefault.jpg" alt="1 hour Memes of 2025 | Try Not To Laugh Impossible" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">1 hour Memes of 2025 | Try Not To Laugh Impossible</h3>
+          <div class="meta-line">Viral Memes • 02 Feb 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/7WzQN86i7uc/" title="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/7WzQN86i7uc/hqdefault.jpg" alt="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025</h3>
+          <div class="meta-line">TreyJam • 11 Apr 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/MOIgDpVTySI/" title="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes 2025 #2">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/MOIgDpVTySI/hqdefault.jpg" alt="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes 2025 #2" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes 2025 #2</h3>
+          <div class="meta-line">TreyJam • 13 Jun 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/J3t7EYyj6j8/" title="Try Not to Laugh Challenge 🤣 Best Fails of September 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/J3t7EYyj6j8/hqdefault.jpg" alt="Try Not to Laugh Challenge 🤣 Best Fails of September 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh Challenge 🤣 Best Fails of September 2025</h3>
+          <div class="meta-line">Life Awesome • 27 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/dkY_O4dEyu4/" title="Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/dkY_O4dEyu4/hqdefault.jpg" alt="Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Funny Videos Of 2025 😂😁 | Try Not To Laugh CHALLENGE (Impossible)</h3>
+          <div class="meta-line">Top Things • 01 Nov 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/1YZ1y16H8S0/" title="Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/1YZ1y16H8S0/hqdefault.jpg" alt="Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Funny Videos Of 2025 😂😁 TRY NOT TO LAUGH Funny Videos</h3>
+          <div class="meta-line">Top Things • 30 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/8p-hs-5tKmM/" title="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/8p-hs-5tKmM/hqdefault.jpg" alt="Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh CLEAN 😂 IMPOSSIBLE | Funny Memes Compilation 2025</h3>
+          <div class="meta-line">TreyJam • 14 Mar 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/-5owdbat9f4/" title="Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/-5owdbat9f4/hqdefault.jpg" alt="Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh Challenge 🤣 ULTIMATE Funny Fails 2025</h3>
+          <div class="meta-line">Life Awesome • 15 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/cZ7Lp6ED4EQ/" title="Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/cZ7Lp6ED4EQ/hqdefault.jpg" alt="Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh Challenge Impossible🤣 Best Fails of July 2025</h3>
+          <div class="meta-line">Life Awesome • 05 Aug 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/JMYMOwHYWlE/" title="Best Funny Videos Of 2025 😂 TRY NOT TO LAUGH Funny Videos">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/JMYMOwHYWlE/hqdefault.jpg" alt="Best Funny Videos Of 2025 😂 TRY NOT TO LAUGH Funny Videos" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Best Funny Videos Of 2025 😂 TRY NOT TO LAUGH Funny Videos</h3>
+          <div class="meta-line">Top Things • 05 Jul 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/vY4nBa_JWrM/" title="1 hour of memes but you laugh you restart">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/vY4nBa_JWrM/hqdefault.jpg" alt="1 hour of memes but you laugh you restart" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">1 hour of memes but you laugh you restart</h3>
+          <div class="meta-line">The Meme Sheep • 06 Sep 2025</div>
+        </div>
+      </a>
+      <a class="card-row" href="/v/VDAzCfNTxlU/" title="Try Not to Laugh Challenge (IMPOSSIBLE) Laugh and You Lose! Part 18">
+        <span class="thumb"><img src="https://i.ytimg.com/vi/VDAzCfNTxlU/hqdefault.jpg" alt="Try Not to Laugh Challenge (IMPOSSIBLE) Laugh and You Lose! Part 18" loading="lazy"/></span>
+        <div class="card-body">
+          <h3 class="card-title">Try Not to Laugh Challenge (IMPOSSIBLE) Laugh and You Lose! Part 18</h3>
+          <div class="meta-line">Laugh Trapped • 22 Jul 2025</div>
+        </div>
+      </a>
     </section>
 
-    <!-- AD #2 MID -->
+    <!-- AD: Mid -->
     <ins class="adsbygoogle"
-         style="display:block; text-align:center; margin:30px auto;"
+         style="display:block; text-align:center; margin:24px auto;"
          data-ad-client="ca-pub-8959777846553693"
          data-ad-slot="2222222222"
          data-ad-format="auto"
