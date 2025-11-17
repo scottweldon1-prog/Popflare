@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://popflare.co.uk/sitemap.xml

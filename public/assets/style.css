@@ -50,12 +50,11 @@ html,body{
   gap:16px;
 }
 
-/* ⭐ FIXED NAV BAR — prevents missing Home tab */
 .nav{
   display:flex;
   gap:10px;
-  flex-wrap:nowrap;        /* prevents tabs wrapping to hidden 2nd row */
-  overflow-x:auto;         /* enables horizontal scroll on small screens */
+  flex-wrap:nowrap;
+  overflow-x:auto;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -66,7 +65,7 @@ html,body{
   padding:10px 14px;
   border-radius:999px;
   cursor:pointer;
-  white-space:nowrap;       /* prevents tab text breaking */
+  white-space:nowrap;
 }
 
 .tab.active{
