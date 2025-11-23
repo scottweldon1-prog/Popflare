@@ -1,118 +1,41 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-  <!-- ⭐ Strong SEO Title -->
-  <title>Viral Videos — Trending Clips, Memes & Must-Watch Moments | Popflare</title>
-
-  <!-- ⭐ Improved SEO Description -->
-  <meta name="description" content="Watch the hottest viral videos trending right now — hilarious clips, unbelievable moments, internet memes and must-see highlights updated daily." />
-
-  <!-- ⭐ Keyword Set -->
-  <meta name="keywords" content="viral videos, trending clips, funny videos, internet memes, trending now, must watch, viral moments, popular videos" />
-
+  <title>Viral Videos — Popflare</title>
+  <meta name="description" content="Can’t-miss viral clips trending across the web right now."/>
   <meta name="theme-color" content="#0f0f10"/>
   <link rel="icon" href="/assets/pf-logo.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="/assets/style.css"/>
-
-  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8959777846553693" crossorigin="anonymous"></script>
-
-  <!-- Canonical URL -->
   <link rel="canonical" href="https://popflare.co.uk/viral/"/>
-
-  <!-- ⭐ OpenGraph (Facebook, WhatsApp, etc.) -->
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="Popflare"/>
-  <meta property="og:title" content="Viral Videos — Trending Clips & Must-See Moments"/>
-  <meta property="og:description" content="The latest trending viral videos, memes and must-watch moments from across the internet — updated daily."/>
+  <meta property="og:title" content="Viral Videos — Popflare"/>
+  <meta property="og:description" content="Can’t-miss viral clips trending across the web right now."/>
   <meta property="og:url" content="https://popflare.co.uk/viral/"/>
   <meta property="og:image" content="https://i.ytimg.com/vi/o3LzynlMA54/hqdefault.jpg"/>
-
-  <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:site" content="@popflare"/>
 
-  <!-- ⭐ KEEP ALL EXISTING INLINE STYLES EXACTLY AS THEY WERE -->
   <style>
     .wrap { max-width: 1100px; margin: 0 auto; padding: 1rem; }
-
     .page-title { font-size: 1.6rem; margin: 1rem 0; }
     .lead { color:#aaa; margin-bottom: 1rem; }
-
-    .list-cards {
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap:1rem;
-      margin-top:1rem;
-    }
-
-    .card-row {
-      display:flex;
-      flex-direction:column;
-      background:#111;
-      border-radius:0.75rem;
-      padding:0.75rem;
-      gap:0.75rem;
-      text-decoration:none;
-      color:inherit;
-    }
-
+    .list-cards { display:flex; flex-direction:column; gap:1rem; margin-top: 1rem; }
+    .card-row { display:flex; gap:1rem; padding:0.75rem; border-radius:0.75rem; background:#111; text-decoration:none; color:inherit; }
     .card-row:hover { background:#181818; }
-
-    .thumb {
-      aspect-ratio:16/9;
-      background:#000;
-      border-radius:0.5rem;
-      overflow:hidden;
-    }
-
-    .thumb iframe,
-    .thumb img {
-      width:100%;
-      height:100%;
-      border:0;
-      display:block;
-      object-fit:cover;
-    }
-
-    .card-body {
-      display:flex;
-      flex-direction:column;
-    }
-
-    .card-title {
-      font-size:1rem;
-      margin:0 0 .35rem 0;
-      font-weight:600;
-    }
-
-    .meta-line {
-      color:#999;
-      font-size:.85rem;
-    }
-
-    .chip {
-      display:inline-block;
-      padding:.25rem .6rem;
-      border:1px solid #333;
-      border-radius:999px;
-      font-size:.8rem;
-      color:#bbb;
-    }
-
-    .footer-links {
-      text-align:center;
-      margin:2rem 0;
-      color:#999;
-      font-size:.9rem;
-    }
-
-    .footer-links a { color:#FF3366; text-decoration:none; }
-
+    .thumb { flex: 0 0 220px; aspect-ratio:16/9; background:#000; border-radius:.5rem; overflow:hidden; }
+    .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+    .card-body { flex:1; display:flex; flex-direction:column; }
+    .card-title { font-size:1rem; margin:0 0 .35rem 0; }
+    .meta-line { color:#999; font-size:.85rem; margin-bottom:.25rem; }
+    .chip { display:inline-block; padding:.25rem .6rem; border:1px solid #333; border-radius:999px; font-size:.8rem; color:#bbb; }
+    .footer-links { text-align:center; margin:2rem 0; color:#999; font-size:.9rem;}
+    .footer-links a{ color:#FF3366; text-decoration:none; }
     @media (max-width: 700px) {
+      .card-row { flex-direction:column; }
       .thumb { width:100%; }
     }
   </style>

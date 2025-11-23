@@ -1,118 +1,41 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-  <!-- ⭐ Strong SEO Title -->
-  <title>Latest Movie Trailers — New Films, Teasers & First Looks | Popflare</title>
-
-  <!-- ⭐ SEO Description -->
-  <meta name="description" content="Watch the latest movie trailers, teasers and first looks for upcoming films — updated daily with official releases." />
-
-  <!-- ⭐ SEO Keywords -->
-  <meta name="keywords" content="movie trailers, latest trailers, film teasers, new movies, upcoming films, movie previews, film first look" />
-
+  <title>Latest Movie Trailers — Popflare</title>
+  <meta name="description" content="Brand new movie trailers, teasers and first looks for upcoming films."/>
   <meta name="theme-color" content="#0f0f10"/>
   <link rel="icon" href="/assets/pf-logo.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="/assets/style.css"/>
-
-  <!-- AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8959777846553693" crossorigin="anonymous"></script>
-
-  <!-- Canonical -->
   <link rel="canonical" href="https://popflare.co.uk/trailers/"/>
-
-  <!-- ⭐ OpenGraph -->
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="Popflare"/>
-  <meta property="og:title" content="Latest Movie Trailers — New Films, Teasers & First Looks"/>
-  <meta property="og:description" content="Brand-new movie trailers, teasers and first looks for upcoming films — updated daily."/>
+  <meta property="og:title" content="Latest Movie Trailers — Popflare"/>
+  <meta property="og:description" content="Brand new movie trailers, teasers and first looks for upcoming films."/>
   <meta property="og:url" content="https://popflare.co.uk/trailers/"/>
   <meta property="og:image" content="https://i.ytimg.com/vi/zHhR3daI3bY/hqdefault.jpg"/>
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:site" content="@popflare"/>
 
-  <!-- ⭐ Your existing styles (kept EXACTLY the same) -->
   <style>
     .wrap { max-width: 1100px; margin: 0 auto; padding: 1rem; }
-
     .page-title { font-size: 1.6rem; margin: 1rem 0; }
     .lead { color:#aaa; margin-bottom: 1rem; }
-
-    .list-cards {
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap:1rem;
-      margin-top:1rem;
-    }
-
-    .card-row {
-      display:flex;
-      flex-direction:column;
-      background:#111;
-      border-radius:0.75rem;
-      padding:0.75rem;
-      gap:0.75rem;
-      text-decoration:none;
-      color:inherit;
-    }
-
+    .list-cards { display:flex; flex-direction:column; gap:1rem; margin-top: 1rem; }
+    .card-row { display:flex; gap:1rem; padding:0.75rem; border-radius:0.75rem; background:#111; text-decoration:none; color:inherit; }
     .card-row:hover { background:#181818; }
-
-    .thumb {
-      aspect-ratio:16/9;
-      background:#000;
-      border-radius:0.5rem;
-      overflow:hidden;
-    }
-
-    .thumb iframe,
-    .thumb img {
-      width:100%;
-      height:100%;
-      border:0;
-      display:block;
-      object-fit:cover;
-    }
-
-    .card-body {
-      display:flex;
-      flex-direction:column;
-    }
-
-    .card-title {
-      font-size:1rem;
-      margin:0 0 .35rem 0;
-      font-weight:600;
-    }
-
-    .meta-line {
-      color:#999;
-      font-size:.85rem;
-    }
-
-    .chip {
-      display:inline-block;
-      padding:.25rem .6rem;
-      border:1px solid #333;
-      border-radius:999px;
-      font-size:.8rem;
-      color:#bbb;
-    }
-
-    .footer-links {
-      text-align:center;
-      margin:2rem 0;
-      color:#999;
-      font-size:.9rem;
-    }
-
-    .footer-links a { color:#FF3366; text-decoration:none; }
-
+    .thumb { flex: 0 0 220px; aspect-ratio:16/9; background:#000; border-radius:.5rem; overflow:hidden; }
+    .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+    .card-body { flex:1; display:flex; flex-direction:column; }
+    .card-title { font-size:1rem; margin:0 0 .35rem 0; }
+    .meta-line { color:#999; font-size:.85rem; margin-bottom:.25rem; }
+    .chip { display:inline-block; padding:.25rem .6rem; border:1px solid #333; border-radius:999px; font-size:.8rem; color:#bbb; }
+    .footer-links { text-align:center; margin:2rem 0; color:#999; font-size:.9rem;}
+    .footer-links a{ color:#FF3366; text-decoration:none; }
     @media (max-width: 700px) {
+      .card-row { flex-direction:column; }
       .thumb { width:100%; }
     }
   </style>
@@ -125,14 +48,14 @@
         <div class="brand-title">Popflare</div>
       </div>
       <nav class="nav">
-        <a class="tab" href="/">Home</a>
-        <a class="tab" href="/football/">Last Night’s Football</a>
-        <a class="tab" href="/trailers/">Upcoming movie trailers</a>
-        <a class="tab" href="/ukpop/">UK Pop Top 100</a>
-        <a class="tab" href="/viral/">Viral</a>
-        <a class="tab" href="/about/">About</a>
-        <a class="tab" href="/contact/">Contact</a>
-      </nav>
+  <a class="tab" href="/">Home</a>
+  <a class="tab" href="/football/">Last Night’s Football</a>
+  <a class="tab" href="/trailers/">Upcoming movie trailers</a>
+  <a class="tab" href="/ukpop/">UK Pop Top 100</a>
+  <a class="tab" href="/viral/">Viral</a>
+  <a class="tab" href="/about/">About</a>
+  <a class="tab" href="/contact/">Contact</a>
+</nav>
     </div>
   </header>
 

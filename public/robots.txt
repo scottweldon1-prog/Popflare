@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-# Allow Google Ads/AdSense crawlers
-User-agent: Mediapartners-Google
-Allow: /
-
-# Sitemap
 Sitemap: https://popflare.co.uk/sitemap.xml
